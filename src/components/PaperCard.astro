@@ -14,7 +14,7 @@ const category = typeInfo(paper.core.type);
     </div>
     <div class="paper-content">
       <div class="paper-meta"><time datetime={paperDate(paper)}>{formatDate(paperDate(paper))}</time><span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span></div>
-      <h2 class="paper-title">{paper.core.title}</h2>
+      <h3 class="paper-title">{paper.core.title}</h3>
       <div class="paper-byline">
         <p><Icon name="user" size={13} /><span>{paper.core.authors?.join(' / ')}</span></p>
         {paper.publication?.bookTitleAbbr && <p><Icon name="book" size={13} /><span>{paper.publication.bookTitleAbbr}</span></p>}

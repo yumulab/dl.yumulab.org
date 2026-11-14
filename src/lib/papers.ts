@@ -61,6 +61,18 @@ export function paperDate(paper: Paper): string {
   return (paper.core.sortingDate || paper.core.presentationDate || paper.publication?.publishedDate || '').slice(0, 10);
 }
 
+/** Group sorted results without changing the year or paper order. */
+export function groupPapersByYear(sorted: Paper[]): { year: string; papers: Paper[] }[] {
+  const groups = new Map<string, Paper[]>();
+  for (const paper of sorted) {
+    const year = paperDate(paper).slice(0, 4);
+    const group = groups.get(year);
+    if (group) group.push(paper);
+    else groups.set(year, [paper]);
+  }
+  return [...groups].map(([year, papers]) => ({ year, papers }));
+}
+
 export function formatDate(value?: string): string {
   return value ? value.slice(0, 10).replaceAll('-', '/') : '—';
 }

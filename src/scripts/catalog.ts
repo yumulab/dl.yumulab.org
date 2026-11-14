@@ -1,4 +1,4 @@
-import { papers, filterPapers, readFilters, typeInfo } from '../lib/papers';
+import { papers, filterPapers, readFilters, typeInfo, groupPapersByYear } from '../lib/papers';
 
 const form = document.querySelector<HTMLFormElement>('#search-form')!;
 const query = document.querySelector<HTMLInputElement>('#query')!;
@@ -20,14 +20,15 @@ function render(updateUrl = true) {
   viewButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === filters.view)));
 
   const results = filterPapers(papers, filters);
-  cards.forEach((card) => { card.hidden = true; });
   const fragment = document.createDocumentFragment();
-  results.forEach((paper) => {
-    const card = cards.get(paper.core.id)!;
-    card.hidden = false;
-    fragment.append(card);
+  groupPapersByYear(results).forEach(({ year, papers: yearPapers }) => {
+    const heading = document.createElement('h2');
+    heading.className = 'paper-year-heading';
+    heading.textContent = year ? `${year}年` : '年不明';
+    fragment.append(heading);
+    yearPapers.forEach((paper) => fragment.append(cards.get(paper.core.id)!));
   });
-  container.append(fragment);
+  container.replaceChildren(fragment);
   const filtered = Boolean(filters.q || filters.year || filters.type);
   document.querySelector('#result-count')!.textContent = filtered ? `${results.length} 件 / 全 ${papers.length} 件` : `全 ${papers.length} 件`;
   document.querySelector<HTMLElement>('#empty-state')!.hidden = results.length > 0;

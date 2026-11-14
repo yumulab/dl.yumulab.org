@@ -96,6 +96,10 @@ svg{flex-shrink:0;vertical-align:middle}
 .papers-grid[data-view=text] .paper-byline{display:flex;flex-wrap:wrap;gap:3px 14px;font-size:11px;margin:0}
 .papers-grid[data-view=text] .paper-byline p{margin:0;min-width:0;overflow-wrap:anywhere}
 .papers-grid[data-view=text] .paper-byline svg{display:none}
+.paper-year-heading{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin:18px 0 0;font-size:20px;font-weight:600;line-height:1.5;color:#3b5666}
+.paper-year-heading::after{content:'';flex:1;height:1px;background:var(--border)}
+.papers-grid[data-view=list] .paper-year-heading,.papers-grid[data-view=text] .paper-year-heading{margin:28px 0 4px}
+.papers-grid .paper-year-heading:first-child{margin-top:0}
 .site-footer{max-width:1072px;margin:0 auto;border-top:1px solid var(--border);padding:24px 0 28px;display:flex;justify-content:space-between;gap:24px;color:#7b858e;font-size:10px}
 .site-footer>div{display:flex;gap:16px;flex-wrap:wrap}
 .site-footer>div:first-child{flex-direction:column;gap:3px}

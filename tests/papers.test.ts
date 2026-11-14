@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { papers, filterPapers, readFilters, paperDate, normalize, safeUrl, embedUrl, thumbnail } from '../src/lib/papers';
+import { papers, filterPapers, readFilters, paperDate, normalize, safeUrl, embedUrl, thumbnail, groupPapersByYear } from '../src/lib/papers';
 
 const defaults = readFilters(new URLSearchParams());
 
@@ -42,6 +42,29 @@ test('shared URLs restore all three display modes without changing search result
   }
   assert.equal(defaults.view, 'grid');
   assert.equal(readFilters(new URLSearchParams('view=tile')).view, 'grid');
+});
+
+test('year groups follow both sort directions and keep every paper in order', () => {
+  const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)))].sort();
+  for (const sort of ['oldest', 'newest'] as const) {
+    const sorted = filterPapers(papers, { ...defaults, sort });
+    const grouped = groupPapersByYear(sorted);
+    assert.deepEqual(grouped.map((group) => group.year), sort === 'oldest' ? years : [...years].reverse());
+    assert.deepEqual(grouped.flatMap((group) => group.papers.map((paper) => paper.core.id)), sorted.map((paper) => paper.core.id));
+    assert.ok(grouped.every((group) => group.papers.every((paper) => paperDate(paper).startsWith(group.year))));
+  }
+});
+
+test('year headings match the filtered results in every display mode', () => {
+  for (const view of ['list', 'grid', 'text'] as const) {
+    const results = filterPapers(papers, { ...defaults, view, year: '2025', type: 'report', q: '湯村' });
+    const grouped = groupPapersByYear(results);
+    assert.ok(results.length > 0);
+    assert.equal(grouped.length, 1);
+    assert.equal(grouped[0].year, '2025');
+    assert.equal(grouped[0].papers.length, results.length);
+    assert.deepEqual(groupPapersByYear(filterPapers(papers, { ...defaults, view, q: 'この語は存在しないxyz' })), []);
+  }
 });
 
 test('missing thumbnails use the placeholder and IDs remain unique', () => {

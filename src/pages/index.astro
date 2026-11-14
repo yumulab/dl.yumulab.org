@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import PaperCard from '../components/PaperCard.astro';
-import { papers, paperDate, paperTypes, filterPapers } from '../lib/papers';
+import { papers, paperDate, paperTypes, filterPapers, groupPapersByYear } from '../lib/papers';
 import { withBase } from '../lib/urls';
 const sorted = filterPapers(papers, { q: '', year: '', type: '', sort: 'newest', view: 'grid' });
 const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).filter(Boolean))].sort().reverse();
@@ -44,7 +44,12 @@ const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).fi
     <main id="main" class="catalog-main">
       <noscript><p class="notice">検索・表示切り替えを利用するにはJavaScriptを有効にしてください。すべての論文は以下から閲覧できます。</p></noscript>
       <div id="active-filters" class="active-filters" aria-label="現在の検索条件" hidden></div>
-      <div id="papers" class="papers-grid" data-view="grid">{sorted.map((paper, index) => <PaperCard paper={paper} index={index} />)}</div>
+      <div id="papers" class="papers-grid" data-view="grid">
+        {groupPapersByYear(sorted).map(({ year, papers: yearPapers }) => <Fragment>
+          <h2 class="paper-year-heading">{year ? `${year}年` : '年不明'}</h2>
+          {yearPapers.map((paper) => <PaperCard paper={paper} index={sorted.indexOf(paper)} />)}
+        </Fragment>)}
+      </div>
       <div id="empty-state" class="empty-state" hidden><Icon name="search" size={36} /><h2>該当する論文が見つかりませんでした</h2><p>キーワードや絞り込み条件を変えてお試しください。</p><button type="button" id="empty-reset" class="outline-button">すべての論文を表示</button></div>
       <p class="catalog-end" id="catalog-end">全 {papers.length} 件の研究成果を表示しています</p>
     </main>
