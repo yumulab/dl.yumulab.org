@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail, paperPdf } from '../lib/papers';
+import type { Paper } from '../lib/papers';
+import { withBase } from '../lib/urls';
+import { paperSlug } from '../lib/paper-urls';
+
+export function getStaticPaths() {
+  return papers.map((paper) => ({ params: { slug: paperSlug(paper) }, props: { paper } }));
+}
+interface Props { paper: Paper; }
+const { paper } = Astro.props;
+const { core, publication: pub } = paper;
+const category = typeInfo(paperType(paper));
+const pdf = paperPdf(paper);
+const source = safeUrl(core.externalUrl);
+const slides = embedUrl(paper.embed?.slideshare);
+const video = embedUrl(paper.embed?.youtube);
+const keywords = core.keywords?.filter(Boolean) ?? [];
+const info = [
+  ['掲載誌・会議名', pub?.bookTitle], ['巻', pub?.volume], ['号', pub?.issue],
+  ['番号', pub?.number], ['ページ', pub?.page],
+  ['出版日', pub?.publishedDate && formatDate(pub.publishedDate)],
+  ['発表日', core.presentationDate && formatDate(core.presentationDate)],
+  ['発表場所', core.presentationlLocation], ['出版社', pub?.publisher],
+  ['ISSN', pub?.ISSN], ['ISBN', pub?.ISBN], ['DOI', pub?.DOI],
+].filter(([, value]) => value);
+const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is string => Boolean(url));
+---
+<Layout title={core.title} description={core.abstract || core.title} image={thumbnail(paper)}>
+  <main id="main" class="detail-page">
+    <a class="back-link" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
+    <header class="detail-header">
+      <span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span>
+      <h1>{core.title}</h1>
+      {core.titleOfEnglish && <p class="english-title" lang="en">{core.titleOfEnglish}</p>}
+      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}>{author}</a>)}</div>
+      <div class="detail-actions">
+        {pdf && <a class="pdf-button" href={pdf} target="_blank" rel="noopener noreferrer"><Icon name="download" size={18} />PDFを開く<Icon name="external" size={14} /></a>}
+        {source && <a class="outline-button" href={source} target="_blank" rel="noopener noreferrer">公開元を見る<Icon name="external" size={15} /></a>}
+        {slides && <a class="outline-button" href="#slides">発表スライド</a>}
+      </div>
+    </header>
+    <div class="detail-layout">
+      <div class="detail-body">
+        {core.abstract && <section class="detail-section"><h2><span>Abstract</span>概要</h2><p class="abstract-text">{core.abstract}</p></section>}
+        {(slides || video || links.length > 0) && <section class="detail-section">
+          <h2><span>Artifacts</span>関連資料</h2>
+          {video && <div class="embed-frame"><iframe src={video} title={`${core.title}の紹介動画`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" /></div>}
+          {slides && <div class="embed-frame" id="slides"><iframe src={slides} title={`${core.title}の発表スライド`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" /></div>}
+          {links.length > 0 && <ul class="artifact-links">{links.map((url) => <li><a href={url} target="_blank" rel="noopener noreferrer">{url}<Icon name="external" size={15} /></a></li>)}</ul>}
+        </section>}
+        <section class="detail-section"><h2><span>Information</span>書誌情報</h2><dl class="information">{info.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>
+        {keywords.length > 0 && <section class="detail-section"><h2><span>Keywords</span>キーワード</h2><div class="keyword-list">{keywords.map((keyword) => <a href={`${withBase('/')}?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}</div></section>}
+        <section class="detail-section">
+          <div class="section-heading"><h2><span>Citation</span>引用</h2><button type="button" id="copy-citation" class="copy-button" hidden><Icon name="copy" size={15} /><span>コピー</span></button></div>
+          <p id="citation-text" class="citation-text">{citation(paper)}</p><p id="copy-status" class="sr-only" role="status"></p>
+        </section>
+        {source && <section class="detail-section"><h2><span>Source URL</span>公開元</h2><a class="source-url" href={source} target="_blank" rel="noopener noreferrer">{source}<Icon name="external" size={15} /></a></section>}
+      </div>
+      <aside class="detail-aside" aria-label="論文の概要情報">
+        <img class="detail-thumbnail" src={thumbnail(paper)} alt={core.thumbnail || core.thumbnailSmall ? `${core.title}の研究紹介画像` : ''} width="560" height="294" />
+        {pub?.bookTitleAbbr && <p class="aside-venue"><span class="venue-badge" style={`--badge-color: ${category.color}`}>{pub.bookTitleAbbr}</span></p>}
+        {core.presentationDate && <p class="aside-date">{formatDate(core.presentationDate)} 発表</p>}
+      </aside>
+    </div>
+    <a class="back-link bottom-back" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
+  </main>
+  <script>
+    const copyButton = document.querySelector<HTMLButtonElement>('#copy-citation');
+    if (copyButton && navigator.clipboard) {
+      copyButton.hidden = false;
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(document.querySelector('#citation-text')!.textContent ?? '');
+          document.querySelector('#copy-status')!.textContent = '引用情報をコピーしました';
+          copyButton.querySelector('span')!.textContent = 'コピーしました';
+          setTimeout(() => { copyButton.querySelector('span')!.textContent = 'コピー'; }, 2000);
+        } catch {
+          document.querySelector('#copy-status')!.textContent = 'コピーできませんでした。引用文を選択してコピーしてください。';
+          copyButton.querySelector('span')!.textContent = '本文を選択してコピー';
+        }
+      });
+    }
+  </script>
+</Layout>

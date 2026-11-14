@@ -30,7 +30,8 @@ test('all published papers have stable, unique, non-numeric URL slugs', () => {
 });
 
 test('new URLs work under the temporary project path and the future custom domain', () => {
-  assert.equal(withBase(paperPath(paper('77')), '/dl.yumulab.org/'), '/dl.yumulab.org/papers/ec79-miyazaki/');
-  assert.equal(withBase(paperPath(paper('77')), '/'), '/papers/ec79-miyazaki/');
+  assert.equal(paperPath(paper('77')), '/ec79-miyazaki/');
+  assert.equal(withBase(paperPath(paper('77')), '/dl.yumulab.org/'), '/dl.yumulab.org/ec79-miyazaki/');
+  assert.equal(withBase(paperPath(paper('77')), '/'), '/ec79-miyazaki/');
   assert.equal(paperSlugs['77'], 'ec79-miyazaki');
 });

@@ -3102,5 +3102,713 @@
     "external": {
       "links": []
     }
+  },
+  {
+    "core": {
+      "id": "80",
+      "type": "paper-conference",
+      "title": "ASSADEP: Non-Contact Ear Haptic Feedback Using Airborne Ultrasound for Immersive ASMR Viewing",
+      "authors": [
+        "Rei Shimizu",
+        "Tsubasa Yumura"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/2026/09/23/vrst-accepted.html",
+      "sortingDate": "2026-11-16T00:00:00.000Z",
+      "presentationlLocation": "宮城県仙台市",
+      "abstract": "2026年11月16日〜18日に仙台で開催予定のVRST2026デモセッションに採択。"
+    },
+    "publication": {
+      "bookTitle": "The 32nd ACM Symposium on Virtual Reality Software and Technology (VRST2026)",
+      "bookTitleAbbr": "VRST2026"
+    },
+    "external": {
+      "links": [
+        "https://sigchi.org/events/vrst-2026/"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "81",
+      "type": "paper-conference",
+      "title": "MaRI/OTTS: A Magnetorheological Self-Sensing Haptic Interface for Tangible Interaction",
+      "authors": [
+        "Sora Kamimura",
+        "Tsubasa Yumura"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/2026/09/23/vrst-accepted.html",
+      "sortingDate": "2026-11-16T00:00:00.000Z",
+      "presentationlLocation": "宮城県仙台市",
+      "abstract": "2026年11月16日〜18日に仙台で開催予定のVRST2026デモセッションに採択。"
+    },
+    "publication": {
+      "bookTitle": "The 32nd ACM Symposium on Virtual Reality Software and Technology (VRST2026)",
+      "bookTitleAbbr": "VRST2026"
+    },
+    "external": {
+      "links": [
+        "https://sigchi.org/events/vrst-2026/"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "82",
+      "type": "talk",
+      "title": "歌詞駆動パーティクルライブ制作支援ツール",
+      "authors": [
+        "上村 宙",
+        "加藤 淳",
+        "中野 倫靖",
+        "後藤 真孝",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/09/07/animare.html",
+      "sortingDate": "2026-09-07T00:00:00.000Z",
+      "presentationDate": "2026-09-07T00:00:00.000Z",
+      "presentationlLocation": "北海道大学 学術交流会館（北海道札幌市）"
+    },
+    "publication": {
+      "bookTitle": "アニマーレ第1回学際ワークショップ",
+      "bookTitleAbbr": "アニマーレ2026",
+      "number": "B-5"
+    },
+    "external": {
+      "links": [
+        "https://anime.pj.aist.go.jp/events/2026-09-07-1st-workshop"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "83",
+      "type": "report",
+      "title": "耳部への触覚提示によるASMR動画視聴体験の拡張",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/09/02/mus147.html",
+      "sortingDate": "2026-09-02T00:00:00.000Z",
+      "presentationDate": "2026-09-02T00:00:00.000Z",
+      "presentationlLocation": "北海道情報大学（北海道江別市）"
+    },
+    "publication": {
+      "bookTitle": "第147回情報処理学会音楽情報科学研究発表会",
+      "bookTitleAbbr": "MUS147"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/mus147.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "84",
+      "type": "paper-conference",
+      "title": "EBE-TSUBU: Audiovisual Urban Reconstruction via Point Clouds and Hyper-Directional Acoustics",
+      "authors": [
+        "Koki Miyauchi",
+        "Togo Okubo",
+        "Rei Shimizu",
+        "Haruka Hirayama"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/2026/06/21/nicograph.html",
+      "sortingDate": "2026-06-21T00:00:00.000Z",
+      "presentationlLocation": "愛知県名古屋市"
+    },
+    "publication": {
+      "bookTitle": "NICOGRAPH International 2026",
+      "bookTitleAbbr": "NICOGRAPH International 2026"
+    },
+    "external": {
+      "links": [
+        "https://www.do-johodai.ac.jp/topics/9699809/",
+        "https://masahiko-itoh.blogspot.com/2026/06/2nicograph-international-2026.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "85",
+      "type": "paper-conference",
+      "title": "ASMR耳かき動画のための音と触覚の同時提示システムにおけるパラメトリックスピーカーの配置検討",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/10/haptics36.html",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "presentationlLocation": "千葉大学 西千葉キャンパス"
+    },
+    "publication": {
+      "bookTitle": "日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会",
+      "bookTitleAbbr": "第36回ハプティクス研究会"
+    },
+    "external": {
+      "links": [
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "86",
+      "type": "paper-conference",
+      "title": "推しみん：推しとの疑似会話体験を活用した睡眠管理アプリの提案",
+      "authors": [
+        "太田 駿",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
+      "sortingDate": "2026-03-09T00:00:00.000Z",
+      "presentationDate": "2026-03-09T00:00:00.000Z",
+      "presentationlLocation": "電気通信大学（東京都調布市）"
+    },
+    "publication": {
+      "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
+      "bookTitleAbbr": "EC79"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "87",
+      "type": "paper-conference",
+      "title": "ノア：メタバース空間で対話相手に向かって自律移動するAIアバターの開発と評価",
+      "authors": [
+        "小山田 悠人",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "presentationlLocation": "電気通信大学（東京都調布市）"
+    },
+    "publication": {
+      "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
+      "bookTitleAbbr": "EC79"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "88",
+      "type": "paper-conference",
+      "title": "足位置の視覚的提示による電子オルガンのペダル鍵盤演奏学習支援システムの開発と評価",
+      "authors": [
+        "寳金 和志",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "presentationlLocation": "電気通信大学（東京都調布市）"
+    },
+    "publication": {
+      "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
+      "bookTitleAbbr": "EC79"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "89",
+      "type": "paper-conference",
+      "title": "リン酸二水素アンモニウム結晶のコンピュテーショナルデザインの検討",
+      "authors": [
+        "玉堀 舜",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "presentationlLocation": "電気通信大学（東京都調布市）"
+    },
+    "publication": {
+      "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
+      "bookTitleAbbr": "EC79"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "90",
+      "type": "paper-conference",
+      "title": "BLEビーコンを用いて物理空間とサンドボックスゲームを接続するシステムの開発",
+      "authors": [
+        "中山 貴博"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
+      "sortingDate": "2026-03-07T00:00:00.000Z",
+      "presentationDate": "2026-03-07T00:00:00.000Z",
+      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+    },
+    "publication": {
+      "bookTitle": "第25回複雑系マイクロシンポジウム",
+      "bookTitleAbbr": "複雑系マイクロ25"
+    },
+    "external": {
+      "links": [
+        "https://cs-micro.github.io/2026/",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "91",
+      "type": "paper-conference",
+      "title": "Re:CODE - 古いギターを再利用した弾き語りのための電子楽器の開発",
+      "authors": [
+        "早坂 匠真"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
+      "sortingDate": "2026-03-07T00:00:00.000Z",
+      "presentationDate": "2026-03-07T00:00:00.000Z",
+      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+    },
+    "publication": {
+      "bookTitle": "第25回複雑系マイクロシンポジウム",
+      "bookTitleAbbr": "複雑系マイクロ25"
+    },
+    "external": {
+      "links": [
+        "https://cs-micro.github.io/2026/",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "92",
+      "type": "paper-conference",
+      "title": "VLMと二輪自動車ドライブレコーダー映像による道路上の運転危険箇所の検出の検討",
+      "authors": [
+        "片岡 美樹"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
+      "sortingDate": "2026-03-07T00:00:00.000Z",
+      "presentationDate": "2026-03-07T00:00:00.000Z",
+      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+    },
+    "publication": {
+      "bookTitle": "第25回複雑系マイクロシンポジウム",
+      "bookTitleAbbr": "複雑系マイクロ25"
+    },
+    "external": {
+      "links": [
+        "https://cs-micro.github.io/2026/",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "93",
+      "type": "paper-conference",
+      "title": "ARマーカーを用いたビニールハウスの窓開閉監視システムの開発",
+      "authors": [
+        "石倉 汰一"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
+      "sortingDate": "2026-03-07T00:00:00.000Z",
+      "presentationDate": "2026-03-07T00:00:00.000Z",
+      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+    },
+    "publication": {
+      "bookTitle": "第25回複雑系マイクロシンポジウム",
+      "bookTitleAbbr": "複雑系マイクロ25"
+    },
+    "external": {
+      "links": [
+        "https://cs-micro.github.io/2026/",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "94",
+      "type": "paper-conference",
+      "title": "PreMaCube：感圧導電シートを2次元マーカとして用いるキューブ型インタフェースの開発",
+      "authors": [
+        "株本 くるみ",
+        "清水 怜良",
+        "上村 宙",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/05/interaction.html",
+      "sortingDate": "2026-03-05T00:00:00.000Z",
+      "presentationDate": "2026-03-05T00:00:00.000Z",
+      "presentationlLocation": "一橋記念講堂（東京都千代田区）"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2026論文集",
+      "bookTitleAbbr": "インタラクション2026",
+      "publishedDate": "2026-02-20T00:00:00.000Z",
+      "number": "3A07",
+      "publisher": "情報処理学会"
+    },
+    "external": {
+      "links": [
+        "https://www.yumulab.org/2026/03/31/summary.html",
+        "https://www.interaction-ipsj.org/proceedings/2026/data/pdf/3A07.pdf"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "95",
+      "type": "report",
+      "title": "電子ペーパーサイネージにおける人の移動を通信媒介とした情報配送手法の開発と評価",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/02/ubi89.html",
+      "sortingDate": "2026-03-01T00:00:00.000Z",
+      "presentationDate": "2026-03-01T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "第89回情報処理学会ユビキタスコンピューティングシステム研究発表会",
+      "bookTitleAbbr": "UBI89"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "96",
+      "type": "report",
+      "title": "HORUS Monitor：ヘッドマウントディスプレイを用いた自動運転車遠隔監視システムの提案",
+      "authors": [
+        "橋本 空輝",
+        "清水 怜良",
+        "金子 直矢",
+        "牧野 仁宣",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2026/03/02/ubi89.html",
+      "sortingDate": "2026-03-02T00:00:00.000Z",
+      "presentationDate": "2026-03-02T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "第89回情報処理学会ユビキタスコンピューティングシステム研究発表会",
+      "bookTitleAbbr": "UBI89"
+    },
+    "external": {
+      "links": [
+        "https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "97",
+      "type": "talk",
+      "title": "メタバース空間で対話相手に向かって自律移動するAIアバター『ノア』の開発",
+      "authors": [
+        "小山田 悠人"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2025/12/14/virtual-conference.html",
+      "sortingDate": "2025-12-14T00:00:00.000Z",
+      "presentationDate": "2025-12-14T00:00:00.000Z",
+      "presentationlLocation": "オンライン（VRChat）"
+    },
+    "publication": {
+      "bookTitle": "バーチャル学会2025",
+      "bookTitleAbbr": "バーチャル学会2025"
+    },
+    "external": {
+      "links": [
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "98",
+      "type": "paper-conference",
+      "title": "ASMR耳かき動画のための音と触覚の同時提示システムの提案",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
+      "sortingDate": "2025-12-04T00:00:00.000Z",
+      "presentationDate": "2025-12-04T00:00:00.000Z",
+      "presentationlLocation": "定山渓（北海道札幌市）"
+    },
+    "publication": {
+      "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
+      "bookTitleAbbr": "WISS2025",
+      "number": "2-C08"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2025/demo.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "99",
+      "type": "paper-conference",
+      "title": "人の移動を通信媒介とする電子ペーパーサイネージのための圧電素子を用いた近接駆動方式の提案",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
+      "sortingDate": "2025-12-04T00:00:00.000Z",
+      "presentationDate": "2025-12-04T00:00:00.000Z",
+      "presentationlLocation": "定山渓（北海道札幌市）"
+    },
+    "publication": {
+      "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
+      "bookTitleAbbr": "WISS2025",
+      "number": "2-C10"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2025/demo.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "100",
+      "type": "paper-conference",
+      "title": "歌詞駆動パーティクルライブ制作支援ツールの提案",
+      "authors": [
+        "上村 宙",
+        "加藤 淳",
+        "中野 倫靖",
+        "後藤 真孝",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
+      "sortingDate": "2025-12-05T00:00:00.000Z",
+      "presentationDate": "2025-12-05T00:00:00.000Z",
+      "presentationlLocation": "定山渓（北海道札幌市）"
+    },
+    "publication": {
+      "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
+      "bookTitleAbbr": "WISS2025",
+      "number": "3-B11"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2025/demo.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "101",
+      "type": "talk",
+      "title": "研究室から社会へ 〜 情報科学でつなぐ科学技術コミュニケーション実践",
+      "authors": [
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/cevent/2025/08/31/costep.html",
+      "sortingDate": "2025-08-31T00:00:00.000Z",
+      "presentationlLocation": "北海道大学 札幌キャンパス"
+    },
+    "publication": {
+      "bookTitle": "CoSTEP20周年記念イベント「CoSTEP宣言」",
+      "bookTitleAbbr": "CoSTEP20周年"
+    },
+    "external": {
+      "links": [
+        "https://costep.open-ed.hokudai.ac.jp/event/30849"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "102",
+      "type": "article-journal",
+      "title": "NNEPS: A Power-efficient e-Paper Signage System with Remote Content Updates",
+      "authors": [
+        "Takafumi Akiba",
+        "Tsubasa Yumura"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/2025/07/12/nneps-journal.html",
+      "sortingDate": "2025-07-12T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "International Journal on Advances in Networks and Services",
+      "bookTitleAbbr": "IJANS",
+      "volume": "18",
+      "issue": "1–2",
+      "page": "1–11"
+    },
+    "external": {
+      "links": [
+        "https://www.iariajournals.org/networks_and_services/tocv18n12.html",
+        "https://www.yumulab.org/2026/03/31/summary.html"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "103",
+      "type": "talk",
+      "title": "Practices of Research and Education using Digital Fabrication Technologies",
+      "authors": [
+        "Tsubasa Yumura"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/conference/2024/09/06/cdioarm.html",
+      "sortingDate": "2024-09-06T00:00:00.000Z",
+      "presentationlLocation": "北海道情報大学（北海道江別市）"
+    },
+    "publication": {
+      "bookTitle": "2024 CDIO Asian Regional Meeting",
+      "bookTitleAbbr": "CDIO ARM2024"
+    }
+  },
+  {
+    "core": {
+      "id": "104",
+      "type": "panel-dis",
+      "title": "Utilization of Fabrication Technology for Prototyping and Creation",
+      "authors": [
+        "Tsubasa Yumura"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.yumulab.org/conference/2024/09/06/cdioarm.html",
+      "sortingDate": "2024-09-06T00:00:00.000Z",
+      "presentationlLocation": "北海道情報大学（北海道江別市）"
+    },
+    "publication": {
+      "bookTitle": "2024 CDIO Asian Regional Meeting",
+      "bookTitleAbbr": "CDIO ARM2024"
+    }
+  },
+  {
+    "core": {
+      "id": "105",
+      "type": "magazine",
+      "title": "雪×情報処理",
+      "authors": [
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/publish/2023/07/15/snow.html",
+      "sortingDate": "2023-07-15T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "情報処理",
+      "bookTitleAbbr": "情報処理",
+      "volume": "64",
+      "issue": "8",
+      "DOI": "10.20729/00226762",
+      "publisher": "情報処理学会"
+    },
+    "external": {
+      "links": [
+        "https://doi.org/10.20729/00226762"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "106",
+      "type": "talk",
+      "title": "Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc.",
+      "authors": [
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/event/2023/03/04/hic.html",
+      "sortingDate": "2023-03-04T00:00:00.000Z",
+      "presentationlLocation": "九段会館テラス（東京都千代田区）"
+    },
+    "publication": {
+      "bookTitle": "超異分野学会東京大会2023",
+      "bookTitleAbbr": "超異分野学会東京2023"
+    }
+  },
+  {
+    "core": {
+      "id": "107",
+      "type": "talk",
+      "title": "Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc.",
+      "authors": [
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.yumulab.org/award/2022/11/26/hic.html",
+      "sortingDate": "2022-11-26T00:00:00.000Z",
+      "presentationDate": "2022-11-26T00:00:00.000Z",
+      "presentationlLocation": "北海道大学フード＆メディカルイノベーション国際拠点（北海道札幌市）"
+    },
+    "publication": {
+      "bookTitle": "超異分野学会北海道フォーラム2022",
+      "bookTitleAbbr": "超異分野学会北海道2022"
+    },
+    "external": {
+      "links": [
+        "https://hic.lne.st/conference/hokkaido2022/"
+      ]
+    }
   }
 ]

@@ -21,5 +21,5 @@ export function paperSlug(paper: Paper): string {
 }
 
 export function paperPath(paper: Paper): string {
-  return `/papers/${paperSlug(paper)}/`;
+  return `/${paperSlug(paper)}/`;
 }
