@@ -2,15 +2,21 @@ import records from '../data/papers.json';
 import { withBase } from './urls';
 
 export const paperTypes = {
-  'paper-conference': { label: '予稿集', color: '#0199b4' },
+  'domestic-conference': { label: '国内学会', color: '#0199b4' },
+  'international-conference': { label: '国際学会', color: '#165189' },
   'article-journal': { label: '論文誌', color: '#b3366a' },
-  report: { label: '研究報告', color: '#165189' },
   thesis: { label: '学位論文', color: '#7e57c2' },
   magazine: { label: '雑誌記事', color: '#b26a13' },
   'invited-ta': { label: '招待講演', color: '#477d25' },
   'panel-dis': { label: 'パネル討論', color: '#765d46' },
-  talk: { label: '講演', color: '#477d25' },
+  presentation: { label: '予稿なし発表', color: '#477d25' },
 } as const;
+
+const legacyTypes: Record<string, string> = {
+  'paper-conference': 'domestic-conference',
+  report: 'domestic-conference',
+  talk: 'presentation',
+};
 
 export interface Paper {
   core: {
@@ -50,6 +56,15 @@ export interface Paper {
 }
 
 export const papers: Paper[] = (records as Paper[]).filter((paper) => !paper.core.draft);
+
+export function paperType(paper: Paper): keyof typeof paperTypes | 'other' {
+  const { type, language } = paper.core;
+  if (type === 'article-journal') return 'article-journal';
+  if (language === 'en') return 'international-conference';
+  if (type === 'paper-conference' || type === 'report') return 'domestic-conference';
+  if (type === 'talk') return 'presentation';
+  return type && Object.hasOwn(paperTypes, type) ? type as keyof typeof paperTypes : 'other';
+}
 
 export function typeInfo(type = ''): { label: string; color: string } {
   return Object.hasOwn(paperTypes, type)
@@ -100,7 +115,7 @@ export function searchText(paper: Paper): string {
   return normalize([
     paper.core.title, paper.core.titleOfEnglish, ...(paper.core.authors ?? []),
     paper.core.abstract, ...(paper.core.keywords ?? []), paper.publication?.bookTitle,
-    paper.publication?.bookTitleAbbr, typeInfo(paper.core.type).label,
+    paper.publication?.bookTitleAbbr, typeInfo(paperType(paper)).label,
   ].filter(Boolean).join(' '));
 }
 
@@ -114,7 +129,8 @@ export interface Filters {
 
 export function readFilters(params: URLSearchParams): Filters {
   const year = params.get('year') ?? '';
-  const type = params.get('type') ?? '';
+  const requestedType = params.get('type') ?? '';
+  const type = Object.hasOwn(legacyTypes, requestedType) ? legacyTypes[requestedType] : requestedType;
   const view = params.get('view');
   return {
     q: params.get('q') ?? '',
@@ -130,9 +146,7 @@ export function filterPapers(all: Paper[], filters: Filters): Paper[] {
   return all.filter((paper) =>
     terms.every((term) => searchText(paper).includes(term)) &&
     (!filters.year || paperFiscalYear(paper) === filters.year) &&
-    (!filters.type || (filters.type === 'other'
-      ? !(paper.core.type && Object.hasOwn(paperTypes, paper.core.type))
-      : paper.core.type === filters.type)),
+    (!filters.type || paperType(paper) === filters.type),
   ).sort((a, b) => {
     const dateOrder = paperDate(a).localeCompare(paperDate(b));
     return (filters.sort === 'oldest' ? dateOrder : -dateOrder) || Number(a.core.id) - Number(b.core.id);

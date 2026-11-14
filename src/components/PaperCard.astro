@@ -1,11 +1,11 @@
 ---
 import type { Paper } from '../lib/papers';
-import { typeInfo, paperDate, formatDate, thumbnail } from '../lib/papers';
+import { paperType, typeInfo, paperDate, formatDate, thumbnail } from '../lib/papers';
 import Icon from './Icon.astro';
 import { withBase } from '../lib/urls';
 interface Props { paper: Paper; index: number; }
 const { paper, index } = Astro.props;
-const category = typeInfo(paper.core.type);
+const category = typeInfo(paperType(paper));
 ---
 <article class="paper-card" data-paper-id={paper.core.id}>
   <a href={withBase(`/papers/${paper.core.id}/`)} class="paper-card-link">

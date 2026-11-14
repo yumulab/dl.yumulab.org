@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
-import { papers, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail } from '../../lib/papers';
+import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail } from '../../lib/papers';
 import type { Paper } from '../../lib/papers';
 import { withBase } from '../../lib/urls';
 
@@ -11,7 +11,7 @@ export function getStaticPaths() {
 interface Props { paper: Paper; }
 const { paper } = Astro.props;
 const { core, publication: pub } = paper;
-const category = typeInfo(core.type);
+const category = typeInfo(paperType(paper));
 const pdf = !paper.files?.draft ? safeUrl(paper.files?.paper) : undefined;
 const source = safeUrl(core.externalUrl);
 const slides = embedUrl(paper.embed?.slideshare);
