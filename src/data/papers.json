@@ -3196,7 +3196,8 @@
       "externalUrl": "https://www.yumulab.org/2026/09/02/mus147.html",
       "sortingDate": "2026-09-02T00:00:00.000Z",
       "presentationDate": "2026-09-02T00:00:00.000Z",
-      "presentationlLocation": "北海道情報大学（北海道江別市）"
+      "presentationlLocation": "北海道情報大学（北海道江別市）",
+      "thumbnail": "/images/papers/83.jpg"
     },
     "publication": {
       "bookTitle": "第147回情報処理学会音楽情報科学研究発表会",
@@ -3206,6 +3207,9 @@
       "links": [
         "https://www.ipsj.or.jp/kenkyukai/event/mus147.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/83.pdf"
     }
   },
   {
@@ -3222,7 +3226,8 @@
       "language": "en",
       "externalUrl": "https://www.yumulab.org/2026/06/21/nicograph.html",
       "sortingDate": "2026-06-21T00:00:00.000Z",
-      "presentationlLocation": "愛知県名古屋市"
+      "presentationlLocation": "愛知県名古屋市",
+      "thumbnail": "/images/papers/84.jpg"
     },
     "publication": {
       "bookTitle": "NICOGRAPH International 2026",
@@ -3863,6 +3868,126 @@
       "links": [
         "https://hic.lne.st/conference/hokkaido2022/"
       ]
+    }
+  },
+  {
+    "core": {
+      "id": "108",
+      "type": "paper-conference",
+      "title": "VRSNS向けメモリ拡張型マルチGPU描画フレームワークVRAM-Xの提案",
+      "authors": [
+        "橋本 空輝",
+        "湯村 翼"
+      ],
+      "abstract": "2026年11月21日に北海道大学で開催される情報処理北海道シンポジウム2026で発表予定。\n\nVRSNSにおけるVRAM不足に対し、複数のGPUへアバターの描画とメモリ保持を分散するフレームワークVRAM-Xを提案する。共有メモリを介して各GPUの描画結果を深度情報に基づき合成し、非同期描画に伴う追従遅延を軽減する局所深度再投影手法を検討する。",
+      "keywords": [
+        "VRSNS",
+        "マルチGPU",
+        "VRAM",
+        "並列レンダリング"
+      ],
+      "language": "ja",
+      "thumbnail": "/images/papers/108.jpg",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2026-11-21T00:00:00.000Z",
+      "sortingDate": "2026-11-21T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2026",
+      "bookTitleAbbr": "情報処理北海道シンポ2026"
+    },
+    "files": {
+      "paper": "/pdfs/108.pdf"
+    }
+  },
+  {
+    "core": {
+      "id": "109",
+      "type": "paper-conference",
+      "title": "YOLO Poseを用いたフィギュア専用ランドマーク推定モデルの構築",
+      "authors": [
+        "佐藤 一樹",
+        "湯村 翼"
+      ],
+      "abstract": "2026年11月21日に北海道大学で開催される情報処理北海道シンポジウム2026で発表予定。\n\nYOLO Poseを用いてフィギュア専用のランドマーク推定モデルを構築する。角やしっぽなどキャラクター固有の部位を含むランドマークを定義し、画像へのアノテーションとモデル学習を行う。将来的なAR表現への応用を想定し、データ数や学習条件による推定結果の違いを調査する。",
+      "keywords": [
+        "YOLO Pose",
+        "フィギュア",
+        "ランドマーク推定",
+        "AR"
+      ],
+      "language": "ja",
+      "thumbnail": "/images/papers/109.jpg",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2026-11-21T00:00:00.000Z",
+      "sortingDate": "2026-11-21T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2026",
+      "bookTitleAbbr": "情報処理北海道シンポ2026"
+    },
+    "files": {
+      "paper": "/pdfs/109.pdf"
+    }
+  },
+  {
+    "core": {
+      "id": "110",
+      "type": "paper-conference",
+      "title": "犬の視覚特性を再現するVR体験システムの開発",
+      "authors": [
+        "多田 祐翔",
+        "湯村 翼"
+      ],
+      "abstract": "2026年11月21日に北海道大学で開催される情報処理北海道シンポジウム2026で発表予定。\n\n犬の視点の高さと二色型色覚を参考にした色変換を組み合わせ、犬の見え方を体験するVRシステムを開発する。Meta Quest 3とUnityを用い、コントローラで人間視点と犬視点を切り替えながら同じ仮想空間を観察できる。",
+      "keywords": [
+        "VR",
+        "犬",
+        "色覚",
+        "Meta Quest 3"
+      ],
+      "language": "ja",
+      "thumbnail": "/images/papers/110.jpg",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2026-11-21T00:00:00.000Z",
+      "sortingDate": "2026-11-21T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2026",
+      "bookTitleAbbr": "情報処理北海道シンポ2026"
+    },
+    "files": {
+      "paper": "/pdfs/110.pdf"
+    }
+  },
+  {
+    "core": {
+      "id": "111",
+      "type": "paper-conference",
+      "title": "ピラミッド型ペッパーズゴーストを利用した空中像における3次元描画システムの提案",
+      "authors": [
+        "上嶋 歩夢",
+        "湯村 翼"
+      ],
+      "abstract": "2026年11月21日に北海道大学で開催される情報処理北海道シンポジウム2026で発表予定。\n\nピラミッド型ペッパーズゴーストを用いて4方向から観察できる空中像を表示し、対象オブジェクトに線を追加描画できるシステムSteLineを提案する。Unityで実装したSteLine Composerで複数視点の映像を合成し、マウスとキーボードで描画や書き込み面の切り替えを行う。",
+      "keywords": [
+        "空中像",
+        "ペッパーズゴースト",
+        "3次元描画",
+        "SteLine"
+      ],
+      "language": "ja",
+      "thumbnail": "/images/papers/111.jpg",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2026-11-21T00:00:00.000Z",
+      "sortingDate": "2026-11-21T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2026",
+      "bookTitleAbbr": "情報処理北海道シンポ2026"
+    },
+    "files": {
+      "paper": "/pdfs/111.pdf"
     }
   }
 ]

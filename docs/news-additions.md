@@ -19,7 +19,7 @@
 | 80 | `/vrst2026-shimizu/` | ASSADEP: Non-Contact Ear Haptic Feedback Using Airborne Ultrasound for Immersive ASMR Viewing | Rei Shimizu, Tsubasa Yumura | The 32nd ACM Symposium on Virtual Reality Software and Technology (VRST2026) | [News](https://www.yumulab.org/2026/09/23/vrst-accepted.html) / [補足1](https://sigchi.org/events/vrst-2026/) | 採択済み。開催初日を並べ替えに使用。個別発表日・出版日・DOIは未確認。 |
 | 81 | `/vrst2026-kamimura/` | MaRI/OTTS: A Magnetorheological Self-Sensing Haptic Interface for Tangible Interaction | Sora Kamimura, Tsubasa Yumura | The 32nd ACM Symposium on Virtual Reality Software and Technology (VRST2026) | [News](https://www.yumulab.org/2026/09/23/vrst-accepted.html) / [補足1](https://sigchi.org/events/vrst-2026/) | 採択済み。開催初日を並べ替えに使用。個別発表日・出版日・DOIは未確認。 |
 | 82 | `/animare2026-kamimura/` | 歌詞駆動パーティクルライブ制作支援ツール | 上村 宙, 加藤 淳, 中野 倫靖, 後藤 真孝, 湯村 翼 | アニマーレ第1回学際ワークショップ | [News](https://www.yumulab.org/2026/09/07/animare.html) / [補足1](https://anime.pj.aist.go.jp/events/2026-09-07-1st-workshop) | ポスター発表。WISS2025とは異なる発表先。 |
-| 83 | `/mus147-shimizu/` | 耳部への触覚提示によるASMR動画視聴体験の拡張 | 清水 怜良, 湯村 翼 | 第147回情報処理学会音楽情報科学研究発表会 | [News](https://www.yumulab.org/2026/09/02/mus147.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mus147.html) | デモ発表。公式募集要項で原稿掲載ありと確認。巻号・ページは未確認。 |
+| 83 | `/mus147-shimizu/` | 耳部への触覚提示によるASMR動画視聴体験の拡張 | 清水 怜良, 湯村 翼 | 第147回情報処理学会音楽情報科学研究発表会 | [News](https://www.yumulab.org/2026/09/02/mus147.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mus147.html) | デモ発表。公式募集要項で原稿掲載ありと確認。巻号・ページは未確認。提供PDFとサムネイル画像を配置済み。 |
 | 84 | `/nicograph2026-miyauchi/` | EBE-TSUBU: Audiovisual Urban Reconstruction via Point Clouds and Hyper-Directional Acoustics | Koki Miyauchi, Togo Okubo, Rei Shimizu, Haruka Hirayama | NICOGRAPH International 2026 | [News](https://www.yumulab.org/2026/06/21/nicograph.html) / [補足1](https://www.do-johodai.ac.jp/topics/9699809/) / [補足2](https://masahiko-itoh.blogspot.com/2026/06/2nicograph-international-2026.html) | ポスター発表。著者順・英語表記は共同研究者の伊藤教授の記事で確認。個別発表日は不明のためNews記事日で並べ替え。 |
 | 85 | `/haptics36-shimizu/` | ASMR耳かき動画のための音と触覚の同時提示システムにおけるパラメトリックスピーカーの配置検討 | 清水 怜良, 湯村 翼 | 日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会 | [News](https://www.yumulab.org/2026/03/10/haptics36.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。 |
 | 86 | `/ec79-ota/` | 推しみん：推しとの疑似会話体験を活用した睡眠管理アプリの提案 | 太田 駿, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
@@ -83,6 +83,14 @@
 | 100 | `/wiss2025-kamimura/` | `wiss2025-kamimura.pdf` | `public/pdfs/100.pdf` | 2ページ・図3（スタイルの出力例）→ `public/images/papers/100.jpg`、720×377px |
 
 取り込み済みの原本は `tmp/archive/` に保管します。論文の件数・URL・著者は変更していません。
+
+## EBE-TSUBUのサムネイル追加
+
+2026-11-15に提供された `tmp/before/ebetsubu.png` を、EBE-TSUBU（ID 84、`/nicograph2026-miyauchi/`）のサムネイルとして登録しました。元画像（894×508px）から装置が写る下部を優先してトリミングし、余白なしの720×377px JPEGを `public/images/papers/84.jpg` に保存しています。原本は内容を変更せず `tmp/archive/ebetsubu.png` に保管します。
+
+## SIGMUS147のPDF・サムネイル追加
+
+2026-11-15に提供された `SIGMUS147_清水.pdf` と `mus147.png` を、清水さんの「耳部への触覚提示によるASMR動画視聴体験の拡張」（ID 83、`/mus147-shimizu/`）に紐づけました。PDFは変更せず `public/pdfs/83.pdf` に配置しています。提供画像（331×188px）は拡大せず、グリッドの縦横比に合わせて余白なしの331×173px JPEGにトリミングし、`public/images/papers/83.jpg` に保存しました。確認後の元ファイルは `tmp/archive/` に保管します。
 
 ## 管理上の注意
 
