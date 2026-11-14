@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "import:legacy": "node scripts/import-legacy.mjs",
+    "download:pdfs": "node scripts/import-legacy.mjs --pdfs-only",
     "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {

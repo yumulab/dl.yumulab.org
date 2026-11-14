@@ -59,11 +59,13 @@ npm run preview # ビルド結果をローカルで確認
     "bookTitleAbbr": "会議略称",
     "publishedDate": "2026-11-14T00:00:00.000Z"
   },
-  "files": { "paper": "https://example.com/paper.pdf" }
+  "files": { "paper": "/pdfs/80.pdf" }
 }
 ```
 
 画像がある場合は `public/images/papers/<id>.jpg` に配置し、`core.thumbnailSmall` または `core.thumbnail` に画像の取得元URLを設定します。画像がない論文には共通のプレースホルダーが表示されます。`core.draft: true` の論文は表示しません。`files.draft: true` のPDFリンクは表示しません。
+
+論文PDFは `public/pdfs/<id>.pdf` に配置し、`files.paper` に `/pdfs/<id>.pdf` を指定します。公開先の `base` はリンク生成時に付加するため、JSONに `/dl.yumulab.org` は含めません。
 
 ## 現行サイトからの再取り込み
 
@@ -71,9 +73,17 @@ npm run preview # ビルド結果をローカルで確認
 npm run import:legacy
 ```
 
-現行サイトの公開APIから全件を取得し、`src/data/papers.json` を置き換えます。手作業の編集がある場合は先にバックアップしてください。公開サムネイルも取得してJPEGに圧縮し、ローカルに保存します。通常のビルドや検索ではAPIへの接続は不要です。
+現行サイトの公開APIから全件を取得し、`src/data/papers.json` を置き換えます。手作業の編集がある場合は先にバックアップしてください。公開サムネイルと論文PDFも取得し、ローカルに保存します。PDFリンクはサイト内のパスに変換し、取得元URLを `files.paperSource` に残します。通常のビルド・閲覧では現行APIへの接続は不要です。
 
-**PDFと発表資料は現行サイト・外部サービスへのリンクです。** PDF自体はこのリポジトリに複製していません。`dl.yumulab.org` をこの静的サイトに置き換える場合は、既存の `/api/files/*` を引き続き配信するか、PDFを別の配信先に移してJSON内のURLも更新してください。管理画面・Googleログイン・アップロード機能は含みません。
+メタデータや画像を変更せず、現在登録されているPDFだけを取得する場合:
+
+```sh
+npm run download:pdfs
+```
+
+PDFは4件ずつ取得し、PDFのヘッダーと終端を確認してから保存します。取得失敗時は最大3回まで試行し、全件の保存に成功した後にJSONを置き換えます。PDFが登録されていない論文にはPDFリンクを表示しません。
+
+発表スライド・動画・関連資料は引き続き外部サービスを参照します。管理画面・Googleログイン・アップロード機能は含みません。
 
 ## 公開
 
@@ -83,9 +93,9 @@ GitHubのリポジトリで **Settings → Pages → Build and deployment → So
 
 `.github/workflows/deploy.yml` により、`main` へのpush時に型チェック・テスト・ビルド・公開を実行します。設定前の実行が失敗した場合は、Pagesを有効にしてから **Actions → Deploy to GitHub Pages → Run workflow** で再実行できます。`dist/` をGitに追加する必要はありません。
 
-PDFは引き続き現行の `dl.yumulab.org` を参照するため、仮URLの公開時にはPDFの移行やDNS変更は不要です。
+論文PDFは `dist/pdfs/` にコピーされ、仮URLでもサイト内から配信されます。
 
-将来 `https://dl.yumulab.org/` に切り替える際は、PDFの配信先を準備してから、`astro.config.mjs` の `site` を `https://dl.yumulab.org`、`base` を `/` に変更してください。その後、GitHub PagesのCustom domainとDNSを設定します。内部リンクを個別に修正する必要はありません。
+将来 `https://dl.yumulab.org/` に切り替える際は、`astro.config.mjs` の `site` を `https://dl.yumulab.org`、`base` を `/` に変更してください。その後、GitHub PagesのCustom domainとDNSを設定します。論文・画像・PDFのリンクを個別に修正する必要はありません。
 
 ## 構成
 
@@ -97,6 +107,7 @@ src/pages/papers/[id].astro 論文詳細の静的生成
 src/scripts/catalog.ts    ブラウザ上の絞り込みと表示切り替え
 src/styles/global.css     共通スタイルとレスポンシブ表示
 public/images/papers/     ローカルのサムネイル
+public/pdfs/              サイト内で配信する論文PDF
 scripts/import-legacy.mjs 公開APIからの移行ツール
 ```
 

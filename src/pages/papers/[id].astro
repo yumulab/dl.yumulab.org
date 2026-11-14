@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
-import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail } from '../../lib/papers';
+import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail, paperPdf } from '../../lib/papers';
 import type { Paper } from '../../lib/papers';
 import { withBase } from '../../lib/urls';
 
@@ -12,7 +12,7 @@ interface Props { paper: Paper; }
 const { paper } = Astro.props;
 const { core, publication: pub } = paper;
 const category = typeInfo(paperType(paper));
-const pdf = !paper.files?.draft ? safeUrl(paper.files?.paper) : undefined;
+const pdf = paperPdf(paper);
 const source = safeUrl(core.externalUrl);
 const slides = embedUrl(paper.embed?.slideshare);
 const video = embedUrl(paper.embed?.youtube);

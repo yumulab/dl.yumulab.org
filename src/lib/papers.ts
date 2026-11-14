@@ -36,7 +36,7 @@ export interface Paper {
     sortingDate?: string;
     draft?: boolean;
   };
-  files?: { draft?: boolean; paper?: string };
+  files?: { draft?: boolean; paper?: string; paperSource?: string };
   publication?: {
     bookTitle?: string;
     bookTitleAbbr?: string;
@@ -105,6 +105,14 @@ export function thumbnail(paper: Paper): string {
   return paper.core.thumbnailSmall || paper.core.thumbnail
     ? withBase(`/images/papers/${paper.core.id}.jpg`)
     : withBase('/images/paper-placeholder.svg');
+}
+
+export function paperPdf(paper: Paper): string | undefined {
+  if (paper.files?.draft) return undefined;
+  const value = paper.files?.paper?.trim();
+  if (!value) return undefined;
+  if (/^\/pdfs\/[a-zA-Z0-9][a-zA-Z0-9._-]*\.pdf$/.test(value)) return withBase(value);
+  return safeUrl(value);
 }
 
 export function normalize(value: string): string {

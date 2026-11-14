@@ -25,7 +25,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/69c67452e2fa33003849c7c2"
+      "paper": "/pdfs/77.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/69c67452e2fa33003849c7c2"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -68,7 +69,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6a4f0b75b6874c001e5cdd3f"
+      "paper": "/pdfs/78.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6a4f0b75b6874c001e5cdd3f"
     },
     "publication": {
       "bookTitle": "日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会 予稿集",
@@ -106,7 +108,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6a9918ceb6874c001e5cdd4a"
+      "paper": "/pdfs/79.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6a9918ceb6874c001e5cdd4a"
     },
     "publication": {
       "bookTitle": "インタラクション2026論文集",
@@ -145,7 +148,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/69be6672e2fa33003849c7a8"
+      "paper": "/pdfs/76.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/69be6672e2fa33003849c7a8"
     },
     "publication": {
       "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2025)論文集",
@@ -182,7 +186,8 @@
       "id": "70"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/694acb2914f686002dd67974"
+      "paper": "/pdfs/70.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/694acb2914f686002dd67974"
     },
     "publication": {
       "bookTitle": "2025 IEEE/IEIE International Conference on Consumer Electronics-Asia (ICCE-Asia)",
@@ -260,7 +265,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6953d2a314f686002dd679cb"
+      "paper": "/pdfs/73.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6953d2a314f686002dd679cb"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
@@ -303,7 +309,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6953d42a14f686002dd679dd"
+      "paper": "/pdfs/74.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6953d42a14f686002dd679dd"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
@@ -346,7 +353,8 @@
       "sortingDate": "2025-08-25T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/6953d04c14f686002dd679b9"
+      "paper": "/pdfs/72.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6953d04c14f686002dd679b9"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
@@ -389,7 +397,8 @@
       "id": "71"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/6953cd5414f686002dd6799e"
+      "paper": "/pdfs/71.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6953cd5414f686002dd6799e"
     },
     "publication": {
       "bookTitle": "研究報告ヒューマンコンピュータインタラクション（HCI）",
@@ -434,7 +443,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67e7554014f686002dd67915"
+      "paper": "/pdfs/66.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e7554014f686002dd67915"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -478,7 +488,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67e7573b14f686002dd67921"
+      "paper": "/pdfs/67.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e7573b14f686002dd67921"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -522,7 +533,8 @@
       "id": "68"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/67e75aa614f686002dd67936"
+      "paper": "/pdfs/68.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e75aa614f686002dd67936"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -567,7 +579,8 @@
       "id": "69"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/67e75c5414f686002dd67953"
+      "paper": "/pdfs/69.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e75c5414f686002dd67953"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -610,7 +623,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67e7511614f686002dd67905"
+      "paper": "/pdfs/65.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e7511614f686002dd67905"
     },
     "publication": {
       "bookTitle": "インタラクション2025論文集",
@@ -647,7 +661,8 @@
       "presentationlLocation": "一橋記念講堂 (東京都千代田区)"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/67e1352514f686002dd678cf"
+      "paper": "/pdfs/64.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67e1352514f686002dd678cf"
     },
     "publication": {
       "bookTitle": "インタラクション2025論文集",
@@ -693,7 +708,8 @@
       "id": "62"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/67c1c4c814f686002dd678b0"
+      "paper": "/pdfs/62.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67c1c4c814f686002dd678b0"
     },
     "publication": {
       "bookTitle": "研究報告ユビキタスコンピューティングシステム（UBI）",
@@ -761,7 +777,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67714efc14f686002dd6786f"
+      "paper": "/pdfs/60.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67714efc14f686002dd6786f"
     },
     "publication": {
       "bookTitle": "第32回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2024) 論文集",
@@ -795,7 +812,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/677150dc14f686002dd6787e"
+      "paper": "/pdfs/61.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/677150dc14f686002dd6787e"
     },
     "publication": {
       "bookTitle": "第32回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2024) 論文集",
@@ -837,7 +855,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6771486c14f686002dd67861"
+      "paper": "/pdfs/59.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6771486c14f686002dd67861"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2024講演論文集",
@@ -876,7 +895,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67713c3914f686002dd6781c"
+      "paper": "/pdfs/57.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67713c3914f686002dd6781c"
     },
     "publication": {
       "bookTitle": "The Eighteenth International Conference on Sensor Technologies and Applications",
@@ -921,7 +941,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/67713e9514f686002dd67828"
+      "paper": "/pdfs/58.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/67713e9514f686002dd67828"
     },
     "publication": {
       "bookTitle": "The Eighteenth International Conference on Sensor Technologies and Applications",
@@ -960,7 +981,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6770f3b414f686002dd6780b"
+      "paper": "/pdfs/56.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6770f3b414f686002dd6780b"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
@@ -1005,7 +1027,8 @@
       "externalUrl": "http://id.nii.ac.jp/1001/00238644/"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/6770ee4b14f686002dd6779a"
+      "paper": "/pdfs/53.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6770ee4b14f686002dd6779a"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
@@ -1045,7 +1068,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6770f0cd14f686002dd677e2"
+      "paper": "/pdfs/54.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6770f0cd14f686002dd677e2"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
@@ -1084,7 +1108,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/6770f24a14f686002dd677fa"
+      "paper": "/pdfs/55.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/6770f24a14f686002dd677fa"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
@@ -1124,7 +1149,8 @@
       "thumbnailSmall": "https://dl.yumulab.org/api/files/65fed806230bc2001e13ad0c"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65fed825230bc2001e13ad1c"
+      "paper": "/pdfs/52.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65fed825230bc2001e13ad1c"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -1166,7 +1192,8 @@
       "id": "50"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65f6f3a2230bc2001e13acf3"
+      "paper": "/pdfs/50.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65f6f3a2230bc2001e13acf3"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -1211,7 +1238,8 @@
       "id": "51"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65f6f6e8230bc2001e13ad05"
+      "paper": "/pdfs/51.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65f6f6e8230bc2001e13ad05"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -1255,7 +1283,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/65f6f0f0230bc2001e13accd"
+      "paper": "/pdfs/49.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65f6f0f0230bc2001e13accd"
     },
     "publication": {
       "bookTitle": "研究報告インターネットと運用技術（IOT）",
@@ -1300,7 +1329,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/65e9bc43230bc2001e13ac6e"
+      "paper": "/pdfs/44.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9bc43230bc2001e13ac6e"
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
@@ -1337,7 +1367,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/65e9be17230bc2001e13ac7a"
+      "paper": "/pdfs/45.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9be17230bc2001e13ac7a"
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
@@ -1373,7 +1404,8 @@
       "id": "46"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65e9befc230bc2001e13ac86"
+      "paper": "/pdfs/46.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9befc230bc2001e13ac86"
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
@@ -1409,7 +1441,8 @@
       "sortingDate": "2024-02-28T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65e9bfea230bc2001e13ac93"
+      "paper": "/pdfs/47.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9bfea230bc2001e13ac93"
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
@@ -1446,7 +1479,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/65e9c0d8230bc2001e13ac9f"
+      "paper": "/pdfs/48.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9c0d8230bc2001e13ac9f"
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
@@ -1492,7 +1526,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/65e9b471230bc2001e13ac55"
+      "paper": "/pdfs/43.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65e9b471230bc2001e13ac55"
     },
     "publication": {
       "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
@@ -1528,7 +1563,8 @@
       "thumbnailSmall": "https://dl.yumulab.org/api/files/65787081230bc2001e13ac3d"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/65786f91230bc2001e13ac39"
+      "paper": "/pdfs/41.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/65786f91230bc2001e13ac39"
     },
     "publication": {
       "bookTitle": "第31回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2021) 論文集",
@@ -1567,7 +1603,8 @@
       "title": "Experiments on ROP Attack with Various Instruction Set Architectures"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/657872ca230bc2001e13ac4d"
+      "paper": "/pdfs/42.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/657872ca230bc2001e13ac4d"
     },
     "publication": {
       "bookTitle": "Bulletin of Networking, Computing, Systems, and Software",
@@ -1604,7 +1641,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/652d2ed3230bc2001e13ac1c"
+      "paper": "/pdfs/36.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/652d2ed3230bc2001e13ac1c"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
@@ -1641,7 +1679,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/652d2fd0230bc2001e13ac21"
+      "paper": "/pdfs/37.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/652d2fd0230bc2001e13ac21"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
@@ -1678,7 +1717,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/652d38b4230bc2001e13ac26"
+      "paper": "/pdfs/38.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/652d38b4230bc2001e13ac26"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
@@ -1714,7 +1754,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/652d3983230bc2001e13ac2b"
+      "paper": "/pdfs/39.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/652d3983230bc2001e13ac2b"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
@@ -1752,7 +1793,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/652d3a11230bc2001e13ac30"
+      "paper": "/pdfs/40.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/652d3a11230bc2001e13ac30"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
@@ -1792,7 +1834,8 @@
       "id": "35"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/64043706230bc2001e13ac0f"
+      "paper": "/pdfs/35.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/64043706230bc2001e13ac0f"
     },
     "publication": {
       "bookTitle": "インタラクション2023論文集",
@@ -1826,7 +1869,8 @@
       "id": "34"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/640436d0230bc2001e13ac09"
+      "paper": "/pdfs/34.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/640436d0230bc2001e13ac09"
     },
     "publication": {
       "bookTitle": "インタラクション2023論文集",
@@ -1865,7 +1909,8 @@
       "thumbnailSmall": "https://dl.yumulab.org/api/files/6405fbd1230bc2001e13ac15"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/63fed65d230bc2001e13abf7"
+      "paper": "/pdfs/33.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/63fed65d230bc2001e13abf7"
     },
     "publication": {
       "bookTitle": "研究報告コンピュータセキュリティ（CSEC）",
@@ -1903,7 +1948,8 @@
       "id": "32"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/63feb009230bc2001e13abf1"
+      "paper": "/pdfs/32.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/63feb009230bc2001e13abf1"
     },
     "publication": {
       "bookTitle": "研究報告ユビキタスコンピューティングシステム（UBI）",
@@ -1942,7 +1988,8 @@
       "externalUrl": "http://id.nii.ac.jp/1001/00222649/"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/638dc241230bc2001e13ab9e"
+      "paper": "/pdfs/30.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/638dc241230bc2001e13ab9e"
     },
     "publication": {
       "bookTitle": "インターネットと運用技術シンポジウム論文集",
@@ -1980,7 +2027,8 @@
       "presentationlLocation": "九州工業大学 戸畑キャンパス (福岡県北九州市)"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/638dcadb230bc2001e13abb1"
+      "paper": "/pdfs/29.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/638dcadb230bc2001e13abb1"
     },
     "publication": {
       "bookTitle": "インターネットと運用技術シンポジウム論文集",
@@ -2074,7 +2122,8 @@
       "id": "27"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/634b9fc4230bc2001e13ab7d"
+      "paper": "/pdfs/27.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/634b9fc4230bc2001e13ab7d"
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2022講演論文集",
@@ -2113,7 +2162,8 @@
       "id": "26"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/63109d1c230bc2001e13ab5d"
+      "paper": "/pdfs/26.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/63109d1c230bc2001e13ab5d"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2022論文集",
@@ -2149,7 +2199,8 @@
       "id": "25"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/622031ba230bc2001e13ab32"
+      "paper": "/pdfs/25.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/622031ba230bc2001e13ab32"
     },
     "publication": {
       "bookTitle": "インタラクション2022論文集",
@@ -2178,7 +2229,8 @@
       "id": "1"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cabb0b403d38001f93614c"
+      "paper": "/pdfs/1.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cabb0b403d38001f93614c"
     },
     "publication": {
       "bookTitleAbbr": "WISS2021",
@@ -2218,7 +2270,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61cff4cc230bc2001e13aa77"
+      "paper": "/pdfs/18.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cff4cc230bc2001e13aa77"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2021論文集",
@@ -2257,7 +2310,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61d002e2230bc2001e13aa8d"
+      "paper": "/pdfs/20.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d002e2230bc2001e13aa8d"
     },
     "publication": {
       "bookTitle": "情報処理学会第83回全国大会 講演論文集",
@@ -2287,7 +2341,8 @@
       "sortingDate": "2021-03-11T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61d00065230bc2001e13aa86"
+      "paper": "/pdfs/19.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d00065230bc2001e13aa86"
     },
     "publication": {
       "bookTitle": "電子情報通信学会2021年総合大会 論文集",
@@ -2369,7 +2424,8 @@
       "presentationDate": "2021-01-15T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cfc161230bc2001e13a96e"
+      "paper": "/pdfs/10.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfc161230bc2001e13a96e"
     },
     "publication": {
       "bookTitle": "Sensors and Materials",
@@ -2407,7 +2463,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61d005fd230bc2001e13aa97"
+      "paper": "/pdfs/21.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d005fd230bc2001e13aa97"
     },
     "publication": {
       "bookTitle": "第28回マルチメディア通信と分散処理ワークショップ論文集",
@@ -2448,7 +2505,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61d0077c230bc2001e13ab0e"
+      "paper": "/pdfs/22.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d0077c230bc2001e13ab0e"
     },
     "publication": {
       "bookTitle": "情報処理学会 研究報告ユビキタスコンピューティングシステム（UBI）",
@@ -2483,7 +2541,8 @@
       "abstract": "エミュレータを用いてIoTシステムの開発を行う際，環境の構築やエミュレータの設定などの事前準備がユーザにとって負担となる．我々はこの問題を解決するため，Webブラウザでアプリケーションを開発することができる統合開発環境Tsumikiot(つみき)を開発した．TsumikiotはCUIになじみがないユーザでもIoTエミュレーションを使ったプログラミングを実行できることを目標とした統合開発環境である．ユーザは環境の構築やエミュレータの設定について意識をする必要がなく，より手軽にプログラミングを行うことが期待できる．"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61d008dd230bc2001e13ab14"
+      "paper": "/pdfs/23.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d008dd230bc2001e13ab14"
     },
     "publication": {
       "bookTitle": "電子情報通信学会2020年総合大会 論文集",
@@ -2512,7 +2571,8 @@
       "sortingDate": "2019-09-24T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cace568f8dee001ea19c8f"
+      "paper": "/pdfs/2.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cace568f8dee001ea19c8f"
     },
     "publication": {
       "bookTitle": "北陸先端科学技術大学院大学 博士論文"
@@ -2581,7 +2641,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61d00b49230bc2001e13ab1c"
+      "paper": "/pdfs/24.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61d00b49230bc2001e13ab1c"
     },
     "publication": {
       "bookTitle": "電子情報通信学会 \u0000\u0000\u0000\u0000技術研究報告 知的環境とセンサネットワーク",
@@ -2701,7 +2762,8 @@
       "id": "16"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cfe58d230bc2001e13aa55"
+      "paper": "/pdfs/16.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfe58d230bc2001e13aa55"
     },
     "publication": {
       "bookTitle": "情報処理学会 研究報告エンタテインメントコンピューティング（EC）",
@@ -2741,7 +2803,8 @@
       "id": "17"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cff108230bc2001e13aa5d"
+      "paper": "/pdfs/17.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cff108230bc2001e13aa5d"
     },
     "publication": {
       "bookTitle": "第25回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2017)論文集",
@@ -2777,7 +2840,8 @@
       "presentationlLocation": "東京大学"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cfe0f3230bc2001e13aa2a"
+      "paper": "/pdfs/15.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfe0f3230bc2001e13aa2a"
     },
     "publication": {
       "bookTitle": "情報処理学会 研究報告エンタテインメントコンピューティング（EC）",
@@ -2848,7 +2912,8 @@
       "presentationlLocation": "NICOGRAPH 2016"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cfdddd230bc2001e13a9f5"
+      "paper": "/pdfs/14.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfdddd230bc2001e13a9f5"
     },
     "publication": {
       "bookTitle": "NICOGRAPH 2016 講演集",
@@ -2884,7 +2949,8 @@
     },
     "files": {
       "draft": false,
-      "paper": "https://dl.yumulab.org/api/files/61cfdc23230bc2001e13a98c"
+      "paper": "/pdfs/13.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfdc23230bc2001e13a98c"
     },
     "publication": {
       "bookTitle": "マルチメディア，分散協調とモバイルシンポジウム2016論文集",
@@ -2926,7 +2992,8 @@
       "sortingDate": "2014-09-12T00:00:00.000Z"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cfdaee230bc2001e13a986"
+      "paper": "/pdfs/12.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cfdaee230bc2001e13a986"
     },
     "publication": {
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2014論文集",
@@ -2994,7 +3061,8 @@
       "abstract": "高エネルギー粒子の生成は, 宇宙プラズマにおける最大の問題の 1 つである. 磁 気リコネクションは, 地球磁気圏や太陽から高エネルギー天体に至るまであらゆる スケールの宇宙プラズマにおいて高エネルギー粒子の生成源として注目される. 人 工衛星のその場観測やシミュレーションを用いた研究により, 磁気リコネクション での様々な電子加速メカニズムが提唱されてきた. しかしそれらの先行研究で行 われたシミュレーションでは, 初期に単一な X-line を形成するモデルを主に用い てきた. 磁気圏尾部や惑星間空間の観測から磁気リコネクションにおける複数の X-line の形成が示唆されており, 複数の X-line と電子加速の関連性を示唆する観 測結果もあるが, これまでのシミュレーションで複数の X-line の効果は考慮され ていない.\n本研究では磁気リコネクションにおいて複数の X-line の形成が電子加速メカニ ズムに与える効果を解明することを目的とし, 初期に任意の数の X-line を形成す るモデルを用いて 2 次元粒子シミュレーションを行った. シミュレーションでは 複数の X-line の形成により複数の磁気島が生成され, リコネクションの発展の中 で磁気島は合体した. 電子加速は磁気島合体に対応して起こった. 多数の磁気島が 生成され磁気島合体が多段階に分かれる場合には, 電子加速も多段階に分かれて起 こった. 加速された高エネルギー電子の空間分布を調べたところ, 多段階の電子加 速によって磁気島を取り囲む多重リング状の分布を形成することを発見した. 電 子の加速領域を調べた結果, X-line, pileup 領域, 磁気島合体領域の 3 つの領域が 電子加速領域となっていた. 磁気島合体領域は複数の X-line の形成によって生ま れる領域であり, 電子加速領域となることは本研究が初めて発見した. 超高エネル ギー電子の生成機構とそれらへの各加速領域の寄与を明らかにするため電子の軌 道と加速履歴を調べた. その結果, 超高エネルギー電子の生成には X-line での加 速が不可欠であることがわかった. しかし X-line での加速のみで超高エネルギー に達する電子はごく僅かで, 超高エネルギーまで到達した多くの電子は X-line で の加速後に pileup 領域や磁気島合体領域でさらなる加速を受けていた.\n初期 X-line 数や計算領域の大きさなどの計算設定の依存性を調べるため, 様々 な計算設定の下でシミュレーションを実行し結果を比較した. 初期 X-line 数の異 なる計算では, 最終時刻での電子エネルギースペクトルはよく似た形を示すが, 電 子が 3 つの加速領域で得るエネルギーには差が生じた. 計算領域の大きさの異な る計算を比較した結果, 計算領域が大きいほど電子の得るエネルギーは増加し, 高 エネルギー電子は多く生成された. エネルギースペクトルは磁気リコネクションの スケールに依存し, 計算領域の大きさの異なる場合でも合体の途中の磁気島の大き さが同じ状態の時に比較するとスペクトルはよく一致した. 本研究における最大 スケールの計算では磁気島合体領域での電子加速の規模が大きくなり, 非熱的電子 が多数生成された."
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cb1bde8f8dee001ea19cb1"
+      "paper": "/pdfs/3.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cb1bde8f8dee001ea19cb1"
     },
     "publication": {
       "bookTitle": "東京大学大学院 修士論文"
@@ -3023,7 +3091,8 @@
       "id": "4"
     },
     "files": {
-      "paper": "https://dl.yumulab.org/api/files/61cb1cd08f8dee001ea19cd9"
+      "paper": "/pdfs/4.pdf",
+      "paperSource": "https://dl.yumulab.org/api/files/61cb1cd08f8dee001ea19cd9"
     },
     "publication": {
       "bookTitle": "北海道大学 卒業論文"
