@@ -26,21 +26,18 @@ const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().r
     </div>
   </div>
   <div class="catalog-layout">
-    <aside class="filters" aria-label="論文の検索と絞り込み">
-      <details open id="filter-panel">
-        <summary><span><Icon name="filter" />検索・絞り込み</span><Icon name="chevron" size={16} /></summary>
-        <form id="search-form" role="search" action={withBase('/')} method="get">
-          <div class="filter-field">
-            <label for="query">検索</label>
-            <div class="search-input"><Icon name="search" size={17} /><input id="query" name="q" type="search" placeholder="タイトル・著者・キーワード" autocomplete="off" /><button type="submit" aria-label="検索する"><Icon name="arrow" size={17} /></button></div>
-          </div>
-          <div class="filter-field"><label for="year">年度</label><div class="select-wrap"><select id="year" name="year"><option value="">すべて</option>{years.map((year) => <option value={year}>{year}年度</option>)}</select><Icon name="chevron" size={15} /></div></div>
-          <div class="filter-field"><label for="type">種類</label><div class="select-wrap"><select id="type" name="type"><option value="">すべて</option>{Object.entries(paperTypes).map(([key, value]) => <option value={key}>{value.label}</option>)}<option value="other">その他</option></select><Icon name="chevron" size={15} /></div></div>
-          <div class="filter-field"><label for="sort">並び順</label><div class="select-wrap"><select id="sort" name="sort"><option value="newest">新しい順</option><option value="oldest">古い順</option></select><Icon name="chevron" size={15} /></div></div>
-          <button type="button" id="reset-filters" class="reset-button"><Icon name="close" size={14} />条件をクリア</button>
-        </form>
-      </details>
-    </aside>
+    <section class="filters" aria-label="論文の検索と絞り込み">
+      <form id="search-form" role="search" action={withBase('/')} method="get">
+        <div class="filter-field">
+          <label for="query">検索</label>
+          <div class="search-input"><Icon name="search" size={17} /><input id="query" name="q" type="search" placeholder="タイトル・著者・キーワード" autocomplete="off" /><button type="submit" aria-label="検索する"><Icon name="arrow" size={17} /></button></div>
+        </div>
+        <div class="filter-field"><label for="year">年度</label><div class="select-wrap"><select id="year" name="year"><option value="">すべて</option>{years.map((year) => <option value={year}>{year}年度</option>)}</select><Icon name="chevron" size={15} /></div></div>
+        <div class="filter-field"><label for="type">種類</label><div class="select-wrap"><select id="type" name="type"><option value="">すべて</option>{Object.entries(paperTypes).map(([key, value]) => <option value={key}>{value.label}</option>)}<option value="other">その他</option></select><Icon name="chevron" size={15} /></div></div>
+        <div class="filter-field"><label for="sort">並び順</label><div class="select-wrap"><select id="sort" name="sort"><option value="newest">新しい順</option><option value="oldest">古い順</option></select><Icon name="chevron" size={15} /></div></div>
+        <button type="button" id="reset-filters" class="reset-button"><Icon name="close" size={14} />条件をクリア</button>
+      </form>
+    </section>
     <main id="main" class="catalog-main">
       <noscript><p class="notice">検索・表示切り替えを利用するにはJavaScriptを有効にしてください。すべての論文は以下から閲覧できます。</p></noscript>
       <div id="active-filters" class="active-filters" aria-label="現在の検索条件" hidden></div>
