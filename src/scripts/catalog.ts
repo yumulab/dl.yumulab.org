@@ -1,4 +1,4 @@
-import { papers, filterPapers, readFilters, typeInfo, groupPapersByYear } from '../lib/papers';
+import { papers, filterPapers, readFilters, typeInfo, groupPapersByFiscalYear } from '../lib/papers';
 
 const form = document.querySelector<HTMLFormElement>('#search-form')!;
 const query = document.querySelector<HTMLInputElement>('#query')!;
@@ -21,10 +21,10 @@ function render(updateUrl = true) {
 
   const results = filterPapers(papers, filters);
   const fragment = document.createDocumentFragment();
-  groupPapersByYear(results).forEach(({ year, papers: yearPapers }) => {
+  groupPapersByFiscalYear(results).forEach(({ year, papers: yearPapers }) => {
     const heading = document.createElement('h2');
     heading.className = 'paper-year-heading';
-    heading.textContent = year ? `${year}年` : '年不明';
+    heading.textContent = year ? `${year}年度` : '年度不明';
     fragment.append(heading);
     yearPapers.forEach((paper) => fragment.append(cards.get(paper.core.id)!));
   });
@@ -37,7 +37,7 @@ function render(updateUrl = true) {
   end.textContent = `${results.length} 件の研究成果を表示しています`;
 
   activeFilters.replaceChildren();
-  const labels = [filters.q && `「${filters.q}」`, filters.year && `${filters.year}年`, filters.type && (filters.type === 'other' ? 'その他' : typeInfo(filters.type).label)].filter(Boolean);
+  const labels = [filters.q && `「${filters.q}」`, filters.year && `${filters.year}年度`, filters.type && (filters.type === 'other' ? 'その他' : typeInfo(filters.type).label)].filter(Boolean);
   labels.forEach((label) => {
     const chip = document.createElement('span');
     chip.textContent = label;

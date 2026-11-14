@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { papers, filterPapers, readFilters, paperDate, normalize, safeUrl, embedUrl, thumbnail, groupPapersByYear } from '../src/lib/papers';
+import { papers, filterPapers, readFilters, paperDate, paperFiscalYear, normalize, safeUrl, embedUrl, thumbnail, groupPapersByFiscalYear } from '../src/lib/papers';
+import type { Paper } from '../src/lib/papers';
 
 const defaults = readFilters(new URLSearchParams());
 
@@ -16,10 +17,10 @@ test('search includes keywords and abstracts and combines every search term', ()
   assert.equal(filterPapers(papers, { ...defaults, q: '宮崎 この語は存在しないxyz' }).length, 0);
 });
 
-test('year, publication type and search combine; sorting reverses dates', () => {
+test('fiscal year, publication type and search combine; sorting reverses dates', () => {
   const results = filterPapers(papers, { ...defaults, year: '2025', type: 'report', q: '湯村' });
   assert.ok(results.length > 1);
-  assert.ok(results.every((paper) => paperDate(paper).startsWith('2025') && paper.core.type === 'report'));
+  assert.ok(results.every((paper) => paperFiscalYear(paper) === '2025' && paper.core.type === 'report'));
   const newest = filterPapers(papers, defaults);
   const oldest = filterPapers(papers, { ...defaults, sort: 'oldest' });
   assert.equal(paperDate(newest[0]), paperDate(oldest.at(-1)!));
@@ -44,27 +45,42 @@ test('shared URLs restore all three display modes without changing search result
   assert.equal(readFilters(new URLSearchParams('view=tile')).view, 'grid');
 });
 
-test('year groups follow both sort directions and keep every paper in order', () => {
-  const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)))].sort();
+test('fiscal year groups follow both sort directions and keep every paper in order', () => {
+  const years = [...new Set(papers.map(paperFiscalYear))].sort();
   for (const sort of ['oldest', 'newest'] as const) {
     const sorted = filterPapers(papers, { ...defaults, sort });
-    const grouped = groupPapersByYear(sorted);
+    const grouped = groupPapersByFiscalYear(sorted);
     assert.deepEqual(grouped.map((group) => group.year), sort === 'oldest' ? years : [...years].reverse());
     assert.deepEqual(grouped.flatMap((group) => group.papers.map((paper) => paper.core.id)), sorted.map((paper) => paper.core.id));
-    assert.ok(grouped.every((group) => group.papers.every((paper) => paperDate(paper).startsWith(group.year))));
+    assert.ok(grouped.every((group) => group.papers.every((paper) => paperFiscalYear(paper) === group.year)));
   }
 });
 
-test('year headings match the filtered results in every display mode', () => {
+test('fiscal year headings match the filtered results in every display mode', () => {
   for (const view of ['list', 'grid', 'text'] as const) {
     const results = filterPapers(papers, { ...defaults, view, year: '2025', type: 'report', q: '湯村' });
-    const grouped = groupPapersByYear(results);
+    const grouped = groupPapersByFiscalYear(results);
     assert.ok(results.length > 0);
     assert.equal(grouped.length, 1);
     assert.equal(grouped[0].year, '2025');
     assert.equal(grouped[0].papers.length, results.length);
-    assert.deepEqual(groupPapersByYear(filterPapers(papers, { ...defaults, view, q: 'この語は存在しないxyz' })), []);
+    assert.deepEqual(groupPapersByFiscalYear(filterPapers(papers, { ...defaults, view, q: 'この語は存在しないxyz' })), []);
   }
+});
+
+test('fiscal year boundaries include April 1 through the following March 31', () => {
+  const samples: Paper[] = ['2025-03-31', '2025-04-01', '2026-03-31', '2026-04-01'].map((date, index) => ({
+    core: { id: String(index), title: date, sortingDate: `${date}T00:00:00.000Z` },
+  }));
+  assert.deepEqual(samples.map(paperFiscalYear), ['2024', '2025', '2025', '2026']);
+  const results = filterPapers(samples, { ...defaults, year: '2025' });
+  assert.deepEqual(results.map((paper) => paper.core.id), ['2', '1']);
+  const grouped = groupPapersByFiscalYear(results);
+  assert.equal(grouped.length, 1);
+  assert.equal(grouped[0].year, '2025');
+  assert.deepEqual(grouped[0].papers, results);
+  assert.equal(paperFiscalYear({ core: { id: 'no-date', title: 'No date' } }), '');
+  assert.equal(paperFiscalYear({ core: { id: 'publication-only', title: 'Publication only' }, publication: { publishedDate: '2026-03-01' } }), '2025');
 });
 
 test('missing thumbnails use the placeholder and IDs remain unique', () => {

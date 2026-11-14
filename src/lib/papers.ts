@@ -61,11 +61,20 @@ export function paperDate(paper: Paper): string {
   return (paper.core.sortingDate || paper.core.presentationDate || paper.publication?.publishedDate || '').slice(0, 10);
 }
 
-/** Group sorted results without changing the year or paper order. */
-export function groupPapersByYear(sorted: Paper[]): { year: string; papers: Paper[] }[] {
+/** Japanese academic year: April through March, named for the starting year. */
+export function paperFiscalYear(paper: Paper): string {
+  const date = paperDate(paper);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return '';
+  const month = Number(date.slice(5, 7));
+  if (month < 1 || month > 12) return '';
+  return String(Number(date.slice(0, 4)) - (month < 4 ? 1 : 0));
+}
+
+/** Group sorted results without changing the fiscal year or paper order. */
+export function groupPapersByFiscalYear(sorted: Paper[]): { year: string; papers: Paper[] }[] {
   const groups = new Map<string, Paper[]>();
   for (const paper of sorted) {
-    const year = paperDate(paper).slice(0, 4);
+    const year = paperFiscalYear(paper);
     const group = groups.get(year);
     if (group) group.push(paper);
     else groups.set(year, [paper]);
@@ -120,7 +129,7 @@ export function filterPapers(all: Paper[], filters: Filters): Paper[] {
   const terms = normalize(filters.q).split(' ').filter(Boolean);
   return all.filter((paper) =>
     terms.every((term) => searchText(paper).includes(term)) &&
-    (!filters.year || paperDate(paper).startsWith(filters.year)) &&
+    (!filters.year || paperFiscalYear(paper) === filters.year) &&
     (!filters.type || (filters.type === 'other'
       ? !(paper.core.type && Object.hasOwn(paperTypes, paper.core.type))
       : paper.core.type === filters.type)),

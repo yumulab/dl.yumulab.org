@@ -2,10 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import PaperCard from '../components/PaperCard.astro';
-import { papers, paperDate, paperTypes, filterPapers, groupPapersByYear } from '../lib/papers';
+import { papers, paperFiscalYear, paperTypes, filterPapers, groupPapersByFiscalYear } from '../lib/papers';
 import { withBase } from '../lib/urls';
 const sorted = filterPapers(papers, { q: '', year: '', type: '', sort: 'newest', view: 'grid' });
-const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).filter(Boolean))].sort().reverse();
+const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().reverse();
 ---
 <Layout>
   <section class="hero" aria-labelledby="page-title">
@@ -34,7 +34,7 @@ const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).fi
             <label for="query">検索</label>
             <div class="search-input"><Icon name="search" size={17} /><input id="query" name="q" type="search" placeholder="タイトル・著者・キーワード" autocomplete="off" /><button type="submit" aria-label="検索する"><Icon name="arrow" size={17} /></button></div>
           </div>
-          <div class="filter-field"><label for="year">出版年・発表年</label><div class="select-wrap"><select id="year" name="year"><option value="">すべての年</option>{years.map((year) => <option value={year}>{year}年</option>)}</select><Icon name="chevron" size={15} /></div></div>
+          <div class="filter-field"><label for="year">年度</label><div class="select-wrap"><select id="year" name="year"><option value="">すべて</option>{years.map((year) => <option value={year}>{year}年度</option>)}</select><Icon name="chevron" size={15} /></div></div>
           <div class="filter-field"><label for="type">種類</label><div class="select-wrap"><select id="type" name="type"><option value="">すべて</option>{Object.entries(paperTypes).map(([key, value]) => <option value={key}>{value.label}</option>)}<option value="other">その他</option></select><Icon name="chevron" size={15} /></div></div>
           <div class="filter-field"><label for="sort">並び順</label><div class="select-wrap"><select id="sort" name="sort"><option value="newest">新しい順</option><option value="oldest">古い順</option></select><Icon name="chevron" size={15} /></div></div>
           <button type="button" id="reset-filters" class="reset-button"><Icon name="close" size={14} />条件をクリア</button>
@@ -45,8 +45,8 @@ const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).fi
       <noscript><p class="notice">検索・表示切り替えを利用するにはJavaScriptを有効にしてください。すべての論文は以下から閲覧できます。</p></noscript>
       <div id="active-filters" class="active-filters" aria-label="現在の検索条件" hidden></div>
       <div id="papers" class="papers-grid" data-view="grid">
-        {groupPapersByYear(sorted).map(({ year, papers: yearPapers }) => <Fragment>
-          <h2 class="paper-year-heading">{year ? `${year}年` : '年不明'}</h2>
+        {groupPapersByFiscalYear(sorted).map(({ year, papers: yearPapers }) => <Fragment>
+          <h2 class="paper-year-heading">{year ? `${year}年度` : '年度不明'}</h2>
           {yearPapers.map((paper) => <PaperCard paper={paper} index={sorted.indexOf(paper)} />)}
         </Fragment>)}
       </div>
