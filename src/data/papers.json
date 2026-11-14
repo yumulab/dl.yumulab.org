@@ -860,6 +860,7 @@
     },
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2024講演論文集",
+      "bookTitleAbbr": "情報処理北海道シンポ2024",
       "publishedDate": "2024-12-01T00:00:00.000Z"
     },
     "acm": {},
@@ -3513,7 +3514,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/05/interaction.html",
       "sortingDate": "2026-03-05T00:00:00.000Z",
       "presentationDate": "2026-03-05T00:00:00.000Z",
-      "presentationlLocation": "一橋記念講堂（東京都千代田区）"
+      "presentationlLocation": "一橋記念講堂（東京都千代田区）",
+      "thumbnail": "/images/papers/94.jpg"
     },
     "publication": {
       "bookTitle": "インタラクション2026論文集",
@@ -3527,6 +3529,9 @@
         "https://www.yumulab.org/2026/03/31/summary.html",
         "https://www.interaction-ipsj.org/proceedings/2026/data/pdf/3A07.pdf"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/94.pdf"
     }
   },
   {
@@ -3569,7 +3574,8 @@
       "language": "ja",
       "externalUrl": "https://www.yumulab.org/2026/03/02/ubi89.html",
       "sortingDate": "2026-03-02T00:00:00.000Z",
-      "presentationDate": "2026-03-02T00:00:00.000Z"
+      "presentationDate": "2026-03-02T00:00:00.000Z",
+      "thumbnail": "/images/papers/96.jpg"
     },
     "publication": {
       "bookTitle": "第89回情報処理学会ユビキタスコンピューティングシステム研究発表会",
@@ -3580,6 +3586,9 @@
         "https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/96.pdf"
     }
   },
   {
@@ -3619,7 +3628,8 @@
       "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
       "sortingDate": "2025-12-04T00:00:00.000Z",
       "presentationDate": "2025-12-04T00:00:00.000Z",
-      "presentationlLocation": "定山渓（北海道札幌市）"
+      "presentationlLocation": "定山渓（北海道札幌市）",
+      "thumbnail": "/images/papers/98.jpg"
     },
     "publication": {
       "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
@@ -3631,6 +3641,9 @@
         "https://www.wiss.org/WISS2025/demo.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/98.pdf"
     }
   },
   {
@@ -3646,7 +3659,8 @@
       "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
       "sortingDate": "2025-12-04T00:00:00.000Z",
       "presentationDate": "2025-12-04T00:00:00.000Z",
-      "presentationlLocation": "定山渓（北海道札幌市）"
+      "presentationlLocation": "定山渓（北海道札幌市）",
+      "thumbnail": "/images/papers/99.jpg"
     },
     "publication": {
       "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
@@ -3658,6 +3672,9 @@
         "https://www.wiss.org/WISS2025/demo.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/99.pdf"
     }
   },
   {
@@ -3676,7 +3693,8 @@
       "externalUrl": "https://www.yumulab.org/2025/12/05/wiss.html",
       "sortingDate": "2025-12-05T00:00:00.000Z",
       "presentationDate": "2025-12-05T00:00:00.000Z",
-      "presentationlLocation": "定山渓（北海道札幌市）"
+      "presentationlLocation": "定山渓（北海道札幌市）",
+      "thumbnail": "/images/papers/100.jpg"
     },
     "publication": {
       "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025）",
@@ -3688,6 +3706,9 @@
         "https://www.wiss.org/WISS2025/demo.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/100.pdf"
     }
   },
   {

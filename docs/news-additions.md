@@ -9,7 +9,7 @@
 - 原則としてNewsの題目・著者を登録し、Newsから参照できる主催者プログラム、年度まとめ、大学・共同研究者の記事で補足しました。共著者の全員が分からない場合は、確認できた著者だけを登録しています。
 - 巻号・ページ・DOI・出版日など、分からない情報は空欄にしています。MUS147と複雑系マイクロシンポジウムは、公式募集要項に原稿掲載・概要集の記載があるため国内学会として分類しています。
 - 発表日が明記されている場合のみ `presentationDate` を登録しています。不明な場合はNews記事の日付を `sortingDate` に使用し、発表日や出版日としては扱いません。例外として、採択段階のVRST2026は開催初日（2026-11-16）を並べ替え日とし、概要に「開催予定」「採択」を明記しています。
-- Newsからの初回追加時にはサムネイル・スライド埋め込み・PDFファイルを追加せず、画像欄は共通プレースホルダーを使用しました。その後、EC79の4件と複雑系マイクロシンポジウムの3件に提供されたPDFと論文内の図を追加しました（下記参照）。
+- Newsからの初回追加時にはサムネイル・スライド埋め込み・PDFファイルを追加せず、画像欄は共通プレースホルダーを使用しました。その後、EC79の4件、複雑系マイクロシンポジウムの3件、PreMaCube・HORUS Monitor・WISS2025の5件に提供されたPDFと論文内の図を追加しました（下記参照）。
 - 新URLはトップ直下です。CDIO ARM2024は同じ会議で湯村が2件登壇しているため、パネルのURLに `panel` を付けて区別しました。
 
 ## 追加一覧
@@ -30,13 +30,13 @@
 | 91 | `/csmicro25-hayasaka/` | Re:CODE - 古いギターを再利用した弾き語りのための電子楽器の開発 | 早坂 匠真, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 提供PDFで筆頭著者・第2著者を確認。PDFと論文内の画像を配置済み。巻号・通しページは未確認。 |
 | 92 | `/csmicro25-kataoka/` | VLMと二輪自動車ドライブレコーダー映像による道路上の運転危険箇所の検出の検討 | 片岡 美樹, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 提供PDFで筆頭著者・第2著者を確認。PDFと論文内の画像を配置済み。巻号・通しページは未確認。 |
 | 93 | `/csmicro25-ishikura/` | ARマーカーを用いたビニールハウスの窓開閉監視システムの開発 | 石倉 汰一, 栗原 純一, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 著者3名はユーザー指定に基づき補完。PDF・画像は未提供。栗原研究室との共同研究。 |
-| 94 | `/i2026-kabumoto/` | PreMaCube：感圧導電シートを2次元マーカとして用いるキューブ型インタフェースの開発 | 株本 くるみ, 清水 怜良, 上村 宙, 由谷 哲夫, 渋谷 敦子, 湯村 翼 | インタラクション2026論文集 | [News](https://www.yumulab.org/2026/03/05/interaction.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) / [補足2](https://www.interaction-ipsj.org/proceedings/2026/data/pdf/3A07.pdf) | 著者一覧は年度まとめ記事と公開論文で確認。 |
+| 94 | `/i2026-kabumoto/` | PreMaCube：感圧導電シートを2次元マーカとして用いるキューブ型インタフェースの開発 | 株本 くるみ, 清水 怜良, 上村 宙, 由谷 哲夫, 渋谷 敦子, 湯村 翼 | インタラクション2026論文集 | [News](https://www.yumulab.org/2026/03/05/interaction.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) / [補足2](https://www.interaction-ipsj.org/proceedings/2026/data/pdf/3A07.pdf) | 著者一覧は年度まとめ記事と公開論文で確認。提供PDFと論文内画像を配置済み。 |
 | 95 | `/ubi89-akiba/` | 電子ペーパーサイネージにおける人の移動を通信媒介とした情報配送手法の開発と評価 | 秋葉 貴文, 湯村 翼 | 第89回情報処理学会ユビキタスコンピューティングシステム研究発表会 | [News](https://www.yumulab.org/2026/03/02/ubi89.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。 |
-| 96 | `/ubi89-hashimoto/` | HORUS Monitor：ヘッドマウントディスプレイを用いた自動運転車遠隔監視システムの提案 | 橋本 空輝, 清水 怜良, 金子 直矢, 牧野 仁宣, 湯村 翼 | 第89回情報処理学会ユビキタスコンピューティングシステム研究発表会 | [News](https://www.yumulab.org/2026/03/02/ubi89.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。 |
+| 96 | `/ubi89-hashimoto/` | HORUS Monitor：ヘッドマウントディスプレイを用いた自動運転車遠隔監視システムの提案 | 橋本 空輝, 清水 怜良, 金子 直矢, 牧野 仁宣, 湯村 翼 | 第89回情報処理学会ユビキタスコンピューティングシステム研究発表会 | [News](https://www.yumulab.org/2026/03/02/ubi89.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。提供PDFと論文内画像を配置済み。 |
 | 97 | `/virtual2025-oyamada/` | メタバース空間で対話相手に向かって自律移動するAIアバター『ノア』の開発 | 小山田 悠人 | バーチャル学会2025 | [News](https://www.yumulab.org/2025/12/14/virtual-conference.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) | Newsで確認できた筆頭著者のみ登録。共著者・予稿情報は未確認。EC2025とは別会場での発表。 |
-| 98 | `/wiss2025-shimizu/` | ASMR耳かき動画のための音と触覚の同時提示システムの提案 | 清水 怜良, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。 |
-| 99 | `/wiss2025-akiba/` | 人の移動を通信媒介とする電子ペーパーサイネージのための圧電素子を用いた近接駆動方式の提案 | 秋葉 貴文, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。 |
-| 100 | `/wiss2025-kamimura/` | 歌詞駆動パーティクルライブ制作支援ツールの提案 | 上村 宙, 加藤 淳, 中野 倫靖, 後藤 真孝, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。 |
+| 98 | `/wiss2025-shimizu/` | ASMR耳かき動画のための音と触覚の同時提示システムの提案 | 清水 怜良, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。提供PDFと論文内画像を配置済み。 |
+| 99 | `/wiss2025-akiba/` | 人の移動を通信媒介とする電子ペーパーサイネージのための圧電素子を用いた近接駆動方式の提案 | 秋葉 貴文, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。提供PDFと論文内画像を配置済み。 |
+| 100 | `/wiss2025-kamimura/` | 歌詞駆動パーティクルライブ制作支援ツールの提案 | 上村 宙, 加藤 淳, 中野 倫靖, 後藤 真孝, 湯村 翼 | 第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2025） | [News](https://www.yumulab.org/2025/12/05/wiss.html) / [補足1](https://www.wiss.org/WISS2025/demo.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 公式デモプログラムで発表日・番号を確認。提供PDFと論文内画像を配置済み。 |
 | 101 | `/costep2025-yumura/` | 研究室から社会へ 〜 情報科学でつなぐ科学技術コミュニケーション実践 | 湯村 翼 | CoSTEP20周年記念イベント「CoSTEP宣言」 | [News](https://www.yumulab.org/cevent/2025/08/31/costep.html) / [補足1](https://costep.open-ed.hokudai.ac.jp/event/30849) | ポスター発表。イベントは8月30〜31日。個別発表日は不明のためNews記事日で並べ替え。 |
 | 102 | `/netser2025-akiba/` | NNEPS: A Power-efficient e-Paper Signage System with Remote Content Updates | Takafumi Akiba, Tsubasa Yumura | International Journal on Advances in Networks and Services | [News](https://www.yumulab.org/2025/07/12/nneps-journal.html) / [補足1](https://www.iariajournals.org/networks_and_services/tocv18n12.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 掲載年は2025年。巻号・ページは出版社の目次で確認。出版月日は未確認のためNews記事日で並べ替え。SENSORCOMM2024の拡張版。 |
 | 103 | `/cdioarm2024-yumura/` | Practices of Research and Education using Digital Fabrication Technologies | Tsubasa Yumura | 2024 CDIO Asian Regional Meeting | [News](https://www.yumulab.org/conference/2024/09/06/cdioarm.html) | ポスター発表。題目は記事内の資料タイトルで確認。開催期間は9月5〜7日。個別発表日は未確認。News記事日で並べ替え。 |
@@ -69,6 +69,20 @@
 | 92 | `/csmicro25-kataoka/` | `csmicro-kataoka.pdf` | `public/pdfs/92.pdf` | 2ページ・Fig.3（危険箇所を示す走行映像）→ `public/images/papers/92.jpg` |
 
 取り込み済みの原本は `tmp/archive/` に保管します。石倉さん（ID 93）はPDF・サムネイルを追加せず、ユーザー指定の「石倉 汰一, 栗原 純一, 湯村 翼」に著者を更新しています。
+
+## PreMaCube・HORUS Monitor・WISS2025のPDF・サムネイル追加
+
+2026-11-14に `tmp/before/` で提供された5件を、題目・著者で既存レコードと照合しました。PDFは内容を変更せず `public/pdfs/` に配置し、SHA-256で原本との一致を確認しています。PDF内の画像をグリッドと同じ縦横比（約1.91:1）にトリミングし、余白は追加していません。画像の上限は720×377ピクセルとし、小さい元画像は拡大していません。
+
+| ID | URL | 提供ファイル名 | 配置先PDF | サムネイルの出典・サイズ |
+|---|---|---|---|---|
+| 94 | `/i2026-kabumoto/` | `interaction2026-premacube.pdf` | `public/pdfs/94.pdf` | 3ページ・図4（PreMaARの使用画面）→ `public/images/papers/94.jpg`、503×263px |
+| 96 | `/ubi89-hashimoto/` | `UBI89_HORUS.pdf` | `public/pdfs/96.pdf` | 1ページ・図1（HORUS Monitorのコンセプト）→ `public/images/papers/96.jpg`、720×377px |
+| 98 | `/wiss2025-shimizu/` | `wiss2025-shimizu.pdf` | `public/pdfs/98.pdf` | 2ページ・図4（スピーカーを曲げる様子）→ `public/images/papers/98.jpg`、720×377px |
+| 99 | `/wiss2025-akiba/` | `wiss2025-akiba.pdf` | `public/pdfs/99.pdf` | 2ページ・図1（プロトタイプの装置写真）→ `public/images/papers/99.jpg`、720×377px |
+| 100 | `/wiss2025-kamimura/` | `wiss2025-kamimura.pdf` | `public/pdfs/100.pdf` | 2ページ・図3（スタイルの出力例）→ `public/images/papers/100.jpg`、720×377px |
+
+取り込み済みの原本は `tmp/archive/` に保管します。論文の件数・URL・著者は変更していません。
 
 ## 管理上の注意
 
