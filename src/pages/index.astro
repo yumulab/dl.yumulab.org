@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import PaperCard from '../components/PaperCard.astro';
 import { papers, paperDate, paperTypes, filterPapers } from '../lib/papers';
+import { withBase } from '../lib/urls';
 const sorted = filterPapers(papers, { q: '', year: '', type: '', sort: 'newest', view: 'tile' });
 const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).filter(Boolean))].sort().reverse();
 ---
@@ -27,7 +28,7 @@ const years = [...new Set(papers.map((paper) => paperDate(paper).slice(0, 4)).fi
     <aside class="filters" aria-label="論文の検索と絞り込み">
       <details open id="filter-panel">
         <summary><span><Icon name="filter" />検索・絞り込み</span><Icon name="chevron" size={16} /></summary>
-        <form id="search-form" role="search" action="/" method="get">
+        <form id="search-form" role="search" action={withBase('/')} method="get">
           <div class="filter-field">
             <label for="query">検索</label>
             <div class="search-input"><Icon name="search" size={17} /><input id="query" name="q" type="search" placeholder="タイトル・著者・キーワード" autocomplete="off" /><button type="submit" aria-label="検索する"><Icon name="arrow" size={17} /></button></div>

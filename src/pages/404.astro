@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { withBase } from '../lib/urls';
 ---
 <Layout title="ページが見つかりません">
-  <main id="main" class="not-found"><p class="error-code">404</p><h1>ページが見つかりませんでした</h1><p>URLをご確認いただくか、論文一覧からお探しください。</p><a class="outline-button" href="/">論文一覧へ戻る</a></main>
+  <main id="main" class="not-found"><p class="error-code">404</p><h1>ページが見つかりませんでした</h1><p>URLをご確認いただくか、論文一覧からお探しください。</p><a class="outline-button" href={withBase('/')}>論文一覧へ戻る</a></main>
 </Layout>

@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-開発サーバーは `http://localhost:4321` で起動します。
+開発サーバーは `http://localhost:4321/dl.yumulab.org/` で起動します。
 
 ```sh
 npm run check   # Astro・TypeScriptの型チェック
@@ -25,7 +25,7 @@ npm run preview # ビルド結果をローカルで確認
 - 論文のタイル／一覧表示と、スマートフォンに対応したレイアウト
 - タイトル・英語タイトル・著者・概要・キーワード・掲載誌による複数語検索
 - 出版年／発表年、種類での絞り込み、新しい順／古い順への並べ替え
-- 検索条件のURLへの反映（例: `/?q=湯村&year=2025&type=report&view=list`）
+- 検索条件のURLへの反映（例: `/dl.yumulab.org/?q=湯村&year=2025&type=report&view=list`）
 - 論文詳細、PDFリンク、書誌情報、キーワード、引用のコピー
 - Speaker Deck・YouTubeの埋め込み、関連資料へのリンク
 - JavaScriptを無効にした場合も論文一覧・詳細を閲覧可能
@@ -69,7 +69,15 @@ npm run import:legacy
 
 ## 公開
 
-`npm run build` で生成される `dist/` を静的ホスティングに配置できます。公開先のドメインを変える場合は `astro.config.mjs` の `site` を変更してください。論文URLは `/papers/<id>/` を維持しています。
+当面の公開URLは `https://yumulab.github.io/dl.yumulab.org/` です。`astro.config.mjs` に `site: 'https://yumulab.github.io'` と `base: '/dl.yumulab.org'` を設定しています。内部リンク・画像・検索フォームは `base` に追従します。
+
+GitHubのリポジトリで **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定してください。独自ドメインは設定せず、Custom domainは空欄のままにします。
+
+`.github/workflows/deploy.yml` により、`main` へのpush時に型チェック・テスト・ビルド・公開を実行します。設定前の実行が失敗した場合は、Pagesを有効にしてから **Actions → Deploy to GitHub Pages → Run workflow** で再実行できます。`dist/` をGitに追加する必要はありません。
+
+PDFは引き続き現行の `dl.yumulab.org` を参照するため、仮URLの公開時にはPDFの移行やDNS変更は不要です。
+
+将来 `https://dl.yumulab.org/` に切り替える際は、PDFの配信先を準備してから、`astro.config.mjs` の `site` を `https://dl.yumulab.org`、`base` を `/` に変更してください。その後、GitHub PagesのCustom domainとDNSを設定します。内部リンクを個別に修正する必要はありません。
 
 ## 構成
 

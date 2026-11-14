@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
 import { papers, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail } from '../../lib/papers';
 import type { Paper } from '../../lib/papers';
+import { withBase } from '../../lib/urls';
 
 export function getStaticPaths() {
   return papers.map((paper) => ({ params: { id: paper.core.id }, props: { paper } }));
@@ -28,12 +29,12 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
 ---
 <Layout title={core.title} description={core.abstract || core.title} image={thumbnail(paper)}>
   <main id="main" class="detail-page">
-    <a class="back-link" href="/"><Icon name="arrow" size={17} />論文一覧へ戻る</a>
+    <a class="back-link" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
     <header class="detail-header">
       <span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span>
       <h1>{core.title}</h1>
       {core.titleOfEnglish && <p class="english-title" lang="en">{core.titleOfEnglish}</p>}
-      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`/?q=${encodeURIComponent(author)}`}><Icon name="user" size={15} />{author}</a>)}</div>
+      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}><Icon name="user" size={15} />{author}</a>)}</div>
       <div class="detail-actions">
         {pdf && <a class="pdf-button" href={pdf} target="_blank" rel="noopener noreferrer"><Icon name="download" size={18} />PDFを開く<Icon name="external" size={14} /></a>}
         {source && <a class="outline-button" href={source} target="_blank" rel="noopener noreferrer">公開元を見る<Icon name="external" size={15} /></a>}
@@ -50,7 +51,7 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
           {links.length > 0 && <ul class="artifact-links">{links.map((url) => <li><a href={url} target="_blank" rel="noopener noreferrer">{url}<Icon name="external" size={15} /></a></li>)}</ul>}
         </section>}
         <section class="detail-section"><h2><span>Information</span>書誌情報</h2><dl class="information">{info.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>
-        {keywords.length > 0 && <section class="detail-section"><h2><span>Keywords</span>キーワード</h2><div class="keyword-list">{keywords.map((keyword) => <a href={`/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}</div></section>}
+        {keywords.length > 0 && <section class="detail-section"><h2><span>Keywords</span>キーワード</h2><div class="keyword-list">{keywords.map((keyword) => <a href={`${withBase('/')}?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}</div></section>}
         <section class="detail-section">
           <div class="section-heading"><h2><span>Citation</span>引用</h2><button type="button" id="copy-citation" class="copy-button" hidden><Icon name="copy" size={15} /><span>コピー</span></button></div>
           <p id="citation-text" class="citation-text">{citation(paper)}</p><p id="copy-status" class="sr-only" role="status"></p>
@@ -63,7 +64,7 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
         {core.presentationDate && <p class="aside-date">{formatDate(core.presentationDate)} 発表</p>}
       </aside>
     </div>
-    <a class="back-link bottom-back" href="/"><Icon name="arrow" size={17} />論文一覧へ戻る</a>
+    <a class="back-link bottom-back" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
   </main>
   <script>
     const copyButton = document.querySelector<HTMLButtonElement>('#copy-citation');

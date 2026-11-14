@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
+import { withBase } from '../lib/urls';
 ---
 <Layout title="このレポジトリについて">
   <main id="main" class="prose-page">
-    <a class="back-link" href="/"><Icon name="arrow" size={17} />論文一覧へ戻る</a>
+    <a class="back-link" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
     <h1>このレポジトリについて</h1>
     <p>北海道情報大学 湯村研究室の論文・研究報告・発表資料をまとめたレポジトリです。研究成果の概要、書誌情報、論文PDFや関連資料をご覧いただけます。</p>
     <h2>論文・資料の利用について</h2>

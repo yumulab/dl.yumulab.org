@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { withBase } from '../lib/urls';
 interface Props { title?: string; description?: string; image?: string; }
 const siteName = '北海道情報大学 湯村研究室 論文レポジトリ';
 const { title, description = '北海道情報大学 湯村研究室の研究成果を公開する論文レポジトリです。論文、研究報告、発表資料をご覧いただけます。', image } = Astro.props;
@@ -14,7 +15,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content={title ? 'article' : 'website'} />
     <meta property="og:title" content={fullTitle} />
@@ -26,13 +27,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <body>
     <a class="skip-link" href="#main">本文へスキップ</a>
     <header class="site-header">
-      <a class="site-name" href="/">{siteName}</a>
+      <a class="site-name" href={withBase('/')}>{siteName}</a>
       <a class="lab-link" href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">研究室サイト <span aria-hidden="true">↗</span></a>
     </header>
     <slot />
     <footer class="site-footer">
-      <div><a href="/">湯村研究室 論文レポジトリ</a><span>© {new Date().getFullYear()} Yumura Lab</span></div>
-      <div><a href="/about/">このレポジトリについて</a><a href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">湯村翼研究室 ↗</a></div>
+      <div><a href={withBase('/')}>湯村研究室 論文レポジトリ</a><span>© {new Date().getFullYear()} Yumura Lab</span></div>
+      <div><a href={withBase('/about/')}>このレポジトリについて</a><a href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">湯村翼研究室 ↗</a></div>
     </footer>
   </body>
 </html>

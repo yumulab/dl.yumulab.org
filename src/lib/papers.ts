@@ -1,4 +1,5 @@
 import records from '../data/papers.json';
+import { withBase } from './urls';
 
 export const paperTypes = {
   'paper-conference': { label: '予稿集', color: '#0199b4' },
@@ -66,8 +67,8 @@ export function formatDate(value?: string): string {
 
 export function thumbnail(paper: Paper): string {
   return paper.core.thumbnailSmall || paper.core.thumbnail
-    ? `/images/papers/${paper.core.id}.jpg`
-    : '/images/paper-placeholder.svg';
+    ? withBase(`/images/papers/${paper.core.id}.jpg`)
+    : withBase('/images/paper-placeholder.svg');
 }
 
 export function normalize(value: string): string {
