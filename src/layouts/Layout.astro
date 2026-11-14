@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+interface Props { title?: string; description?: string; image?: string; }
+const siteName = '北海道情報大学 湯村研究室 論文レポジトリ';
+const { title, description = '北海道情報大学 湯村研究室の研究成果を公開する論文レポジトリです。論文、研究報告、発表資料をご覧いただけます。', image } = Astro.props;
+const fullTitle = title ? `${title} - ${siteName}` : siteName;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={title ? 'article' : 'website'} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="ja_JP" />
+    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+    <header class="site-header">
+      <a class="site-name" href="/">{siteName}</a>
+      <a class="lab-link" href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">研究室サイト <span aria-hidden="true">↗</span></a>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <div><a href="/">湯村研究室 論文レポジトリ</a><span>© {new Date().getFullYear()} Yumura Lab</span></div>
+      <div><a href="/about/">このレポジトリについて</a><a href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">湯村翼研究室 ↗</a></div>
+    </footer>
+  </body>
+</html>

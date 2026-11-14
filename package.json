@@ -1,0 +1,27 @@
+{
+  "name": "yumulab-digital-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "import:legacy": "node scripts/import-legacy.mjs",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "astro": "^7.4.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^24.19.2",
+    "sharp": "^0.35.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  }
+}

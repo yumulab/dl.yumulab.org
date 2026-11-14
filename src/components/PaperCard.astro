@@ -1,0 +1,23 @@
+---
+import type { Paper } from '../lib/papers';
+import { typeInfo, paperDate, formatDate, thumbnail } from '../lib/papers';
+import Icon from './Icon.astro';
+interface Props { paper: Paper; index: number; }
+const { paper, index } = Astro.props;
+const category = typeInfo(paper.core.type);
+---
+<article class="paper-card" data-paper-id={paper.core.id}>
+  <a href={`/papers/${paper.core.id}/`} class="paper-card-link">
+    <div class="paper-image">
+      <img src={thumbnail(paper)} alt="" width="560" height="294" loading={index < 3 ? 'eager' : 'lazy'} decoding="async" />
+    </div>
+    <div class="paper-content">
+      <div class="paper-meta"><time datetime={paperDate(paper)}>{formatDate(paperDate(paper))}</time><span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span></div>
+      <h2 class="paper-title">{paper.core.title}</h2>
+      <div class="paper-byline">
+        <p><Icon name="user" size={13} /><span>{paper.core.authors?.join(' / ')}</span></p>
+        {paper.publication?.bookTitleAbbr && <p><Icon name="book" size={13} /><span>{paper.publication.bookTitleAbbr}</span></p>}
+      </div>
+    </div>
+  </a>
+</article>

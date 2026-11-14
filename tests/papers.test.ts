@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { papers, filterPapers, readFilters, paperDate, normalize, safeUrl, embedUrl, thumbnail } from '../src/lib/papers';
+
+const defaults = readFilters(new URLSearchParams());
+
+test('Japanese and Latin search normalizes width, case and whitespace', () => {
+  assert.equal(normalize('  ＡＲ　Quest  '), 'ar quest');
+  const results = filterPapers(papers, { ...defaults, q: '宮崎　野球場' });
+  assert.deepEqual(results.map((paper) => paper.core.id), ['77']);
+});
+
+test('search includes keywords and abstracts and combines every search term', () => {
+  const results = filterPapers(papers, { ...defaults, q: 'Ｑｕｅｓｔ AR' });
+  assert.ok(results.some((paper) => paper.core.id === '77'));
+  assert.equal(filterPapers(papers, { ...defaults, q: '宮崎 この語は存在しないxyz' }).length, 0);
+});
+
+test('year, publication type and search combine; sorting reverses dates', () => {
+  const results = filterPapers(papers, { ...defaults, year: '2025', type: 'report', q: '湯村' });
+  assert.ok(results.length > 1);
+  assert.ok(results.every((paper) => paperDate(paper).startsWith('2025') && paper.core.type === 'report'));
+  const newest = filterPapers(papers, defaults);
+  const oldest = filterPapers(papers, { ...defaults, sort: 'oldest' });
+  assert.equal(paperDate(newest[0]), paperDate(oldest.at(-1)!));
+  assert.equal(paperDate(newest.at(-1)!), paperDate(oldest[0]));
+});
+
+test('shared URL restores Japanese queries and validates filter options', () => {
+  const restored = readFilters(new URLSearchParams('q=%E6%B9%AF%E6%9D%91&year=2025&type=report&sort=oldest&view=list'));
+  assert.deepEqual(restored, { q: '湯村', year: '2025', type: 'report', sort: 'oldest', view: 'list' });
+  const invalid = readFilters(new URLSearchParams('year=invalid&type=toString&sort=wrong&view=wrong'));
+  assert.deepEqual(invalid, defaults);
+});
+
+test('missing thumbnails use the placeholder and IDs remain unique', () => {
+  assert.equal(new Set(papers.map((paper) => paper.core.id)).size, papers.length);
+  const missing = papers.find((paper) => !paper.core.thumbnail && !paper.core.thumbnailSmall)!;
+  assert.equal(thumbnail(missing), '/images/paper-placeholder.svg');
+  assert.equal(thumbnail(papers.find((paper) => paper.core.id === '77')!), '/images/papers/77.jpg');
+});
+
+test('external links reject executable URLs and embeds accept supported providers', () => {
+  assert.equal(safeUrl('javascript:alert(1)'), undefined);
+  assert.equal(safeUrl('data:text/html,test'), undefined);
+  assert.equal(safeUrl(' http://dl.yumulab.org/api/files/123 '), 'https://dl.yumulab.org/api/files/123');
+  assert.equal(embedUrl('https://www.youtube.com/watch?v=vwfBaLy4WGU'), 'https://www.youtube-nocookie.com/embed/vwfBaLy4WGU');
+  assert.equal(embedUrl('https://example.com/embed/123'), undefined);
+  assert.equal(embedUrl('https://speakerdeck.com.evil.example/player/abc'), undefined);
+});

@@ -1,0 +1,3037 @@
+[
+  {
+    "core": {
+      "type": "report",
+      "title": "非試合日の野球場を楽しむためのARホームランボールキャッチ体験システムの開発",
+      "authors": [
+        "宮崎 創太",
+        "湯村 翼"
+      ],
+      "abstract": "本研究は，エスコンフィールドHOKKAIDOにおける非試合日の来客促進および滞在体験の向上を目的とし，拡張現実（Augmented Reality：AR）技術を用いたホームランボール捕球体験システムを開発した．Meta Quest 3のカラーパススルー機能を活用し，現実のスタジアム風景に仮想のボールを重畳させることで，没入感の高い疑似体験を実現した．システム実装においては，実環境の座標に基づいた3パターンの打球軌道生成エンジンや，ハンドトラッキングによる捕球・投球インタラクションを統合し，スタジアム特有の物理的環境を活かしたコンテンツを提示した．20代の被験者4名を対象とした評価実験の結果，操作性および満足度において平均4.50の高評価を得た．",
+      "keywords": [
+        "AR",
+        "XR",
+        "スポーツ",
+        ""
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2007886",
+      "thumbnail": "https://dl.yumulab.org/api/files/69c67420e2fa33003849c7ac",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/69c67424e2fa33003849c7af",
+      "presentationlLocation": "電気通信大学（東京都調布市）",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "id": "77"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/69c67452e2fa33003849c7c2"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "bookTitleAbbr": "EC79",
+      "publishedDate": "2026-03-02T00:00:00.000Z",
+      "volume": "2026-EC-79",
+      "issue": "20",
+      "page": "1-4",
+      "publisher": "情報処理学会",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/b803f1348b124a5d87bfe366a9389233"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "MR 流体を用いたセルフセンシング可能な触覚デバイスの提案",
+      "authors": [
+        "上村 宙",
+        "湯村 翼"
+      ],
+      "abstract": "従来の触覚デバイスは出力性能に特化したものが多く，入力には追加センサを要するという課題があった．本研究では，MR流体と電磁石を用いたデバイスにより多様な硬さ表現を可能にすると同時に，流体の移動に伴う磁場変化を利用した入力機能を検討した．これにより，追加センサを排した単一機構で入出力統合を実現し，感触を得ながら操作する双方向インタラクションを可能にする．",
+      "keywords": [
+        "触覚",
+        "センシング"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/6a4f0b29b6874c001e5cdd2b",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6a4f0b2db6874c001e5cdd2e",
+      "presentationlLocation": "千葉大学 西千葉キャンパス",
+      "presentationDate": "2026-03-10T00:00:00.000Z",
+      "sortingDate": "2026-03-10T00:00:00.000Z",
+      "id": "78"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6a4f0b75b6874c001e5cdd3f"
+    },
+    "publication": {
+      "bookTitle": "日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会 予稿集",
+      "bookTitleAbbr": "第36回ハプティクス研究会",
+      "publishedDate": "2026-03-09T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/f355985a07ac4908a3d8747e33aae927"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "手袋型入力デバイス Airnds-Type の開発と入力手法検討",
+      "authors": [
+        "西山 拓実",
+        "大谷 晃弘",
+        "木村 遥香",
+        "藤岡 大和",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "id": "79",
+      "abstract": "文字入力手法のひとつに，ハンドジェスチャによる文字入力があげられる.ハンドジェスチャによる 文字入力に用いられる市販のデータグローブもあるが，多機能で高価である.そこで本研究では，入力デ バイスとしての機能に特化した手袋型入力デバイス Airnds-Type の開発を行った.Airnds-Type は，ユー ザが手指を手のひらに接触させて文字入力を行う.ユーザが指で手のひらを触った際の通電を検知し，文 字入力に用いた.Airnds-Type の 2 種類のプロトタイプを実装した.評価として，Airnds-Type を聴講者 に明かさずに使用して聴講者が気づいたかどうかを調べ，80%の聴講者が気づかなかった.プロトタイプ 開発で得られた知見をもとに，次世代版の仕様を検討した.",
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/6a991870b6874c001e5cdd43",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6a991878b6874c001e5cdd46",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2026-03-05T00:00:00.000Z",
+      "sortingDate": "2026-03-05T00:00:00.000Z"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6a9918ceb6874c001e5cdd4a"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2026論文集",
+      "bookTitleAbbr": "インタラクション2026",
+      "publishedDate": "2026-02-20T00:00:00.000Z",
+      "page": "1097-1101",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "地産地消型センシングに向けた植物の葉への電子回路形成の検討",
+      "authors": [
+        "湯村 翼",
+        "松田 裕貴"
+      ],
+      "abstract": "環境モニタリングや生態観察など自然環境下でのセンシングが広く行われる．従来のセンサの設置は開発拠点で製作した装置を現地に運ぶ方式であり，輸送コストや設置環境への適応性，生態系への干渉，電子廃棄物の発生などの課題を抱える．これらの課題に対し，本研究では現地で入手可能な自然素材を用いてセンサを構築する「地産地消型センシング」を提案する．その第一段階として，植物の葉を基材とした電子回路形成を試みた．低出力レーザー加工機を用い，葉の表面を局所的に炭化させた結果，導電性の高いレーザー誘起グラフェンではなくアモルファス炭素が形成された．アモルファス炭素は絶縁体であるが，水分を介した際にイオン伝導による導電性が確認され，自然素材を用いたセンシングデバイス開発の可能性を示した．",
+      "keywords": [
+        "デジタルファブリケーション",
+        "自然物センサ"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2025Proceedings/",
+      "thumbnail": "https://dl.yumulab.org/api/files/69be65f4e2fa33003849c765",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/69be65f8e2fa33003849c768",
+      "presentationlLocation": "定山渓ビューホテル（北海道札幌市）",
+      "presentationDate": "2025-12-03T00:00:00.000Z",
+      "sortingDate": "2025-12-03T00:00:00.000Z",
+      "id": "76"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/69be6672e2fa33003849c7a8"
+    },
+    "publication": {
+      "bookTitle": "第33回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2025)論文集",
+      "bookTitleAbbr": "WISS2025",
+      "publishedDate": "2025-11-26T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Proposal of an Information Delivery Method for Electronic Paper Signage Using Human Mobility as the Communication Medium",
+      "titleOfEnglish": "Proposal of an Information Delivery Method for Electronic Paper Signage Using Human Mobility as the Communication Medium",
+      "authors": [
+        "Takafumi Akiba",
+        "Tsubasa Yumura"
+      ],
+      "abstract": "In environments where communication infrastructure is unstable, remotely updating Electronic Paper Signage (EPS) is difficult. This study proposes a method that leverages human mobility as a communication medium to disseminate content progressively among EPS units. Mobile devices such as smartphones and wearables connect to EPS via short-range links upon encounter and, based on bidirectional version comparison, update to the newer content. On the EPS side, power consumption is reduced by controlling scanning intervals. We implemented a prototype using M5Paper v1.1 and confirmed basic operations, including content handover and display updates. We also outline a future direction to minimize standby power by introducing wake-up mechanisms triggered by touch/proximity and energy harvesting using piezoelectric elements.",
+      "keywords": [
+        "e-Paper",
+        "Digital Signage"
+      ],
+      "language": "en",
+      "externalUrl": "https://doi.org/10.1109/ICCE-Asia67487.2025.11263520",
+      "thumbnail": "https://dl.yumulab.org/api/files/694acacd14f686002dd6795d",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/694acad114f686002dd67960",
+      "presentationlLocation": "Westin Josun Busan (Busan, South Korea)",
+      "presentationDate": "2025-10-29T00:00:00.000Z",
+      "sortingDate": "2025-10-29T00:00:00.000Z",
+      "id": "70"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/694acb2914f686002dd67974"
+    },
+    "publication": {
+      "bookTitle": "2025 IEEE/IEIE International Conference on Consumer Electronics-Asia (ICCE-Asia)",
+      "bookTitleAbbr": "ICCE-Asia 2025",
+      "publishedDate": "2025-12-04T00:00:00.000Z",
+      "page": "1-4",
+      "publisher": "IEEE",
+      "DOI": "10.1109/ICCE-Asia67487.2025.11263520",
+      "ISBN": "979-8-3315-7402-4"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/e5398ab774b14ad7b59516f36a1720b0"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "talk",
+      "titleOfEnglish": "",
+      "authors": [
+        "Takafumi Akiba",
+        "Tsubasa Yumura"
+      ],
+      "keywords": [
+        "e-Paper",
+        "signage",
+        "network"
+      ],
+      "language": "en",
+      "thumbnail": "https://dl.yumulab.org/api/files/6953d57a14f686002dd679e0",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6953d58014f686002dd679e3",
+      "presentationlLocation": "Nihon University (Tokyo, Japan)",
+      "presentationDate": "2025-08-28T00:00:00.000Z",
+      "sortingDate": "2025-08-28T00:00:00.000Z",
+      "id": "75",
+      "title": "A Proposal of an Information Delivery Method using Human Movement as a Communication Medium for Electronic Paper Signage"
+    },
+    "files": {},
+    "publication": {
+      "bookTitleAbbr": "EC2025-ICEC2025"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/c1a840b4c47f4557a1659f1111d11e66"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "メタバース空間で対話相手に向かって自律移動するAIアバター『ノア』の開発",
+      "authors": [
+        "小山田 悠人",
+        "湯村 翼"
+      ],
+      "abstract": "メタバース空間では会話可能なAI アバター開発が進む．しかし、その多くは対話機能に限定され、アバターの動作を交えたインタラクションは困難という課題がある．そこで本研究では、ユーザーとの会話に加え、呼びかけに応じて自律移動を行うAI アバターを開発する．VRChat を対象プラットフォームとし、ユーザーが発する音声の方向をリアルタイムで算出し、音源へ向かって自律的に接近する機能をPython で実装した．ChatGPT 等と連携した対話も行い、AI が能動的に振る舞う、存在感のあるインタラクティブな体験の創出を目指す．",
+      "keywords": [
+        "メタバース",
+        "アバター",
+        "LLM"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2003711",
+      "thumbnail": "https://dl.yumulab.org/api/files/6953d26d14f686002dd679bc",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6953d27214f686002dd679bf",
+      "presentationlLocation": "日本大学 文理学部キャンパス（東京都世田谷区）",
+      "presentationDate": "2025-08-26T00:00:00.000Z",
+      "sortingDate": "2025-08-26T00:00:00.000Z",
+      "id": "73"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6953d2a314f686002dd679cb"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
+      "bookTitleAbbr": "EC2025",
+      "publishedDate": "2025-08-18T00:00:00.000Z",
+      "volume": "2025",
+      "page": "378-380",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/b2f0f72beb6e40228c81c0a957b17b28"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "足位置の視覚的提示による電子オルガンのペダル鍵盤演奏学習支援システムの提案",
+      "authors": [
+        "寳金 和志",
+        "湯村 翼"
+      ],
+      "abstract": "電子オルガンの演奏では，演奏姿勢を維持するためにペダル鍵盤を見ずに操作することが求められるが，初心者にとっては困難である．そこで本研究では，演奏姿勢を保ったまま足の位置を視認できるシステムの開発を行う．AR マーカーを用いて足の座標を取得し，足とペダル鍵盤の位置関係を映像として提示する．これにより，電子オルガン初心者のペダル鍵盤習得時の負担を軽減する．",
+      "keywords": [
+        "楽器",
+        "学習支援",
+        "音楽"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2003722",
+      "thumbnail": "https://dl.yumulab.org/api/files/6953d3ff14f686002dd679cf",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6953d40414f686002dd679d2",
+      "presentationlLocation": "日本大学 文理学部キャンパス（東京都世田谷区）",
+      "presentationDate": "2025-08-26T00:00:00.000Z",
+      "sortingDate": "2025-08-26T00:00:00.000Z",
+      "id": "74"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6953d42a14f686002dd679dd"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
+      "bookTitleAbbr": "EC2025",
+      "publishedDate": "2025-08-18T00:00:00.000Z",
+      "volume": "2025",
+      "page": "419-420",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/c09ca31cb5214575883c7752462d1de3"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "電子ペーパーサイネージにおける人の移動を通信媒介とした情報配送手法の提案",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "abstract": "通信インフラが不安定な環境では，電子ペーパーサイネージを遠隔で更新することが困難である．本研究は，人の移動を通信媒介として活用し，電子ペーパーサイネージ間でコンテンツを配送する手法を提案する．さらに，人の接近・接触をトリガーとしてスリープ解除や発電を行う仕組みの導入を視野に入れ，省電力性向上に関する考察を行う．本稿では，プロトタイプ実装を提示し，基本動作を検証することで提案手法の有効性を評価する．",
+      "keywords": [
+        "電子ペーパー",
+        "サイネージ",
+        "ネットワーク",
+        ""
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2003696",
+      "id": "72",
+      "thumbnail": "https://dl.yumulab.org/api/files/6953cfce14f686002dd679a2",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6953cfd714f686002dd679a5",
+      "presentationlLocation": "日本大学 文理学部キャンパス（東京都世田谷区）",
+      "presentationDate": "2025-08-25T00:00:00.000Z",
+      "sortingDate": "2025-08-25T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/6953d04c14f686002dd679b9"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2025論文集",
+      "bookTitleAbbr": "EC2025",
+      "publishedDate": "2025-08-18T00:00:00.000Z",
+      "volume": "2025",
+      "page": "312-315",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/00a728cd616f4bcc89f004f3fc0071c6"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "感圧導電シートを用いた床面圧力センサによる人物同定手法の開発",
+      "authors": [
+        "上村 宙",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "abstract": "人物の識別や動線分析には，カメラ映像を用いた画像処理技術を用いる手法が主流である．しかし，遮蔽物によって死角が生じたり，プライバシーを侵害したりする懸念がある．そこで本研究では，床面圧力センサを用いて，足底の圧力分布によって人物を同定する手法を提案する．そのために，感圧導電シートと銅箔テープを用いて床面圧力センサを開発した．CNNとGRUを用いたニューラルネットワークを使用し，人物同定のための時系列データの分類を行った．16名の被験者を対象として評価実験を実施した．実験では，被験者は靴を履いたまま床面圧力センサへの着地と離脱を繰り返す．このデータを用いて提案手法の性能を評価した．",
+      "keywords": [
+        "センシング",
+        "感圧導電シート"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2002515",
+      "thumbnail": "https://dl.yumulab.org/api/files/6953ccef14f686002dd67977",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6953ccf514f686002dd6797a",
+      "presentationlLocation": "東京大学 本郷キャンパス（東京都文京区）",
+      "presentationDate": "2025-06-19T00:00:00.000Z",
+      "sortingDate": "2025-06-19T00:00:00.000Z",
+      "id": "71"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/6953cd5414f686002dd6799e"
+    },
+    "publication": {
+      "bookTitle": "研究報告ヒューマンコンピュータインタラクション（HCI）",
+      "bookTitleAbbr": "HCI213",
+      "publishedDate": "2025-06-11T00:00:00.000Z",
+      "volume": "2025-HCI-213",
+      "issue": "31",
+      "page": "1-6",
+      "publisher": "情報処理学会",
+      "ISSN": "2188-8760"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/30c375dc5d2f4783804d793bbea273fc"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "ASSADS：ASMR動画に合わせて撫でられる感覚を提示するシステムの開発と評価",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "abstract": "YouTubeなどで配信される動画には，ASMRというジャンルがある．ASMRでは，視聴者はささやき声や咀嚼音などを聞き，聴覚の刺激から心地よさやリラックス効果を得る．ASMRのコンテンツには，撫でられている感覚を体感するものがある．しかし，撫でるASMR動画では，撫でられたという触覚的な体感を得ることができない．そこで音に加えて疑似触覚を付与することで，ASMR動画にあわせて撫でられる感覚を提示するシステムASSADS（アサダス）を提案する．本研究では，ASSADSの設計と実装を行い，評価実験を実施した．ASSADSは，ASMR動画に合わせて制御コマンドを送信するASSADS Connectと，熱によって疑似触覚を提示するデバイスASSADS GEARから構成される．ASSADS使用の有無を比較し，没入感があるという結果を得た．また，温度の感じ方に個人差があり，温度調整が必要という課題も明らかとなった．",
+      "keywords": [
+        "ASMR",
+        "触覚",
+        "動画"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2001374",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e7550514f686002dd67908",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e7550914f686002dd6790b",
+      "presentationlLocation": "京都大学（京都府京都市）",
+      "presentationDate": "2025-03-18T00:00:00.000Z",
+      "sortingDate": "2025-03-18T00:00:00.000Z",
+      "id": "66"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67e7554014f686002dd67915"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "bookTitleAbbr": "EC75",
+      "publishedDate": "2025-03-10T00:00:00.000Z",
+      "volume": "2025-EC-75",
+      "issue": "19",
+      "page": "1-4",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/f24b083e2a964c12a8561de1dcd06478"
+    },
+    "external": {
+      "links": [
+        "https://protopedia.net/prototype/6164"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "ｳｯﾄﾞｽﾀｯｸﾁｬﾝ：木材を用いた小型エージェントロボットの開発と印象評価",
+      "authors": [
+        "佐藤 慎之助",
+        "湯村 翼"
+      ],
+      "abstract": "掃除ロボットや配膳ロボット，対話可能なエージェントロボットといった様々な種類のロボットの普及が進む．現存するロボットの筐体の多くは金属や合成樹脂でつくられており，木材でつくられたものはあまりない．ロボットの筐体に木材を用いれば，一般的なロボットとは異なる見た目や手触りとなり，ロボットの活用の可能性が広がる．そこで本研究では，木材を用いた小型エージェントロボットウッドスタックチャンを開発する．ウッドスタックチャンは，オープンソースの小型エージェントロボットスタックチャンをベースにし，その筐体を木で置き換えた．木製のロボットが与える心理的影響を調査するため，木製筐体のウッドスタックチャンとプラスチック製筐体のスタックチャンとの印象を比較する評価実験を実施した．評価実験の結果，木製ロボットはプラスチック製ロボットよりも，安心感や親しみやすさにおいて良い影響を与えることがわかった．",
+      "keywords": [
+        "ロボット"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2001378",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e7571714f686002dd67918",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e7571c14f686002dd6791b",
+      "presentationlLocation": "京都大学（京都府京都市）",
+      "presentationDate": "2025-03-18T00:00:00.000Z",
+      "sortingDate": "2025-03-18T00:00:00.000Z",
+      "id": "67"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67e7573b14f686002dd67921"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "bookTitleAbbr": "EC75",
+      "publishedDate": "2025-03-10T00:00:00.000Z",
+      "volume": "2025-EC-75",
+      "issue": "19",
+      "page": "1-5",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/e1122bcaec8f4226837d3854b89b130e"
+    },
+    "external": {
+      "links": [
+        "https://dev.protopedia.net/prototype/6352"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "MGDSS：慣性式モーションキャプチャを用いたジェスチャによるドローンの操作",
+      "authors": [
+        "山内 瀬智",
+        "湯村 翼"
+      ],
+      "abstract": "ドローンは，農薬の散布や災害救助，ライトアップショーなどで利用されている．操作にはコントローラを用いるのが一般的であるが，その際には操縦者の手が塞がる．両手を塞がずにドローンを使用することができれば，ドローンの活用の可能性は広がる．ジェスチャによる操作システムにはいくつかの事例があるが，カメラやセンサを用いる場合には操縦者の位置が制限され，専用の装着式センサを用いる場合には故障時の保守性が低い．そこで本論文では，汎用的な慣性式モーションキャプチャを用いてドローンをジェスチャで操作するシステム，MGDSSを提案する．本論文では，MGDSSのシステム設計と実装を行い，評価実験を実施した．ジェスチャでの操作性に対する評価の結果，ジェスチャでのドローン操作は行いやすいという結果を得た．また，慣性式モーションキャプチャ機器の精度によって，ジェスチャの判定とのずれが生じ，操作が行えないという課題も明らかとなった．",
+      "keywords": [
+        "ドローン",
+        "モーションキャプチャ"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2001390",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e75a8814f686002dd67924",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e75cac14f686002dd67956",
+      "presentationlLocation": "京都大学（京都府京都市）",
+      "presentationDate": "2025-03-18T00:00:00.000Z",
+      "sortingDate": "2025-03-18T00:00:00.000Z",
+      "id": "68"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/67e75aa614f686002dd67936"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "bookTitleAbbr": "EC75",
+      "publishedDate": "2025-03-10T00:00:00.000Z",
+      "volume": "2025-EC-75",
+      "issue": "19",
+      "page": "1-4",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/4663620d190c420f86d9f88841adf915"
+    },
+    "external": {
+      "links": [
+        "https://dev.protopedia.net/prototype/6384"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "チャッドローン：LLMによる画像認識を用いた自律飛行ドローンシステムの開発と実験",
+      "authors": [
+        "森崎 一歩",
+        "湯村 翼"
+      ],
+      "abstract": "ドローンはさまざまな分野で活用され，操作が不要な自律飛行技術の開発も進む．GNSSが利用できない屋内環境で自律飛行を実現するためにドローン撮影画像の分析が用いられるが，モデルの適用には限界があり、状況に応じた適切な制御にはプログラムやモデルの開発にコストがかかる．そこで本研究では，大規模言語モデル（Large Language Model：LLM）の画像認識技術を用いてドローンが自律飛行を行うチャッドローンを提案する．チャッドローンでは，画像処理のためのモデルやプログラムを用意するのではなく，LLMに送るプロンプトを用意する．ドローンが撮影した画像とプロンプトをLLMに送り，LLMの応答をもとにして状況に合わせた飛行を行う．小型ドローンTelloとChatGPTを用いて，チャッドローンのプロトタイプ開発を行った．チャッドローンの有効性を確認するために，予備実験と本実験を行った．プロンプトの記述を詳細にすることでより意図通りの自律飛行を実施させることができるが，プロンプトが長くなるため応答時間も長くなるという相反関係があることが明らかとなった．",
+      "keywords": [
+        "ドローン",
+        "LLM",
+        "画像処理"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2001391",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e75c3114f686002dd67939",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e75cbc14f686002dd67959",
+      "presentationlLocation": "京都大学（京都府京都市）",
+      "presentationDate": "2025-03-18T00:00:00.000Z",
+      "sortingDate": "2025-03-18T00:00:00.000Z",
+      "id": "69"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/67e75c5414f686002dd67953"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "bookTitleAbbr": "EC75",
+      "publishedDate": "2025-03-10T00:00:00.000Z",
+      "volume": "2025-EC-75",
+      "issue": "19",
+      "page": "1-4",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/e6699af89d714e2eb08b7fa22d9d5e28"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "NOVVS：北海道情報大学図書館における滞在人数可視化システムの開発と検証",
+      "authors": [
+        "南 朝陽",
+        "辻 順平",
+        "湯村 翼"
+      ],
+      "keywords": [
+        "クラウドカウンティング",
+        "画像処理"
+      ],
+      "presentationDate": "2025-03-04T00:00:00.000Z",
+      "sortingDate": "2025-03-04T00:00:00.000Z",
+      "id": "65",
+      "abstract": "北海道情報大学図書館には多くの利用者が来館する．座席の利用状況を確認するには図書館に出向く必要があるが，来館前に確認できるサービスがあれば利便性が高まる．特定空間内の滞在人数を遠隔地で確認するための手法は多数存在する．ただし，『図書館の自由に関する宣言』では利用者の秘密を守ることが求められるため，図書館に導入するサービスには利用者に配慮したシステム設計が必要となる．そこで本研究では，利用者のプライバシーに配慮して滞在人数計測を行う，北海道情報大学図書館の滞在人数可視化システムNOVVS(ノーブス) を開発する．NOVVSは，図書館内の混雑度をWebページとして表示し，来館者はスマートフォンで閲覧することができる．滞在人数の計測には，Webカメラの撮影画像による人物認識を用いた．利用者の秘密を守るため，撮影データを保存しないよう設計し，カメラの設置位置を配慮した．開発したシステムを用い，図書館で1週間の実証実験を実施した．実証実験の結果，NOVVSに多くの需要があることが確認できた．一方，カメラを用いることによる死角や遮蔽の問題も明らかとなった．",
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e750b614f686002dd678d2",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e750ba14f686002dd678d5",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67e7511614f686002dd67905"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2025論文集",
+      "bookTitleAbbr": "インタラクション2025",
+      "publishedDate": "2025-02-23T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/651e888d84314bcab1a307a85861c8cb"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "CHaserWeb:ブラウザ上で動作する対戦型プログラミング学習環境の提案と評価",
+      "authors": [
+        "井上 慎之介",
+        "湯村 翼"
+      ],
+      "keywords": [
+        "プログラミング教育",
+        "Webアプリケーション"
+      ],
+      "id": "64",
+      "presentationDate": "2025-03-03T00:00:00.000Z",
+      "sortingDate": "2025-03-03T00:00:00.000Z",
+      "abstract": "プログラミング学習には様々な環境が用いられており，そのひとつにU-16プログラミングコンテストで用いられる対戦型プログラミングプラットフォームCHaserがある．従来のCHaserは，実行環境のインストールやCHaserサーバーの起動など煩雑な初期設定が必要であり，これが学習者の意欲を削ぐ要因となっていた．また，環境構築におけるOSや端末への依存性が，導入の障壁となっていた．そこで本研究では，Webブラウザ上でCHaserのプログラム記述から実行，デバッグ，盤面表示をワンストップで行えるCHaserWebを提案する．CHaserWebは，Webブラウザ向けPythonランタイムPyodideを用い，Pythonで記述したプログラムを実行可能とした．高校生と大学生を対象に評価実験を実施し，簡便性と使い勝手が高く評価された．CHaserWebが学習者の開発負荷軽減および学習モチベーション向上に寄与し，プログラミング初学者が挫折しにくい学習基盤として有効であることを示唆する結果を得た．",
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/67e134fa14f686002dd678bc",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67e1350014f686002dd678bf",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/67e1352514f686002dd678cf"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2025論文集",
+      "bookTitleAbbr": "インタラクション2025",
+      "publishedDate": "2025-02-23T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/f1885437decb42ff88c8beafaf554535"
+    },
+    "external": {
+      "links": [
+        "https://shin3391.github.io/CHaserWeb/",
+        "https://github.com/shin3391/CHaserWeb",
+        "https://protopedia.net/prototype/6340"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "CARMUI-NET：自動運転車遠隔監視のためのバーチャル都市プラットフォームにおける通信品質変動機能の開発と評価",
+      "authors": [
+        "秋葉 貴文",
+        "清水 怜良",
+        "井上 慎之介",
+        "金子 直矢",
+        "牧野 仁宣",
+        "湯村 翼"
+      ],
+      "abstract": "公道での走行が始まったレベル4 自動運転車は，運転者が乗車しない場合に遠隔監視が必要である．遠隔監視システムのUIは監視を容易にするために改善が必須だが，自動運転車の実機を使った開発はコストやリソース面で困難である．我々は，以前の研究において，3DCGで構築したバーチャル都市を活用して自動運転車遠隔監視システムのUI検討を行うプラットフォームCARMUIを開発した．実際の遠隔監視システムでは，自動車との通信は，ローミングや周辺の混雑状況などの様々な要因によって品質が変化する．そのため，CARMUIにおいても通信品質の変化を考慮することが求められる．そこで本研究では，CARMUIに通信品質変動機能を追加したプラットフォームCARMUI-NETを開発する．CARMUI-NETの設計および実装を行い，通信品質変動機能の性能と有効性を評価した．また，通信品質変動の影響を考慮した模擬評価実験を実施した．",
+      "keywords": [
+        "CARMUI",
+        "ネットワーク"
+      ],
+      "language": "ja",
+      "externalUrl": "https://ipsj.ixsq.nii.ac.jp/records/2000295",
+      "thumbnail": "https://dl.yumulab.org/api/files/67c1c4a314f686002dd67881",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67c1c4a714f686002dd67884",
+      "presentationlLocation": "大阪大学中之島センター（大阪府大阪市）",
+      "presentationDate": "2025-02-28T00:00:00.000Z",
+      "sortingDate": "2025-02-28T00:00:00.000Z",
+      "id": "62"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/67c1c4c814f686002dd678b0"
+    },
+    "publication": {
+      "bookTitle": "研究報告ユビキタスコンピューティングシステム（UBI）",
+      "publishedDate": "2025-02-20T00:00:00.000Z",
+      "volume": "2025-UBI-85",
+      "issue": "30",
+      "page": "1-6",
+      "bookTitleAbbr": "UBI85"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/83ea43d10adc4509aeeee5a5549182ca"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "talk",
+      "title": "待機電力を削減したネットワーク更新型電子ペーパーサイネージの研究開発",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/67c1c9f714f686002dd678b3",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67c1c9fb14f686002dd678b6",
+      "presentationlLocation": "Blooming Camp by さくらインターネット（大阪府大阪市）",
+      "presentationDate": "2025-02-26T00:00:00.000Z",
+      "sortingDate": "2025-02-26T00:00:00.000Z",
+      "id": "63"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "Japan UBI Symposium 2025"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/a79d72cc98064894b6c8e7c991d9a762"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "ASMR動画に合わせて撫でられる感覚を提示するシステム ASSADS の実装",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "abstract": "ささやき声や咀嚼音などを再生して聴覚を刺激し，心地よさやぞくぞく感を与える ASMR という ジャンルの動画がある.ASMR には，バイノーラルマイクを手で撫でる音を視聴者が聞くことで，撫でら れている感覚を体感するものがある.しかし，撫でる ASMR 動画では，撫でられたという触覚的な体感を 得ることはできない.そこで本研究では，音に加えて擬似触覚を付与することで，ASMR 動画にあわせて 撫でられる感覚を提示するシステム ASSADS(アサダス)を提案する.ASSADS は，ASMR 動画に合わせ て制御コマンドを送信する ASSADS Connect と，ユーザの頭部を温めて疑似触覚を提示するヘルメット型 デバイス ASSADS GEAR で構成される.我々の既報では，ASSADS の設計と予備実装をおこない，疑似 触覚について考察した.本稿では，ASSADS Connect の実装を進め，ASSADS GEAR の実装形状につい て検討した.",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2024Proceedings/index.html",
+      "thumbnail": "https://dl.yumulab.org/api/files/67714ec214f686002dd67864",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67714ec614f686002dd67867",
+      "presentationlLocation": "苗場プリンスホテル（新潟県南魚沼郡）",
+      "presentationDate": "2024-12-11T00:00:00.000Z",
+      "sortingDate": "2024-12-11T00:00:00.000Z",
+      "id": "60"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67714efc14f686002dd6786f"
+    },
+    "publication": {
+      "bookTitle": "第32回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2024) 論文集",
+      "bookTitleAbbr": "WISS2024",
+      "publishedDate": "2024-12-04T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "MR流体を用いて形状と硬さを動的に提示する触覚デバイスの提案",
+      "authors": [
+        "上村 宙",
+        "湯村 翼"
+      ],
+      "abstract": "触覚を提示するデバイスとして，振動を用いて手触りなどを再現するもの，ピンアレイを用いた形 状や点字を提示するものなどが研究されてきた.これらのデバイスでは，手触りや形状，硬さなど触覚情 報の部分的な要素の提示にとどまり，触覚の複合的な提示を行うことはできていない.そこで本研究では， 形状と硬さの両方を動的に提示するデバイスを開発する.MR 流体と 6 個の電磁石を用いて 2 × 3 の解像 度のプロトタイプデバイスの実装を行った.また，操作用の GUI アプリケーションを実装した.このデバ イスにより，点字の表示や，物が動いているような感覚を提示することが可能となる.",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2024Proceedings/index.html",
+      "thumbnail": "https://dl.yumulab.org/api/files/677150b914f686002dd67873",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/677150bc14f686002dd67876",
+      "presentationlLocation": "苗場プリンスホテル（新潟県南魚沼郡）",
+      "presentationDate": "2024-12-11T00:00:00.000Z",
+      "sortingDate": "2024-12-11T00:00:00.000Z",
+      "id": "61"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/677150dc14f686002dd6787e"
+    },
+    "publication": {
+      "bookTitle": "第32回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2024) 論文集",
+      "bookTitleAbbr": "WISS2024",
+      "publishedDate": "2024-12-03T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "入浴時に映像が投影される一人用足湯システムの開発と運用",
+      "authors": [
+        "玉堀 舜",
+        "宮崎 創太",
+        "太田 駿",
+        "小山田 悠人",
+        "片岡 美樹",
+        "中山 貴博",
+        "早坂 匠真",
+        "寳金 和志",
+        "湯村 翼"
+      ],
+      "keywords": [
+        "足湯",
+        "プロジェクションマッピング"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/6771484714f686002dd6782d",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6771484b14f686002dd67830",
+      "presentationlLocation": "北見工業大学（北海道北見市）",
+      "presentationDate": "2024-12-01T00:00:00.000Z",
+      "sortingDate": "2024-12-01T00:00:00.000Z",
+      "id": "59"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6771486c14f686002dd67861"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2024講演論文集",
+      "publishedDate": "2024-12-01T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/7b51faff8f744b81a45002d0f28871c4"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "NNEPS: Network-Updated E-Paper Signage with Reduced Standby Power Consumption",
+      "authors": [
+        "Takafumi Akiba",
+        "Tsubasa Yumura"
+      ],
+      "abstract": "Electronic Paper Signage (EPS) is used in various ways, such as at bus stops and in menu lists. One type of EPS is a network-updated EPS that updates content via the Internet. In the network update type EPS, a management computer consumes power constantly while awaiting contents. Therefore, a feature of the electronic paper (e-paper), namely, that it does not require standby power, cannot be utilized. To solve this problem, we proposed a network-updated EPS system that reduces power consumption during standby communication. We developed a prototype of the proposed EPS system and evaluated its power consumption.",
+      "keywords": [
+        "Electronic Paper",
+        "Signage",
+        "Power Saving"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.thinkmind.org/library/SENSORCOMM/SENSORCOMM_2024/sensorcomm_2024_1_30_10014.html",
+      "thumbnail": "https://dl.yumulab.org/api/files/67713bed14f686002dd6780e",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67713bf314f686002dd67811",
+      "presentationlLocation": "Hotel Novotel Cap 3000 (Nice, France)",
+      "presentationDate": "2024-11-06T00:00:00.000Z",
+      "sortingDate": "2024-11-06T00:00:00.000Z",
+      "id": "57"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67713c3914f686002dd6781c"
+    },
+    "publication": {
+      "bookTitle": "The Eighteenth International Conference on Sensor Technologies and Applications",
+      "bookTitleAbbr": "SENSORCOMM 2024",
+      "publishedDate": "2024-11-03T00:00:00.000Z",
+      "page": "8-9",
+      "ISSN": "2308-4405",
+      "ISBN": "978-1-68558-207-4"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/e7823bf49f374b908c61fbc2750ac453"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Shoe Recognition Model with Floor Pressure Sensors",
+      "authors": [
+        "Sora Kamimura",
+        "Tetsuo Yutani",
+        "Atsuko Shibuya",
+        "Tsubasa Yumura"
+      ],
+      "abstract": "In research on traffic flow analysis, computer vision methods using camera images have been the predominant approach. However, using cameras for flow line analysis presents challenges, such as creating blind spots caused by obstructions such as people or objects. Additionally, privacy concerns arise. These issues can be mitigated using floor pressure sensors for flow line analysis. To successfully perform flow line analysis with these sensors, it is essential to identify individuals based on factors such as weight, stride length, speed, and shoe type. In this study, we developed a system to identify shoe types from footprint pressure distribution using a neural network model. Our focus was on three types of shoes: sneakers, room shoes, and sandals. We collected data for each category and created a recognition model, achieving an F-measure of 97.6% in the best model. The primary challenges for practical implementation are measurement time and durability.",
+      "keywords": [
+        "Neural Networks",
+        "Flow Line Analysis",
+        "Pressure-Sensitive Conductive Sheet"
+      ],
+      "language": "en",
+      "externalUrl": "https://www.thinkmind.org/library/SENSORCOMM/SENSORCOMM_2024/sensorcomm_2024_1_40_10017.html",
+      "thumbnail": "https://dl.yumulab.org/api/files/67713e5714f686002dd6781f",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/67713e5c14f686002dd67822",
+      "presentationlLocation": "Hotel Novotel Cap 3000 (Nice, France)",
+      "presentationDate": "2024-11-06T00:00:00.000Z",
+      "sortingDate": "2024-11-06T00:00:00.000Z",
+      "id": "58"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/67713e9514f686002dd67828"
+    },
+    "publication": {
+      "bookTitle": "The Eighteenth International Conference on Sensor Technologies and Applications",
+      "bookTitleAbbr": "SENSORCOMM 2024",
+      "publishedDate": "2024-11-03T00:00:00.000Z",
+      "page": "10-11",
+      "ISSN": "2308-4405",
+      "ISBN": "978-1-68558-207-4"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/66ebe3010e66495798e4f2c3f3ad7048"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "ASMR 動画に合わせて撫でられる感覚を提示するシステムの検討",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "abstract": "ささやき声や咀嚼音などを再生し，聴覚への刺激により心地よさやぞくぞく感を与えるASMRというジャンルの動画がある．ASMRには，配信者がバイノーラルマイクを手で撫でることで音を発生させ，視聴者はこの音を聞くことで撫でられている感覚を体感するものがある．しかし，撫でるASMR動画では，撫でられたという触覚的な体感を得ることはできない．そこで本研究では，聴覚に加えて擬似触覚を付与することで，ASMRをより楽しめるシステムASSADSを提案する．ASSADSは，ASMR動画が撫でられシーンであるかどうかを判定し通知するASSADS Connectと，ユーザへの撫でられ感覚を提示するヘルメット型デバイスASSADS GEARで構成する．ASSADS GEARは，視聴者の頭部を温めることで擬似触覚を生成する．本研究ではASSADSの設計とプロトタイプ実装をおこない，疑似触覚について考察した．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00238663/",
+      "thumbnail": "https://dl.yumulab.org/api/files/6770f38114f686002dd677fd",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6770f38614f686002dd67800",
+      "presentationlLocation": "北海道情報大学（北海道江別市）",
+      "presentationDate": "2024-09-03T00:00:00.000Z",
+      "sortingDate": "2024-09-03T00:00:00.000Z",
+      "id": "56"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6770f3b414f686002dd6780b"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
+      "bookTitleAbbr": "EC2024",
+      "publishedDate": "2024-08-26T00:00:00.000Z",
+      "volume": "2024",
+      "page": "526-528"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/5854e0e718894b1d8ccceb0ba30161a3"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Sound Times：音のインスタレーション作品制作・展示プロジェクトの実施報告",
+      "authors": [
+        "棚田 隼斗",
+        "宮内 康希",
+        "星 沙也加",
+        "岩橋 龍佑",
+        "清水 怜良",
+        "小村 穂乃花",
+        "杉澤 愛美",
+        "近澤 潤",
+        "平山 晴花",
+        "大島 慶太郎",
+        "湯村 翼"
+      ],
+      "abstract": "Sound Timesは，2023年度に北海道情報大学で実施された，音に関するインスタレーション作品の制作と展示のプロジェクトである．北海道情報大学学生チャレンジプロジェクトに採択され，6名の学生と2名のメンター教員によって進められた．音と釣り，音と波，音と影絵，音と木の装置の4作品を制作し，学内での2度のプレ展示を経て2024年3月2日に本展示を行った．本論文では，Sound Timesの実施について，概要，準備内容，作品詳細，課題等について報告する．",
+      "keywords": [],
+      "thumbnail": "https://dl.yumulab.org/api/files/6770edb614f686002dd67764",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6770edce14f686002dd67767",
+      "presentationlLocation": "北海道情報大学",
+      "presentationDate": "2024-09-02T00:00:00.000Z",
+      "sortingDate": "2024-09-02T00:00:00.000Z",
+      "id": "53",
+      "externalUrl": "http://id.nii.ac.jp/1001/00238644/"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/6770ee4b14f686002dd6779a"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
+      "bookTitleAbbr": "EC2024",
+      "publishedDate": "2024-08-26T00:00:00.000Z",
+      "volume": "2024",
+      "page": "448-452"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/fc95afb35afa4c1cbfe89e0783c283de"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "床面圧力センサによる靴の識別モデルの開発と評価",
+      "authors": [
+        "上村 宙",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "abstract": "過去の動線分析の研究では，カメラ映像を用いたコンピュータビジョン的方法が主流である．しかし，カメラを用いた動線分析では，遮蔽物による死角が生じるという欠点がある．また，プライバシー侵害の懸念もある．これらの問題は，動線分析に床面圧力センサを用いることで回避することができる．床面圧力センサを使って動線解析を行うには，体重，歩幅，スピード，靴の種類などから人を識別する必要がある．本研究では，ニューラルネットワークを用いて靴の圧力分布から靴の種類を識別する手法を開発した．スニーカー，上靴，サンダルの3種類の靴を用意してデータを収集し，識別モデルを作成した．もっともよいモデルの正答率は97.4\\%であった．実運用における課題は計測時間と耐久性である．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00238641/",
+      "thumbnail": "https://dl.yumulab.org/api/files/6770f0a014f686002dd677a0",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6770f0a414f686002dd677a3",
+      "presentationlLocation": "北海道情報大学（北海道江別市）",
+      "presentationDate": "2024-09-02T00:00:00.000Z",
+      "sortingDate": "2024-09-02T00:00:00.000Z",
+      "id": "54"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6770f0cd14f686002dd677e2"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
+      "bookTitleAbbr": "EC2024",
+      "publishedDate": "2024-08-26T00:00:00.000Z",
+      "volume": "2024",
+      "page": "434-437"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/41ae08e58c9246bf8b18710be51237d4"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "北海道情報大学図書館における滞在人数可視化システムの開発",
+      "authors": [
+        "南 朝陽",
+        "辻 順平",
+        "湯村 翼"
+      ],
+      "abstract": "北海道情報大学の図書館は建物3フロア分あり，職員が特定のエリアに集中しているため，上層階や奥まったスペースでは目の届かないところが多い．そのため，利用者数の把握が難しく，適切なサービス提供が困難である．そこで本研究では，Webカメラを用いた滞在人数可視化システムを開発する．館内に設置されたWebカメラから画像処理で人物認識を行い，リアルタイムでデータを収集し，滞在人数の可視化を行う．また図書館の自由に関する宣言に基づきプライバシーを考慮したシステム設計を目指す．これにより，職員の状況把握や利用者の利便性向上が期待される．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00238639/",
+      "thumbnail": "https://dl.yumulab.org/api/files/6770f21214f686002dd677e5",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6770f22914f686002dd677e8",
+      "presentationlLocation": "北海道情報大学（北海道江別市）",
+      "presentationDate": "2024-09-02T00:00:00.000Z",
+      "sortingDate": "2024-09-02T00:00:00.000Z",
+      "id": "55"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/6770f24a14f686002dd677fa"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2024論文集",
+      "bookTitleAbbr": "EC2024",
+      "publishedDate": "2024-08-26T00:00:00.000Z",
+      "volume": "2024",
+      "page": "434-437"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/4722d2c6b0a744d493deb7a01dd177c3"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "LTooL: 思い立った時にLTができるプレゼンテーションツールの開発と評価",
+      "authors": [
+        "辻永 泰輔",
+        "湯村 翼"
+      ],
+      "abstract": "IT勉強会には，開発成果やアイディアを短時間で発表するライトニングトーク（LT）という文化がある．聴講者から意見をもらうことで開発の質を高めることがLTの目的のひとつである．しかし，PowerPoint等の既存のプレゼンテーションツールをつかった資料作成は時間を要するため，開発時間が圧迫される．そこで，LTを対象としたプレゼンテーションツールLTooLを開発する．LTooLでは，日常的に記録している作業メモからスライドを生成することで資料作成時間を短縮する．本研究では，LTooLの設計と実装を行い，評価実験を実施した．LTooLの操作性や生成スライドに対する評価の結果，LTooLがLTでの利用に適しているという結果を得た．",
+      "keywords": [
+        "プレゼンテーション",
+        "Webアプリケーション"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00233540/",
+      "id": "52",
+      "presentationlLocation": "京都学・歴彩館（京都府京都市）",
+      "presentationDate": "2024-03-18T00:00:00.000Z",
+      "sortingDate": "2024-03-18T00:00:00.000Z",
+      "thumbnail": "https://dl.yumulab.org/api/files/65fed801230bc2001e13ad09",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65fed806230bc2001e13ad0c"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65fed825230bc2001e13ad1c"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2024-03-10T00:00:00.000Z",
+      "volume": "2024-EC-71",
+      "issue": "15",
+      "page": "1-5",
+      "ISSN": "2188-8914",
+      "bookTitleAbbr": "EC71"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": [
+        "https://ltool.gachal.net/material/Gachal29/c0c2b26a-a8f3-462b-8aba-380281a3e897/"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "サウナでのプロジェクションマッピングの可能性の検討",
+      "authors": [
+        "小泉 翔平",
+        "湯村 翼"
+      ],
+      "abstract": "サウナでの新たな楽しみ方の一つとして，サウナ内壁へのプロジェクションマッピングを提案する．サウナでのプロジェクションマッピングの事例は存在するが，その手法は確立されておらず，効果も確認されていない．そこで本研究では，サウナでのプロジェクションマッピングの可能性と課題を明らかにするため，サウナ施設で二度の評価実験を行った．実験では，サウナ室のガラス窓を通じてサウナ室内壁にプロジェクターで映像を投影した．炎，星空，サイケデリックトランスなどの多様なジャンルの映像を投影し，サウナの楽しみ方を広げるコンテンツを探った．実験を通じて，ガラス窓が曇るなどの課題も明らかとなった．",
+      "keywords": [
+        "プロジェクションマッピング",
+        "サウナ"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00233533/",
+      "thumbnail": "https://dl.yumulab.org/api/files/65f6f36c230bc2001e13acd2",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65f6f371230bc2001e13acd7",
+      "presentationlLocation": "京都学・歴彩館（京都府京都市）",
+      "presentationDate": "2024-03-17T00:00:00.000Z",
+      "sortingDate": "2024-03-17T00:00:00.000Z",
+      "id": "50"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65f6f3a2230bc2001e13acf3"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2024-03-10T00:00:00.000Z",
+      "volume": "2024-EC-71",
+      "issue": "15",
+      "page": "1-5",
+      "ISSN": "2188-8914",
+      "bookTitleAbbr": "EC71"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/ceb51dd64daa4cba9b367c26bc762c5a"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "眠眠ガチャ：ガチャを活用した睡眠意欲向上アプリの開発",
+      "authors": [
+        "乾 泰河",
+        "湯村 翼"
+      ],
+      "abstract": "課金ガチャは依存性が高い．本研究では，その依存性の高さを活用して，睡眠をするとガチャを回せる睡眠意欲向上アプリ眠眠ガチャを開発する．眠眠ガチャは、睡眠時間管理アプリとガチャアプリで構成される．睡眠時間管理アプリはiOSアプリケーションとして実装した．ガチャアプリは，北海道の市町村を擬人化したキャラクターをひけるガチャをWebアプリケーションとして実装した．評価実験の結果，操作のシンプルさとキャラクターへの愛着という要素が，睡眠意欲向上アプリにおいて重要であるという結果を得た．この2つの要素は，アプリの設計においてトレードオフの関係となる．",
+      "keywords": [
+        "ヘルスケア",
+        "睡眠",
+        "ガチャ",
+        "ゲーミフィケーション",
+        "生成AI"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00233537/",
+      "thumbnail": "https://dl.yumulab.org/api/files/65f6f676230bc2001e13acf8",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65f6f688230bc2001e13acfd",
+      "presentationlLocation": "京都学・歴彩館（京都府京都市）",
+      "presentationDate": "2024-03-17T00:00:00.000Z",
+      "sortingDate": "2024-03-17T00:00:00.000Z",
+      "id": "51"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65f6f6e8230bc2001e13ad05"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2024-03-10T00:00:00.000Z",
+      "volume": "2024-EC-71",
+      "issue": "19",
+      "page": "1-4",
+      "ISSN": "2188-8914",
+      "bookTitleAbbr": "EC71"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/cde76d0d0a154b15ba8d390e68cbbde3"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "待機電力を削減したネットワーク更新型電子ペーパーサイネージの開発と評価",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "abstract": "電子ペーパーサイネージ (Electric Paper Signage : EPS) は，バス停やメニュー表といった様々な活用がされている．EPS の種類のひとつに，インターネット経由でコンテンツの更新を行うネットワーク更新型EPSがある． ネットワーク更新型EPSは，制御を行うコンピュータが，コンテンツの待ち受けのために電力を常時消費してしまう．そのため，待機電力が不要という電子ペーパーの特徴が活かせないことが課題である．この課題を解決するために，本研究では，通信待機時に使用する電力を削減するネットワーク更新型電子ペーパーサイネージを提案し消費電力について評価を行った．",
+      "keywords": [
+        "電子ペーパー",
+        "サイネージ",
+        "省電力"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00232933/",
+      "thumbnail": "https://dl.yumulab.org/api/files/65f6f0ac230bc2001e13aca2",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65f6f0b1230bc2001e13aca5",
+      "presentationlLocation": "宮古島市未来創造センター",
+      "presentationDate": "2024-03-12T00:00:00.000Z",
+      "sortingDate": "2024-03-12T00:00:00.000Z",
+      "id": "49"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/65f6f0f0230bc2001e13accd"
+    },
+    "publication": {
+      "bookTitle": "研究報告インターネットと運用技術（IOT）",
+      "publishedDate": "2024-03-05T00:00:00.000Z",
+      "volume": "2024-IOT-64",
+      "issue": "27",
+      "page": "1-6",
+      "ISSN": "2188-8787"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/f4f54e4a84b347a08b9de918bf737bbd"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "CARMUI：自動運転車遠隔監視システムのUI検討のためのバーチャル都市プラットフォームの開発",
+      "authors": [
+        "井上 慎之介",
+        "清水 怜良",
+        "金子 直矢",
+        "阿部 博",
+        "湯村 翼"
+      ],
+      "abstract": "公道での走行が始まったレベル4自動運転車は，運転者が乗車しない場合に遠隔監視が必要である．遠隔監視システムのユーザインタフェース(UI)は改善の余地があるが，UI改善を行うために自動運転車の実機を運行することは，コストやリソースの面で困難である.そこで本研究では，3次元コンピュータグラフィックス(3DCG)で構築したバーチャル都市を用いて自動運転車遠隔監視システムのUI検討を行うバーチャル都市プラットフォームCARMUIを開発する．CARMUIの設計と実装を行い，それを用いて遠隔監視システムのUIの模擬評価実験を実施した．CARMUIに対する評価の結果，CARMUIが自動運転車遠隔監視システムのUI検討に有用であることが期待できる．",
+      "keywords": [
+        "自動運転",
+        "デジタルツイン",
+        "PLATEAU"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/65e9baf8230bc2001e13ac58",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65e9bafd230bc2001e13ac5b",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2024-03-06T00:00:00.000Z",
+      "sortingDate": "2024-03-06T00:00:00.000Z",
+      "id": "44"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/65e9bc43230bc2001e13ac6e"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2024論文集",
+      "publishedDate": "2024-02-28T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/29cc37fe201344178c724f6217f24b4a"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "GRAB：VRコントローラに握力感知機能を追加する拡張センサ",
+      "authors": [
+        "岡 秀哉",
+        "湯村 翼"
+      ],
+      "abstract": "VRコントローラには，握力で操作する機能は一般的には搭載されていない．VRコントローラに握力感知機能を追加できれば，握り潰しの操作を行うことができるなど，コンテンツ表現の幅が広がる．そこで本研究では，既存のVRコントローラに巻きつけるだけで握力感知機能を追加するベルト状センサGRABを開発する．GRABの有効性を検証するため，VRテストアプリを実装して評価実験を実施した．評価実験の結果，想定通りの操作が可能であることが確認できた．また，任意の握力強度に調整することが困難という課題も明らかとなった．",
+      "keywords": [
+        "VR",
+        "ハードウェア"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/65e9bdc0230bc2001e13ac71",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65e9bdc4230bc2001e13ac74",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2024-03-06T00:00:00.000Z",
+      "sortingDate": "2024-03-06T00:00:00.000Z",
+      "id": "45"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/65e9be17230bc2001e13ac7a"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2024論文集",
+      "publishedDate": "2024-02-28T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/d9ab9427c4a4459a97caa00a4b864dae"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "RolBo - 巻ける電光掲示板の開発",
+      "authors": [
+        "鎌田 峻輔",
+        "湯村 翼"
+      ],
+      "abstract": "電光掲示板は，視認性に優れた情報掲示機器であり，様々な場面で活用される．壁などに固定して掲示するのが一般的な使い方であるが，気軽に持ち運んで使用することができれば，電光掲示板の活用の場は広がる．そこで本研究では，巻き取ることができる電光掲示板RolBoの開発を行う．RolBoは，メジャーの仕組みを参考にして設計した．非使用時には筐体にコンパクトに格納され，必要な時に引き出して使用する．8本のLEDテープを用いてRolBoのプロトタイプ実装を行った．筐体は3Dモデリングソフトで設計し，3Dプリンタで出力した．LEDテープに任意の文字列を表示する制御プログラムをArduino Unoに実装した．RolBoの有用性を検証するために，被験者に使用感をたずねる評価実験を行い，サイズ感や携帯性に関しておおむね良い評価を得た．より小型でバッテリーを持つマイコンを使用すれば，RolBoの携帯性をさらに高めることができるだろう．",
+      "keywords": [
+        "ハードウェア",
+        "LED"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/65e9bed5230bc2001e13ac7d",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65e9beda230bc2001e13ac80",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2024-03-06T00:00:00.000Z",
+      "sortingDate": "2024-03-06T00:00:00.000Z",
+      "id": "46"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65e9befc230bc2001e13ac86"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2024論文集",
+      "publishedDate": "2024-02-28T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/666bc76acdb344a1aafb35f64495a8e0"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "ニューラルネットワークを用いた床面圧力センサによる靴の種類の識別",
+      "authors": [
+        "上村 宙",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "abstract": "人物の移動を追跡する動線分析には，カメラを用いた画像認識による方法が多く提案される．しかし，カメラを用いた動線分析では，遮蔽物による死角が生じるという欠点がある．また，プライバシー侵害の懸念もある．これらの問題は，動線分析に床面圧力センサを用いることで回避することができる．そのためには，同一人物の靴を同定する必要がある．そこで本研究では，圧力センサ上に靴を置いた際の圧力分布を元にニューラルネットワークを用いて靴の種類を識別する手法を開発する．スニーカー，上靴，サンダルの3種類の靴を用意してデータを収集し，識別モデルを作成した．このモデルの正答率は82.6%であった．実環境での運用を見据えると，計測時間や耐久性に課題があり，さらなる改善が必要である．",
+      "keywords": [
+        "ハードウェア",
+        "機械学習"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/65e9bfce230bc2001e13ac89",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65e9bfd3230bc2001e13ac8c",
+      "id": "47",
+      "sortingDate": "2024-02-28T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65e9bfea230bc2001e13ac93"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2024論文集",
+      "publishedDate": "2024-02-28T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/143de77d304d4055b9f27fa455ee4d76"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Jadwelry：フィンガーブレスレット型疲労通知デバイスの開発",
+      "authors": [
+        "藤谷 梨生",
+        "湯村 翼"
+      ],
+      "abstract": "ウェアラブルデバイスは身につけるだけでヘルスケアがおこなえる．しかし，ウェアラブルデバイスの見た目についてはデザインが固定化され，衣服によっては浮いてしまうという問題がある．本研究では，ヘルスケア機能を搭載したアクセサリとして，フィンガーブレスレット型疲労通知デバイスを開発する．プロトタイプでは，脈拍数を心拍数に変換し，心拍数が基準値を下回ったときにLEDを点灯させ，疲労を通知することができた．また，Jadwelryがアクセサリとして身につけられるデバイスであるか,デザインの種類を増やせるものであるか明らかにするため,評価実験をおこなった．その結果,Jadwelryは一部見た目が悪い箇所があり装着しにくいという課題があるが,日常生活で使用できるデバイスであり,デザインの種類を増やせるアクセサリであるという評価を得ることが出来た．",
+      "keywords": [
+        "ハードウェア",
+        "ウェアラブルデバイス",
+        "LED",
+        "ヘルスケア"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/65e9c0c4230bc2001e13ac96",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65e9c0c8230bc2001e13ac99",
+      "id": "48",
+      "sortingDate": "2024-02-28T00:00:00.000Z"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/65e9c0d8230bc2001e13ac9f"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2024論文集",
+      "publishedDate": "2024-02-28T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/f2e8031fadc94f31bf577083164e0326"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "エンタテインメントシンポジウム 2023 における Re:commend-demo トーク録",
+      "authors": [
+        "渡邊 恵太",
+        "水口 充",
+        "栗原 一貴",
+        "簗瀬 洋平",
+        "馬場 保仁",
+        "片寄 晴弘",
+        "三上 浩司",
+        "園山 隆輔",
+        "小坂 崇之",
+        "橋田 光代",
+        "阪口 紗季",
+        "湯村 翼",
+        "小泉 直也",
+        "松下 光範",
+        "山西 良典"
+      ],
+      "abstract": "本稿はエンタテインメントコンピューティングシンポジウム2023 において実施された企画「Re:commend-demo（レコメンデモ）」の記録である．レコメンデモはシンポジウムで展示されたデモを専門員が体験・評価し，各々が最も「推したい」デモの評価ポイントを言語化してプレゼンするというものであり，エンタテインメントシステムの「体験」の評価を共有することで今後のEC研究分野を考える上での礎となることを企図している． 本企画では13人の評価者（専門員）が事前に定められ，10件のデモ発表がレコメンデモとして選出された．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00231539/",
+      "presentationlLocation": "東京工科大学",
+      "presentationDate": "2023-12-20T00:00:00.000Z",
+      "sortingDate": "2023-12-20T00:00:00.000Z",
+      "id": "43"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/65e9b471230bc2001e13ac55"
+    },
+    "publication": {
+      "bookTitle": "研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2023-12-20T00:00:00.000Z",
+      "volume": "2023-EC-70",
+      "issue": "2",
+      "page": "1-9",
+      "ISSN": "2188-8914"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "床面圧力センサ開発における感圧導電シート分離方式の検討",
+      "authors": [
+        "上村 宙",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "abstract": "人の移動の軌跡を分析する動線分析の実現方法のひとつとして，床面圧力センサが用いられる．床面圧力センサの開発において，用いられる感圧導電シートの分離方式がセンサの精度に影響を与える可能性がある.そこで本研究では，床面圧力センサの開発において，感圧導電シートVelostatの分離方式が与える影響を調査した．比較実験を行うため，Velostatの両面に銅箔テープを格子状に貼り，各点の電圧を計測する仕組みの4種類の圧力センサを開発した．実験の結果，送電する銅箔テープに対して平行となる向きに分離した帯状分離型(平行)が床面圧力センサに最も適していることが明らかになった．また，問題点として，センサに圧力をかけた瞬間の大幅な電圧低下や，計測値の取得に時間を要することも明らかになった．",
+      "keywords": [],
+      "language": "ja",
+      "presentationlLocation": "Royal Hotel 八ヶ岳（山梨県北杜市）",
+      "presentationDate": "2023-12-01T00:00:00.000Z",
+      "sortingDate": "2023-12-01T00:00:00.000Z",
+      "id": "41",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/65787081230bc2001e13ac3d"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/65786f91230bc2001e13ac39"
+    },
+    "publication": {
+      "bookTitle": "第31回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2021) 論文集",
+      "bookTitleAbbr": "WISS2023",
+      "publishedDate": "2023-11-22T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/ec86902ee11a407aa794c414eb34c7ef"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "titleOfEnglish": "Experiments on ROP Attack with Various Instruction Set Architectures",
+      "authors": [
+        "Yuuma Taki",
+        "Masayuki Fukumitsu",
+        "Tsubasa Yumura"
+      ],
+      "abstract": "The return-oriented programming (ROP) attack attempts to execute malicious code by collecting code snippets, and several ROP variants have been proposed. Although there are security mechanisms against ROP attacks, these require high-spec architectures with respect to memories and CPUs. Recently, Cloosters et al. analyzed the features of various CPUs including the ARM 32, the ARM64 and the RISC-V, and they developed a method to search ROP gadgets automatically and then construct an ROP chain. In this paper, we reconsider the   possibility of ROP attacks against the x86, ARM32, and ARM64 architectures to investigate their differences. In an experiment, these processors were emulated using the QEMU emulator, and we demonstrate that our method allows us to construct the target environments easily even for multiple processors.",
+      "keywords": [
+        "Return-oriented Programming",
+        "Security",
+        "CPU Architectures"
+      ],
+      "language": "en",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6578727c230bc2001e13ac40",
+      "presentationlLocation": "Kunibiki Messe (Matsue, Japan)",
+      "presentationDate": "2023-12-01T00:00:00.000Z",
+      "sortingDate": "2023-12-01T00:00:00.000Z",
+      "id": "42",
+      "title": "Experiments on ROP Attack with Various Instruction Set Architectures"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/657872ca230bc2001e13ac4d"
+    },
+    "publication": {
+      "bookTitle": "Bulletin of Networking, Computing, Systems, and Software",
+      "volume": "13",
+      "number": "1"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/6ebf0f8bb456450c8b13b5ae129b4445"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "巻ける電光掲示板の開発",
+      "authors": [
+        "鎌田 峻輔",
+        "湯村 翼"
+      ],
+      "abstract": "情報を発信する電子媒体として電光掲示板が存在しているが，持ち運びできず，使わないときにコンパクトに収納できない．この欠点を解消できれば，電光掲示板の特性を生かした広告が容易になる．本研究では，メジャーの機構を活かした，巻ける電光掲示板RolBoを開発する．",
+      "keywords": [
+        "電光掲示板",
+        "ディスプレイ",
+        "LED"
+      ],
+      "language": "ja",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2023-10-14T00:00:00.000Z",
+      "sortingDate": "2023-10-14T00:00:00.000Z",
+      "id": "36"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/652d2ed3230bc2001e13ac1c"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
+      "publishedDate": "2023-10-14T00:00:00.000Z",
+      "page": "115-118"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/3d37849f8bad420382ba2b18a468f49e"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "ネットワーク更新型電子ペーパーサイネージの待機電力削減",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "abstract": "本研究では，画面更新時のみ電子ペーパーサイネージを起動する「ノーマリーオフ・ネットワーク型電子ペーパーサイネージ」Normally-off Network Electric Paper Signage：NNEPS)の開発を行う．EPSをノーマリーオフ化することによりNNEPSを実現する．NNEPSは，画面更新前に通知を受け取り，画面を更新する際に電源をオンにする．そして，画面の更新終了後に電源をオフにすることにより，通信待機時に使用する電力を削減する．",
+      "keywords": [
+        "電子ペーパー",
+        "サイネージ",
+        "省電力"
+      ],
+      "language": "ja",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2023-10-14T00:00:00.000Z",
+      "sortingDate": "2023-10-14T00:00:00.000Z",
+      "id": "37"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/652d2fd0230bc2001e13ac21"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
+      "publishedDate": "2023-10-14T00:00:00.000Z",
+      "page": "119-120"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/8219788c301148e389efc5879636003d"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "VRコントローラに握力検出機能を拡張するセンサの開発",
+      "authors": [
+        "岡 秀哉",
+        "湯村 翼"
+      ],
+      "abstract": "一般的にVRコントローラには，握力検出機能が搭載されていない．しかし既存のVRコントローラに握力検出の機能を拡張できれば，あらゆる既存のVRデバイスにおいて握力による操作が可能となる．本研究は，VRコントローラの持ち手に巻きつけ，握力検出機能を拡張するベルト状センサ，GRAB(Grip Recognizable Attachment Belt)を開発する．",
+      "keywords": [
+        "バーチャルリアリティ",
+        "コントローラ",
+        "センシング"
+      ],
+      "language": "ja",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2023-10-14T00:00:00.000Z",
+      "sortingDate": "2023-10-14T00:00:00.000Z",
+      "id": "38"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/652d38b4230bc2001e13ac26"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
+      "publishedDate": "2023-10-14T00:00:00.000Z",
+      "page": "121-124"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/16fac143ffc74d3c8389470b550d9709"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "思い立った時にLTができるプレゼンテーションツールの提案",
+      "authors": [
+        "辻永 泰輔",
+        "湯村 翼"
+      ],
+      "abstract": "IT勉強会では，開発の成果や悩みをテーマにライトニングトーク(Lightning Talk:LT)を行う機会が多い．LTを行うことで聴講者からフィードバックを受けて開発を前進させることができる一方，資料の作成に時間を要するという課題がある．本研究では，資料作成作業を省略し，思い立った時にLTができるプレゼンテーションツールLTooLを提案する．LTooLは，開発中に記録した作業メモをもとに，登壇中に都度スライドを作成する．本論文では，LTooLの設計を示し，プロトタイプの実装を行った．",
+      "keywords": [
+        "LT",
+        "プレゼンテーションツール",
+        "Webアプリケーション"
+      ],
+      "language": "ja",
+      "presentationDate": "2023-10-14T00:00:00.000Z",
+      "sortingDate": "2023-10-14T00:00:00.000Z",
+      "id": "39"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/652d3983230bc2001e13ac2b"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
+      "publishedDate": "2023-10-14T00:00:00.000Z",
+      "page": "125-126"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/bdd9d5dd5f224abe83f3fc2169df5f40"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "フィンガーブレスレット型疲労通知デバイスの開発",
+      "authors": [
+        "藤谷 梨生",
+        "湯村 翼"
+      ],
+      "abstract": "ウェアラブルデバイスは身につけるだけでヘルスケアがおこなえる．しかし，ウェアラブルデバイスの見た目についてはデザインが固定化され，衣服によっては浮いてしまうという問題がある．本研究では，ヘルスケア機能を搭載したアクセサリとして，フィンガーブレスレット型疲労通知デバイスの開発を目的する．プロトタイプでは，脈拍数を心拍数に変換し，心拍数が基準値を下回ったときにLEDを点灯させ，疲労を通知することができた．",
+      "keywords": [
+        "ウェアラブルデバイス",
+        "ヘルスケア",
+        "脈波",
+        "センシング"
+      ],
+      "language": "ja",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2023-10-14T00:00:00.000Z",
+      "sortingDate": "2023-10-14T00:00:00.000Z",
+      "id": "40"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/652d3a11230bc2001e13ac30"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
+      "publishedDate": "2023-10-14T00:00:00.000Z",
+      "page": "127-128"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/19220498a822484e9c70214f79da14af"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "SRIPY: 氷雪路面歩行技術の向上のためのトレーニングゲーム",
+      "authors": [
+        "岡 秀哉",
+        "由谷 哲夫",
+        "渋谷 敦子",
+        "湯村 翼"
+      ],
+      "abstract": "氷や雪が路面を覆う冬道は，不慣れな歩行者にとって転倒のリスクが高い．しかし，冬道の歩行を訓練する機会はあまりない．そこで，氷雪の歩行をトレーニングするゲームSRIPYを提案する．SRIPYでは，プレイヤーは靴型コントローラを装着し，ゲーム画面の指示に従って足踏みを行う．靴型コントローラに敷かれた圧力センサが足底部の圧力を6点で計測し，そのバランスが氷雪歩行に適さない不均衡な場合にゲーム内でフィードバックを行う．本研究では，感圧導電シートと銅箔テープ，M5Stackを用いて靴型コントローラを，Unityを用いてゲーム画面を実装した．8名の被験者に対して評価実験を行い，プレイ中の圧力データとゲームへの感想を収集し，それらを分析して課題を明らかにした．",
+      "keywords": [
+        "センシング",
+        "トレーニング",
+        "ゲーム"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/63fee181230bc2001e13ac01",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/63fee186230bc2001e13ac04",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2023-03-09T00:00:00.000Z",
+      "sortingDate": "2023-03-09T00:00:00.000Z",
+      "id": "35"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/64043706230bc2001e13ac0f"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2023論文集",
+      "publishedDate": "2023-03-01T00:00:00.000Z",
+      "page": "469-474"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/bb74672f6f76447fa9baee3478fea7b8"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "TOSHIATE:実在都市をコースとした都市当てレースゲーム",
+      "authors": [
+        "大栁 剣汰",
+        "湯村 翼"
+      ],
+      "abstract": "カーレースゲームのコース制作において，PLATEAUという実在の都市の3Dモデルを活用する手法がある．実在の都市をコースとすることにより，制作が容易になることに加え，新たな楽しみ方が追加され，観光促進効果も期待される．しかし，プレイヤーがコースに注目しなければ，期待する効果は得られない．そこで，本研究は，プレイヤーがコースの都市に意識を向けるために，コースの都市を推測する都市当ての要素をゲームに取り入れたレースゲームTOSHIATEを提案する．PLATEAUの都市モデルデータを用いて，UnityでTOSHIATEの実装を行った．被験者実験を行ったところ，期待した効果が得られることを確認したが，実装の完成度が不十分であるという課題も明らかとなった．",
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/63fee0ac230bc2001e13abfa",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/63fee0b0230bc2001e13abfd",
+      "presentationlLocation": "一橋記念講堂 (東京都千代田区)",
+      "presentationDate": "2023-03-08T00:00:00.000Z",
+      "sortingDate": "2023-03-08T00:00:00.000Z",
+      "id": "34"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/640436d0230bc2001e13ac09"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2023論文集",
+      "publishedDate": "2023-03-01T00:00:00.000Z",
+      "page": "331-333"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/fbc319ff6d4046afb859c0d1d92b13ca"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "様々なCPUアーキテクチャにおけるROP攻撃可能性の検証",
+      "authors": [
+        "多木 優馬",
+        "福光 正幸",
+        "湯村 翼"
+      ],
+      "abstract": "Return Oriented Programming (ROP) 攻撃は，プログラム内の命令片を利用し，任意の処理を行わせる攻撃手法であり，様々な派生手法も登場している．ROP 攻撃への対策として，高い計算能力を持つ CPU を活用する Control-Flow Integrity (CFI )や，広いアドレス空間を活用する Address Space Layout Randomization (ASLR) といったセキュリティ機構が存在する．ただし，組込み機器では，プロセッサに対する制約によってこれらのセキュリティ機構を実装できない場合もある．本研究では，組込み機器に対する ROP 攻撃の可能性を調査するため，x86，ARM32，ARM64 環境に対して ROP 攻撃検証を行った．プロセッサエミュレータ QEMU を用いて攻撃対象環境を構築し，そこで稼働する脆弱なテストプログラムに対して ROP 攻撃を実施した．検証の結果，x86 環境と ARM32 環境への ROP 攻撃は成立し，ARM64 環境への ROP 攻撃は不成立であった．この結果について考察し，関数呼び出し方法を工夫することでリターンアドレスの書き換えを緩和できることを明らかにした．",
+      "keywords": [
+        "ROP攻撃",
+        "セキュリティ"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00224591/",
+      "presentationlLocation": "東海大学 高輪キャンパス (東京都港区)",
+      "presentationDate": "2023-03-06T00:00:00.000Z",
+      "sortingDate": "2023-03-06T00:00:00.000Z",
+      "id": "33",
+      "thumbnail": "https://dl.yumulab.org/api/files/6405fbcc230bc2001e13ac12",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6405fbd1230bc2001e13ac15"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/63fed65d230bc2001e13abf7"
+    },
+    "publication": {
+      "bookTitle": "研究報告コンピュータセキュリティ（CSEC）",
+      "publishedDate": "2023-02-27T00:00:00.000Z",
+      "volume": "2023-CSEC-100",
+      "issue": "24",
+      "page": "1-6"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/d875df4237564a54a314859b5beb59a6"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "熱を用いた2次元マーカの検討",
+      "authors": [
+        "湯村 翼"
+      ],
+      "abstract": "物理空間にある物体への情報付与やWeb連携のために，QRコードなどの2次元情報マーカが使われる．現在，情報マーカの読み取り機器はスマートフォンが主流であるが，今後は読み取りにスマートグラスを利用することが増えるであろう．スマートグラスでの読み取りは便利であるものの，可視光カメラで周囲を常時撮影することは，周囲の人や環境のプライバシーを侵害する恐れがある．そこで本研究では，スマートグラスでの情報マーカ読み取りに可視光カメラではなく熱赤外線カメラを利用することを提案する．そのために，熱赤外線カメラで読み取ることのできる熱情報マーカを開発する．本論文では，ペルチェ素子を用いた遮蔽型と伝導型の2種類の方式のマーカと，組込み機器用熱赤外線センサを用いた認識機をプロトタイプとして開発した．開発したシステムを用いて認識率を計測し，実用可能な精度であることを確認した．現在，スマートグラスはそれほど普及しておらず，熱赤外線センサも搭載されていない．しかし，熱マーカがスマートグラスにおけるプライバシーの懸念を払拭するキーテクノロジーとなれば，スマートグラスの普及を推し進めることができるだろう．",
+      "keywords": [
+        "熱マーカ"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00224134/",
+      "thumbnail": "https://dl.yumulab.org/api/files/63feafc4230bc2001e13abbd",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/63feafcc230bc2001e13abc0",
+      "presentationlLocation": "名古屋大学 東山キャンパス (愛知県名古屋市)",
+      "presentationDate": "2023-03-01T00:00:00.000Z",
+      "sortingDate": "2023-03-01T00:00:00.000Z",
+      "id": "32"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/63feb009230bc2001e13abf1"
+    },
+    "publication": {
+      "bookTitle": "研究報告ユビキタスコンピューティングシステム（UBI）",
+      "publishedDate": "2023-02-21T00:00:00.000Z",
+      "volume": "2023-UBI-77",
+      "issue": "17",
+      "page": "1-7",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/56abc012e6e944668e05cbfbc05d4f29"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "title": "Furm: 家具移動アプリケーションの提案",
+      "authors": [
+        "辻永 泰輔",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "id": "30",
+      "type": "paper-conference",
+      "titleOfEnglish": "Furm: A Proposal of Furniture Moving Application",
+      "abstract": "部屋内の家具の移動は，多くの場合に困難を伴う．そこで，家具移動ロボットを用い，スマートフォンを操作するだけで家具を移動する家具移動アプリケーションFurmを提案する．本論文では，家具の配置指示，家具の配置保存，保存された家具配置の表示というFurmの3つの機能を設計した．そして，市販のキューブ型ロボットトイtoioを用いて，コンセプト実装を行った．Furmの実装において，制御の精度と位置情報の取得という2点の考慮が重要であることが，コンセプト実装によって明らかになった．",
+      "language": "ja",
+      "presentationDate": "2022-12-09T00:00:00.000Z",
+      "sortingDate": "2022-12-09T00:00:00.000Z",
+      "thumbnail": "https://dl.yumulab.org/api/files/638dbb1f230bc2001e13ab93",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/638dbb23230bc2001e13ab96",
+      "presentationlLocation": "九州工業大学 戸畑キャンパス (福岡県北九州市)",
+      "externalUrl": "http://id.nii.ac.jp/1001/00222649/"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/638dc241230bc2001e13ab9e"
+    },
+    "publication": {
+      "bookTitle": "インターネットと運用技術シンポジウム論文集",
+      "volume": "2022",
+      "page": "98-99"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/5092cb54e0d24a428f6e3d225e2b8ac4"
+    },
+    "external": {
+      "links": [
+        "https://github.com/Gachal29/Furm"
+      ]
+    }
+  },
+  {
+    "core": {
+      "title": "画面転送式デジタルサイネージの開発に向けた VNC トラフィックの計測",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "id": "29",
+      "type": "paper-conference",
+      "titleOfEnglish": "VNC Traffic Measurements for Development of Screen-Transfer Type Digital Signage",
+      "abstract": "我々は，サーバ側でWebブラウザを動作させ，画面をストリーミングし，クライアントコンピュータへ送ることでWebブラウザの表示を可能とするクラウド型のデジタルサイネージシステムの開発を目指している．本研究は，画面転送型デジタルサイネージの運用における使用ネットワーク帯域を予測することを目的とし，Virtual Network Computing (VNC) ソフトウェア使用時の画面転送のトラフィックを計測する．トラフィックの計測は，エンコード方式，色数，通信の暗号化の有無の3つについての変更を行った．本研究の計測で，エンコード方式がトラフィックに大きく影響するという結果や，色数の減少とともにトラフィックが減少するという結果を得た．本研究から画面転送型デジタルサイネージを実現する上でエンコード方式や通信帯域は重要パラメータであるという知見を得ることができた．",
+      "presentationDate": "2022-12-08T00:00:00.000Z",
+      "sortingDate": "2022-12-08T00:00:00.000Z",
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00222642/",
+      "thumbnail": "https://dl.yumulab.org/api/files/638dcabd230bc2001e13aba6",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/638dcac3230bc2001e13aba9",
+      "presentationlLocation": "九州工業大学 戸畑キャンパス (福岡県北九州市)"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/638dcadb230bc2001e13abb1"
+    },
+    "publication": {
+      "bookTitle": "インターネットと運用技術シンポジウム論文集",
+      "publishedDate": "2022-12-01T00:00:00.000Z",
+      "volume": "2022",
+      "page": "84-85"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/77486534b77041d4b2cc2214b78944b3"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "talk",
+      "title": "組込み機器はROP攻撃に対応できているか？ -低スペックな組込み機器へのROP検証-",
+      "titleOfEnglish": "Are Embedded Devices Ready for ROP Attacks? -ROP verification for low-spec embedded devices. -",
+      "authors": [
+        "多木 優馬"
+      ],
+      "abstract": "Return Oriented Programming（ROP）攻撃は、プログラム内の命令片を利用し、任意の処理を行わせる攻撃手法であり、様々な派生手法も登場している。攻撃対象がPCの場合、高い計算能力を持つプロセッサを活かしたCFI（Control-Flow Integrity）や、広いアドレス空間を活かしたAddress Space Layout Randomization（ASLR）といった、ROP攻撃に有効なセキュリティ機構を実装することができる。一方、組込み機器の場合、プロセッサに対する制約から、ROP攻撃に有効なセキュリティ機構を実装できない機器も存在する。また、セキュリティ機構の実装状況はOSの種類とそのバージョンによっても異なる。このため本研究では、複数のOSとプロセッサの組み合わせに対するROP攻撃の可能性を調査する。組込み機器向けの様々なOSとプロセッサをQEMUを用いてエミュレートして攻撃対象の環境を構築し、そこで稼働する脆弱なテストプログラムに対してROP攻撃の検証を行う。本講演では、脆弱なテストプログラムに対するROP攻撃のデモを行い、ROP攻撃の危険性を伝えるとともに、低スペックな組込み機器へのROP攻撃対策について、現段階での調査で判明したことを発表する。",
+      "keywords": [],
+      "thumbnail": "https://dl.yumulab.org/api/files/638ec347230bc2001e13abb4",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/638ec35d230bc2001e13abb7",
+      "presentationlLocation": "渋谷パルコ(東京都渋谷区)",
+      "presentationDate": "2022-10-27T00:00:00.000Z",
+      "sortingDate": "2022-10-27T00:00:00.000Z",
+      "id": "31"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "CODEBLUE2022"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/4d7f9ff73c40407899bdc8e9fcbc46d0"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "プロセッサエミュレータQEMUを用いた組込み機器へのROP攻撃のデモンストレーション",
+      "authors": [
+        "多木 優馬",
+        "福光 正幸",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/636208d0230bc2001e13ab89",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/636208d5230bc2001e13ab8c",
+      "presentationlLocation": "熊本城ホール",
+      "presentationDate": "2022-10-26T00:00:00.000Z",
+      "sortingDate": "2022-10-26T00:00:00.000Z",
+      "id": "28"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "コンピュータセキュリティシンポジウム2022（CSS2022）"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/0c741b2698a845ee895318e24fdd1684"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "組込み機器へのROP攻撃の検証のためのプロセッサエミュレータを用いた調査",
+      "authors": [
+        "多木 優馬",
+        "福光 正幸",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/634b9f7f230bc2001e13ab62",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/634bc699230bc2001e13ab83",
+      "presentationlLocation": "北海道大学",
+      "presentationDate": "2022-10-15T00:00:00.000Z",
+      "sortingDate": "2022-10-15T00:00:00.000Z",
+      "id": "27"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/634b9fc4230bc2001e13ab7d"
+    },
+    "publication": {
+      "bookTitle": "情報処理北海道シンポジウム2022講演論文集",
+      "publishedDate": "2022-10-15T00:00:00.000Z",
+      "page": "185-188"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/a6cc82f7e90b419e97fc8b6048a36f19"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "一人称視点映像を提示する VRサッカー作戦盤システムの検討",
+      "authors": [
+        "湯村 翼"
+      ],
+      "abstract": "サッカーの作戦会議では，ある局面における戦術を指示するために，書き込みとマグネット配置が 可能な作戦盤を用いる．しかし，作戦盤は平面であるため，その局面における視覚的状況を想像しにくい．そこで，視覚的状況を容易に想像できるよう，一人称視点映像を提示する VR サッカー作戦盤システム TacticBoardVR を開発した．選手の配置を指定する指示ボードとしてタブレット端末を，ビューワとし てヘッドマウントディスプレイを用いてシステムのインタフェースを構築した．",
+      "keywords": [
+        "VR",
+        "サッカー",
+        "スポーツ",
+        "HMD"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00219390/",
+      "thumbnail": "https://dl.yumulab.org/api/files/63109cc5230bc2001e13ab3a",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/634bc83a230bc2001e13ab86",
+      "presentationlLocation": "福知山公立大学 (京都府福知山市)",
+      "presentationDate": "2022-09-01T00:00:00.000Z",
+      "sortingDate": "2022-09-01T00:00:00.000Z",
+      "id": "26"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/63109d1c230bc2001e13ab5d"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2022論文集",
+      "publishedDate": "2022-08-25T00:00:00.000Z",
+      "volume": "2022",
+      "page": "99-101"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "ヘッドマウントディスプレイにおける指文字を用いた文字入力手法の提案",
+      "authors": [
+        "久保田 千尋",
+        "湯村 翼"
+      ],
+      "abstract": "ヘッドマウントディスプレイの普及において，文字入力手法が課題である．指先などでカーソルを操作し仮想キーボードを操作する手法が主流であるものの，手の認識に深度センサや複数台のRGBカメラが必要である．そこで本研究では，MediaPipe Handsを用いることによりRGBカメラ1台で手の形状を推論し，手話の一種である指文字によって文字を入力するシステムを提案する．本稿ではアメリカ手話(ASL)の指文字に対応するプロトタイプを実装し，問題点や実用性を洗い出し，本システムの有用性について検討した．",
+      "keywords": [
+        "入力",
+        "HMD"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/62203197230bc2001e13ab29",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/6220319c230bc2001e13ab2c",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2022-02-28T00:00:00.000Z",
+      "sortingDate": "2022-02-28T00:00:00.000Z",
+      "id": "25"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/622031ba230bc2001e13ab32"
+    },
+    "publication": {
+      "bookTitle": "インタラクション2022論文集",
+      "publishedDate": "2022-02-21T00:00:00.000Z",
+      "page": "180-183"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "熱は情報の伝達媒体になり得るか？熱赤外線を用いた 2 次元マーカの開発",
+      "authors": [
+        "湯村 翼"
+      ],
+      "abstract": "2次元マーカの読み取りに用いる機器は現在スマートフォンが主流であるが，今後はスマートグラ スを利用することが増えるだろう.スマートグラスの可視光カメラで周囲を撮影することは，人知れずプライバシーを侵害する恐れがある.そこで本研究では，情報マーカ読み取りに熱赤外線カメラを利用するこ とを提案する.本論文では，ペルチェ素子を用いた遮蔽型と伝導型の 2 種類の方式のマーカと，組込み機 器用熱赤外線センサを用いた認識機をプロトタイプとして開発した.",
+      "keywords": [],
+      "language": "ja",
+      "presentationlLocation": "THE HAMANAKO",
+      "presentationDate": "2021-12-08T00:00:00.000Z",
+      "sortingDate": "2021-12-08T00:00:00.000Z",
+      "id": "1"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cabb0b403d38001f93614c"
+    },
+    "publication": {
+      "bookTitleAbbr": "WISS2021",
+      "bookTitle": "第29回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2021) 論文集",
+      "publishedDate": "2021-12-03T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {
+      "youtube": "https://www.youtube.com/watch?v=vwfBaLy4WGU",
+      "slideshare": "https://speakerdeck.com/player/6563994925a64d1caef057a2192b9b66"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "draft": false,
+      "type": "paper-conference",
+      "title": "ミエナイトデンワ：遠隔地にいる相手の存在を感じながら音声通話できる糸電話型デバイスの提案",
+      "titleOfEnglish": "Invisible string telephone：String telephone shaped device that allows to talk with the presence of a remote partner",
+      "authors": [
+        "堀 洋祐",
+        "湯村 翼"
+      ],
+      "abstract": "本研究では，相手の存在を感じる音声通話を実現する糸電話型デバイス“ミエナイトデンワ”を提案する．携帯電話などの音声通話では相手の存在をあまり意識せずに会話することが多い．本デバイスは「見えない糸で結ばれた糸電話」をコンセプトに，２対のコップが空間的に向かい合ったときのみ音声通話を可能とする。会話のために相手と向かい合っているという状況を必要とすることで，相手との繋がりを強く意識した「対話」を実現できる。",
+      "keywords": [
+        "インタフェース"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00212450/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cff5a2230bc2001e13aa7c",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2021-08-31T00:00:00.000Z",
+      "sortingDate": "2021-08-31T00:00:00.000Z",
+      "id": "18"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61cff4cc230bc2001e13aa77"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2021論文集",
+      "bookTitleAbbr": "EC2021",
+      "publishedDate": "2021-08-23T00:00:00.000Z",
+      "page": "97 - 106",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://www.slideshare.net/slideshow/embed_code/key/5TCCrkLf6lpm44"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "draft": false,
+      "type": "paper-conference",
+      "title": "果樹園における農薬散布支援のためのBLEビーコンを用いた位置情報取得システム",
+      "authors": [
+        "亀田 晃佑",
+        "湯村 翼",
+        "リム 勇仁",
+        "丹 康雄"
+      ],
+      "abstract": "果樹園では，農薬散布などの圃場機械を用いて行われる農作業に対して，位置情報をもとに進捗状況を把握することが求められる．一般的に，屋外での位置情報取得には全球測位衛星システム（GNSS）が用いられるが，木々に覆われた果樹園では使用できない場合がある．本研究では，果樹園での農薬散布支援のための，Bluetooth Low Energy（BLE）ビーコンを用いた位置情報取得システムを開発する．圃場機械の位置情報は登録されたBLEビーコンの受信信号を用いて推定し，端末で可視化する．圃場に適した端末をユーザが選択して使用できるよう，システムのインターフェースはウェブブラウザで動作するよう作成した．",
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d002b5230bc2001e13aa89",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2021-03-19T00:00:00.000Z",
+      "sortingDate": "2021-03-19T00:00:00.000Z",
+      "id": "20"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61d002e2230bc2001e13aa8d"
+    },
+    "publication": {
+      "bookTitle": "情報処理学会第83回全国大会 講演論文集",
+      "bookTitleAbbr": "情報処理学会第83回全国大会",
+      "publishedDate": "2021-03-19T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "title": "IoTエミュレーションシステムにおける監視制御機能の提案",
+      "authors": [
+        "大畑 誠弥",
+        "中村 拓人",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "id": "19",
+      "abstract": "情報通信研究機構のテストベッドStarBEDでは，IoTシステムのテストのためのデバイスエミュレーションシステムを構築している．これは，実機に使用するIoTソフトウェアをエミュレーションするシステムである．このシステムでは，エミュレータの配置や数を記述した設定ファイルを用い，展開し実行できる．しかし，このシステムでは操作がCLIのみであり，CLIを扱えるユーザしか扱えないという問題がある．また，コンテナ毎の負荷を見ることができず，ユーザが必要な情報を得ることができない．そこで，GUIから操作できるコントロールパネルと監視システムを開発した．",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d00050230bc2001e13aa82",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2021-03-11T00:00:00.000Z",
+      "sortingDate": "2021-03-11T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61d00065230bc2001e13aa86"
+    },
+    "publication": {
+      "bookTitle": "電子情報通信学会2021年総合大会 論文集",
+      "bookTitleAbbr": "電子情報通信学会2021年総合大会",
+      "publisher": "電子情報通信学会",
+      "publishedDate": "2021-03-11T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "article-journal",
+      "title": "バーチャルハッカソン SpaceApps COVID-19 Challenge の日本における開催支援",
+      "titleOfEnglish": "Support for Holding Virtual Hackathon SpaceApps COVID-19 Challenge in Japan",
+      "authors": [
+        "湯村 翼",
+        "勝間 亮",
+        "鳥山 美由紀",
+        "大日向 大地",
+        "河村 聡人",
+        "池畑 陽介",
+        "河村 耕平",
+        "松尾 尚子"
+      ],
+      "abstract": "人工衛星等の宇宙のデータを使って地球の課題を解決するハッカソンイベントNASA InternationalSpace Apps Challenge (SpaceApps)が，2012 年より毎年開催されている．2020 年の年初より始まった新型コロナウイルス感染症 (COVID-19) の拡大を背景とし，宇宙データを使ったCOVID-19対策を行うバーチャルハッカソンイベントSpaceApps COVID-19 Challengeが急遽企画され，2020 年5 月に開催された．イベントはオンラインでの開催となり，日本では，日本地域の参加者向けに過去のSpaceAppsのオーガナイザが中心となってイベントのサポートを行った．本稿では，SpaceApps COVID-19 Challengeの開催の背景と概要，オンラインツールを活用した開催支援方法，結果と課題についてまとめる．",
+      "keywords": [
+        "オープンサイエンス"
+      ],
+      "language": "ja",
+      "externalUrl": "http://doi.org/10.20637/00047376",
+      "presentationlLocation": "宇宙科学情報解析論文誌",
+      "id": "11",
+      "sortingDate": "2021-02-22T00:00:00.000Z"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "宇宙科学情報解析論文誌",
+      "publishedDate": "2021-02-22T00:00:00.000Z",
+      "volume": "",
+      "issue": "10",
+      "page": "109-117",
+      "publisher": "宇宙航空研究開発機構",
+      "copyrightHolder": "宇宙航空研究開発機構",
+      "DOI": "http://doi.org/10.20637/00047376",
+      "ISSN": "2433-2216"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "article-journal",
+      "title": "BluMoon: Bluetooth Low Energy Emulator for Software Testing",
+      "titleOfEnglish": "BluMoon: Bluetooth Low Energy Emulator for Software Testing",
+      "authors": [
+        "Tsubasa Yumura",
+        "Kunio Akashi",
+        "Tomoya Inoue",
+        "Yasuo Tan"
+      ],
+      "abstract": "In software system testing using Bluetooth Low Energy (BLE), it is necessary to evaluate the system, including the wireless communication. However, it is difficult to build a test environment for testing with physical machines because of installation costs. This problem can be solved by emulation to reproduce BLE communication on computers; however, a BLE emulator is required. In this paper, we propose a BLE emulator called BluMoon for testing software systems using BLE. We impose the following requirements on the BLE emulator: (1) calculating the received signal strength for each frame and (2) imitating radio interference. To satisfy these requirements, we devised a software-implemented BLE controller with a host controller interface as a boundary and devised a data format called the BluMoon frame for sending and receiving data frame by frame. We designed and implemented BluMoon, and performed functional and performance evaluation as well as a comparative experiment with a physical environment. The results revealed that it is possible to implement a BLE emulator that meets the aforementioned requirements.",
+      "keywords": [
+        "Bluetooth"
+      ],
+      "language": "en",
+      "externalUrl": "https://myukk.org/SM2017/article.php?ss=2986",
+      "id": "10",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfc13f230bc2001e13a95f",
+      "sortingDate": "2021-01-15T00:00:00.000Z",
+      "draft": false,
+      "presentationlLocation": "Sensors and Materials",
+      "presentationDate": "2021-01-15T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cfc161230bc2001e13a96e"
+    },
+    "publication": {
+      "bookTitle": "Sensors and Materials",
+      "publishedDate": "2021-01-15T00:00:00.000Z",
+      "volume": "33",
+      "number": "1",
+      "page": "147-169",
+      "DOI": "https://doi.org/10.18494/SAM.2021.2986"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "draft": false,
+      "type": "paper-conference",
+      "title": "エミュレータを用いた大規模IoTシステムテストのための実験環境構築機能の開発",
+      "authors": [
+        "中村 拓人",
+        "大畑 誠弥",
+        "湯村 翼"
+      ],
+      "abstract": "Internet of Things (IoT) 機器を用いたシステムは普及が進み，様々な用途で利用される．IoT システムの安定稼働には試験が肝要であるが，大規模な IoT システムを試験を実施するためには実機と場所を要する．情報通信研究機構の StarBED は，大規模な実験を目的とし，多数のコンピュータノードで構成されたネットワークテストベッドである．StarBED のノードの CPU は x86_64 アーキテクチャであるが，エミュレータを活用すれば，組込み機器向け CPU を用いた IoT システムの試験を実施することができる．しかし，StarBED の複数ノード上で多数のエミュレータが稼働する任意の実験環境を構築することは，非常に煩雑な作業となる．大規模な IoT システムの構築のためには，複数のコンピュータノードに対してエミュレータを分散配置し，それに応じたネットワークを構築する必要がある．そこで本研究では，エミュレータを用いた大規模な実験環境を簡便に構築するための実験環境構築機能を開発する．エミュレータの実行に Docker コンテナを利用することで，エミュレートされた IoT デバイスを容易に複製可能とする．構築する環境の IoT デバイス数，エミュレータの稼働ノードの指定，IP アドレス等の情報は，YAML 形式の設定ファイルに記述する．設定ファイルは，Docker Network ごとにグループ化して記述する仕様とし，これによりエミュレータの適切な分散配置を可能としている．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00207531/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d005a0230bc2001e13aa92",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2020-11-11T00:00:00.000Z",
+      "sortingDate": "2020-11-11T00:00:00.000Z",
+      "id": "21"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61d005fd230bc2001e13aa97"
+    },
+    "publication": {
+      "bookTitle": "第28回マルチメディア通信と分散処理ワークショップ論文集",
+      "bookTitleAbbr": "DPSWS2020",
+      "publishedDate": "2020-11-04T00:00:00.000Z",
+      "page": "215 - 218"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "Bluetooth Low Energyの反射電波を用いた家庭内での生体情報取得",
+      "titleOfEnglish": "Biological Information Acquisition at Home using Reflected Radio Waves of Bluetooth Low Energy",
+      "authors": [
+        "福嶋 開人",
+        "湯村 翼",
+        "リム 勇仁",
+        "丹 康雄"
+      ],
+      "abstract": "少子高齢化の進展により，少ない働く世代で多くの高齢者を支えることから働く世代，高齢者ともに負担が高まっており，少ない介護者で効率的に高齢者を見守る方法が注目されている．そこで，無線電波によるデバイスフリーで呼吸数および心拍数を推定する研究がされており，種々の電波方式が検討されている．例えば，専用無線機器を用いた FMCW や汎用無線の Wi-Fi を用いる方法が挙げられる．しかし，これらの方法には機器が社会に広く普及していない点や消費電力が大きい点で，家庭内での利用に不向きという問題がある．本稿では，汎用無線標準である Bluetooth Low Energy のアドバタイズ機能を用いて家庭内にいる居住者の呼吸数および心拍数の取得の可能性について検討する．実験では，人の呼吸数および心拍数に相当する振動をアルミバルーンを用いて再現し，送信電波がフレネルゾーンにより干渉することで生じる受信強度の変化から振動が取得できるかを確認した．呼吸数の 10bpm，15bpm，20bpm において，想定した周波数に反応が出ている結果を得た．このことから，BLE 電波を用いて生体情報の実現が取得が可能であると結論付けた．今後の展望として，本実験では利用しなかった送信パケットのデータ部に送信機の位置を格納し，マルチアンテナ構成を実現することでより高精度な測定の実現を見込む．また，家庭内での位置情報を利用する研究と組み合わせることで居住者一人ひとりを識別し，個人に合わせた提案を行う社会的に影響の大きな技術となり得る．",
+      "keywords": [
+        "Bluetooth",
+        "センシング",
+        "ヘルスケア"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00204519/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d0071c230bc2001e13aa9c",
+      "presentationlLocation": "オンライン",
+      "presentationDate": "2020-05-25T00:00:00.000Z",
+      "sortingDate": "2020-05-25T00:00:00.000Z",
+      "id": "22"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61d0077c230bc2001e13ab0e"
+    },
+    "publication": {
+      "bookTitle": "情報処理学会 研究報告ユビキタスコンピューティングシステム（UBI）",
+      "bookTitleAbbr": "情報処理学会 第66回UBI研究会",
+      "publishedDate": "2020-05-18T00:00:00.000Z",
+      "volume": "2020-UBI-66",
+      "issue": "1",
+      "page": "1-8",
+      "publisher": "情報処理学会"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Tsumikiot: IoTデバイスエミュレータのための統合開発環境",
+      "authors": [
+        "竹村 太一",
+        "湯村 翼"
+      ],
+      "keywords": [
+        "IoT"
+      ],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d008be230bc2001e13ab11",
+      "sortingDate": "2020-03-03T00:00:00.000Z",
+      "id": "23",
+      "abstract": "エミュレータを用いてIoTシステムの開発を行う際，環境の構築やエミュレータの設定などの事前準備がユーザにとって負担となる．我々はこの問題を解決するため，Webブラウザでアプリケーションを開発することができる統合開発環境Tsumikiot(つみき)を開発した．TsumikiotはCUIになじみがないユーザでもIoTエミュレーションを使ったプログラミングを実行できることを目標とした統合開発環境である．ユーザは環境の構築やエミュレータの設定について意識をする必要がなく，より手軽にプログラミングを行うことが期待できる．"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61d008dd230bc2001e13ab14"
+    },
+    "publication": {
+      "bookTitle": "電子情報通信学会2020年総合大会 論文集",
+      "bookTitleAbbr": "電子情報通信学会2020年総合大会",
+      "publishedDate": "2020-03-03T00:00:00.000Z",
+      "publisher": "電子情報通信学会"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "title": "人間とコンピュータと物理のインタラクションを統合的に取り扱うCyber-Physical-Human Interactionの研究",
+      "authors": [
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "id": "2",
+      "type": "thesis",
+      "language": "ja",
+      "externalUrl": "https://dspace.jaist.ac.jp/dspace/handle/10119/16173",
+      "presentationDate": "2019-09-24T00:00:00.000Z",
+      "sortingDate": "2019-09-24T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cace568f8dee001ea19c8f"
+    },
+    "publication": {
+      "bookTitle": "北陸先端科学技術大学院大学 博士論文"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "Joostar: Heterogeneous Simulator Federation for Application-in-the-Loop Simulation",
+      "titleOfEnglish": "Joostar: Heterogeneous Simulator Federation for Application-in-the-Loop Simulation",
+      "authors": [
+        "Tsubasa Yumura",
+        "Yuki Oshikawa",
+        "Masatoshi Enomoto",
+        "Tomoya Inoue",
+        "Toshiyuki Miyachi"
+      ],
+      "abstract": "Preliminary simulation is important for constructing large-scale systems. However, it is difficult to consider all aspects of a society and an environment. This study attempts to solve this difficulty by utilizing the approach of application-in-the-loop (AITL) simulation. AITL has not been considered in previous studies regarding simulation federation. This study proposes a method of linking an application to an agent of multi-agent based simulation (MABS) for AITL. We design and implement a simulation federation platform to study this approach. Furthermore, two applications are discussed based on the simulation results.",
+      "keywords": [],
+      "language": "en",
+      "externalUrl": "https://ieeexplore.ieee.org/document/8897830",
+      "id": "9",
+      "sortingDate": "2019-08-02T00:00:00.000Z"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "2019 IEEE International Geoscience and Remote Sensing Symposium",
+      "bookTitleAbbr": "IGARSS 2019",
+      "publishedDate": "2019-08-02T00:00:00.000Z",
+      "publisher": "IEEE",
+      "DOI": "https://doi.org/10.1109/IGARSS.2019.8897830"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "draft": false,
+      "type": "paper-conference",
+      "title": "センサIoTデバイスエミュレーションの抽象化に関する研究",
+      "titleOfEnglish": "Abstraction of Emulation for Sensor IoT Devices",
+      "authors": [
+        "\u0000\u0000 \u0000\u0000\u0000\u0000広瀬 太志",
+        "湯村 翼",
+        "篠田 陽一"
+      ],
+      "abstract": "センサを搭載したIoT (Internet of Things)デバイスを使用することで，市街地や圃場など広範囲な環境データの取得が容易になる．データ取得に用いられるIoTデバイスは大量に設置する必要があるため，事前検証が難しく，また現地でのデバイス再設置のコストが高い．その対策としてエミュレーションを用いた検証が行われるが，センサIoTデバイスは同時かつ大量に動作するため計算負荷が高い．一方で，テスト要件に対して忠実な実装が必要とは限らない．そこで本研究では，計算要求リソースを削減するため，テストで用いるMCU (Micro Control Unit)エミュレータの機能の一部を抽象化することを提案し，抽象化によりテストのカバレッジがどの様に変化するかを考察した．",
+      "keywords": [
+        "IoT"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.ieice.org/ken/paper/20190304j1lc/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d00b1a230bc2001e13ab18",
+      "presentationlLocation": "東京大学 駒場IIキャンパス",
+      "presentationDate": "2019-03-04T00:00:00.000Z",
+      "sortingDate": "2019-03-04T00:00:00.000Z",
+      "id": "24"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61d00b49230bc2001e13ab1c"
+    },
+    "publication": {
+      "bookTitle": "電子情報通信学会 \u0000\u0000\u0000\u0000技術研究報告 知的環境とセンサネットワーク",
+      "bookTitleAbbr": "電子情報通信学会 ASN研究会",
+      "publishedDate": "2019-02-25T00:00:00.000Z",
+      "volume": "118",
+      "number": "468",
+      "page": "49-54",
+      "publisher": "電子情報通信学会"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "AOBAKO: A Testbed for Context-Aware Applications with Physicalizing Virtual Beacons",
+      "titleOfEnglish": "AOBAKO: A Testbed for Context-Aware Applications with Physicalizing Virtual Beacons",
+      "authors": [
+        "Tsubasa Yumura",
+        "Masatoshi Enomoto",
+        "Kunio Akashi",
+        "Futoshi Hirose",
+        "Tomoya Inoue",
+        "Satoshi Uda",
+        "Toshiyuki Miyachi",
+        "Yasuo Tan",
+        "Yoichi Shinoda"
+      ],
+      "keywords": [
+        "Bluetooth",
+        ""
+      ],
+      "id": "8",
+      "abstract": "In this study, we propose AOBAKO, a testbed for context-aware applications, which focuses on the testing of mobile applications using Bluetooth Low Energy (BLE) for indoor positioning. AOBAKO emulates BLE-beacon communications based on accurate frame-level emulation. In the proposed testbed, the emulation result is transferred to a physical space and beacon frames are emitted via radio waves. AOBAKO makes it possible to verify context awareness in a mobile application and can reduce the cost of a field survey.",
+      "language": "en",
+      "externalUrl": "https://dl.acm.org/doi/10.1145/3267305.3267568",
+      "sortingDate": "2018-10-09T00:00:00.000Z",
+      "thumbnail": "https://dl.yumulab.org/api/files/61d00f5a230bc2001e13ab26",
+      "presentationlLocation": "Singapore",
+      "presentationDate": "2018-10-09T00:00:00.000Z"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers",
+      "bookTitleAbbr": "UbiComp '18",
+      "publishedDate": "2018-10-08T00:00:00.000Z",
+      "page": "476-479",
+      "publisher": "ACM",
+      "DOI": "https://doi.org/10.1145/3267305.3267568"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "BluMoon: Bluetooth Low Energy Emulation System with Software-Implemented Controller",
+      "titleOfEnglish": "BluMoon: Bluetooth Low Energy Emulation System with Software-Implemented Controller",
+      "authors": [
+        "Tsubasa Yumura",
+        "Kunio Akashi",
+        "Tomoya Inoue"
+      ],
+      "abstract": "In the Internet of Things (IoT), Bluetooth Low Energy (BLE) plays the important role of providing a path between a terminal device and a gateway. For the development of BLE applications, testing is important; however, two major problems exist in that physical device preparation is costly and replay testing is difficult. To avoid these problems, we propose a novel approach to BLE application testing that employs emulation using the newly designed BluMoon architecture, which is a BLE emulation system with utilization software. The BluMoon emulation system design follows the communication model of actual BLE. However, BluMoon uses software-implemented pseudo controllers instead of physical controllers. Interaction with remote devices is emulated through exchange of virtual packets, where each virtual packet encapsulates an entire BLE link layer packet format in its payload. Here, we implement a pseudo controller with an advertising function, establishing a connection and exchanging data. We also evaluate the BluMoon implementation performance and measure the resource usage at BluMoon execution, the received packet loss rate, and the response time of HCI command execution. The results show that BluMoon exhibits performance satisfactory for practical application, for all measured items.",
+      "keywords": [
+        "BLE"
+      ],
+      "language": "en",
+      "externalUrl": "https://ieeexplore.ieee.org/document/8480294",
+      "presentationDate": "2018-03-23T00:00:00.000Z",
+      "sortingDate": "2018-03-23T00:00:00.000Z",
+      "id": "7"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "2018 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)",
+      "bookTitleAbbr": "PerCom Workshops 2018",
+      "page": "860-865",
+      "publisher": "IEEE",
+      "DOI": "10.1109/PERCOMW.2018.8480294"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "Chef＊mo: 動画が調理器具を制御して調理を支援するシステムの提案",
+      "authors": [
+        "湯村 翼",
+        "古舘 佑子",
+        "松本 華歩",
+        "竹澤 ひさみ",
+        "栗原 一貴"
+      ],
+      "abstract": "本研究では，動画が調理器具を制御して調理を支援するシステム Chef＊mo （シェフモ） を提案する．Chef＊mo では，料理動画に調理スクリプトを埋め込み，動画の内容に合わせて調理器具を制御して調理支援を行う．調理支援にも様々な形態があるが，Chef＊mo が行う調理支援は，人と機械の協調となる領域である．コンセプト実装では，映像コンテンツを外部 Web サービスや IoT 機器と連携するためのフレームワーク srt.js を用いて調理スクリプトの記述と実行を行った．API 制御可能な調理器具を自作し，「かける」 「混ぜる」 「切る」 の 3 種類の調理行動を実装した．これらを用いて 「ドレッシングをかける」 「卵を溶く」 「豆腐を切る」 という 3 つのユースケースを実施した．コンセプト実装の結果をふまえて Chef＊mo の活用方法や可能性について議論と課題をまとめた．",
+      "keywords": [
+        "インタフェース",
+        "料理"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00184988/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfe551230bc2001e13aa33",
+      "presentationlLocation": "グランフロント大阪",
+      "presentationDate": "2017-12-23T00:00:00.000Z",
+      "sortingDate": "2017-12-23T00:00:00.000Z",
+      "id": "16"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cfe58d230bc2001e13aa55"
+    },
+    "publication": {
+      "bookTitle": "情報処理学会 研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2017-12-15T00:00:00.000Z",
+      "volume": "2017-EC-46",
+      "issue": "5",
+      "page": "1-7",
+      "publisher": "情報処理学会",
+      "ISSN": "2188-8914",
+      "DOI": ""
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/ce7951f54e624581ad5fbfab6b5cac0a"
+    },
+    "external": {
+      "links": [
+        "https://yumulog.hatenablog.com/entry/2017/12/25/005940"
+      ]
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "睡眠時間の副次利用によるエンタテインメント価値創出",
+      "authors": [
+        "石井 優衣",
+        "栗原 一貴",
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cff049230bc2001e13aa59",
+      "presentationlLocation": "八ヶ岳ロイヤルホテル（山梨県北杜市）",
+      "presentationDate": "2017-12-06T00:00:00.000Z",
+      "sortingDate": "2017-12-06T00:00:00.000Z",
+      "id": "17"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cff108230bc2001e13aa5d"
+    },
+    "publication": {
+      "bookTitle": "第25回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2017)論文集",
+      "bookTitleAbbr": "WISS2017",
+      "publishedDate": "2017-12-06T00:00:00.000Z"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "report",
+      "title": "Augmented Typing : 映像と音の演出付与によるキーボードタイピング体験の拡張",
+      "authors": [
+        "湯村 翼",
+        "中村 聡史"
+      ],
+      "abstract": "本研究では，キーボードに映像演出と音響演出を加えることによって，タイピング体験を拡張するシステム Augmented Typing を提案する．Augmented Typing では，キーボードの打鍵に合わせて映像演出と音響演出を付与することによってタイピング体験を拡張する．Augmented Typing のプロトタイプとして，プロジェクションマッピングを用いた映像演出と効果音を再生する音響演出を行うシステムを実装した．システムの効果を評価するため，演出に対する印象評価と，効果映像をアレンジする際の法則性の調査を行った．印象評価では，映像に比べ音響演出の方が印象評価のばらつきが大きく，映像演出の方が美しさが高く，音響演出の方が鬱陶しく感じるという傾向が現れた．効果映像のパラメータ調査でも一定の法則を示唆する結果を得た．",
+      "keywords": [
+        "プロジェクションマッピング",
+        "インタフェース"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00182007/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfe0ac230bc2001e13aa05",
+      "thumbnailSmall": "https://dl.yumulab.org/api/files/61cfe0b7230bc2001e13aa0a",
+      "presentationDate": "2017-06-02T00:00:00.000Z",
+      "sortingDate": "2017-06-02T00:00:00.000Z",
+      "id": "15",
+      "presentationlLocation": "東京大学"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cfe0f3230bc2001e13aa2a"
+    },
+    "publication": {
+      "bookTitle": "情報処理学会 研究報告エンタテインメントコンピューティング（EC）",
+      "publishedDate": "2017-05-25T00:00:00.000Z",
+      "volume": "2017-EC-44",
+      "issue": "23",
+      "page": "1-9",
+      "publisher": "情報処理学会",
+      "ISSN": "2188-8760"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/4517169be5f84346a398042bca6aea41"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "draft": false,
+      "type": "article-journal",
+      "title": "宇宙データを使った世界同時開催ハッカソン「International Space Apps Challenge」の日本開催",
+      "titleOfEnglish": "Organizing the space data hackathon International Space Apps Challenge in Japan",
+      "authors": [
+        "湯村 翼"
+      ],
+      "abstract": "International Space Apps Challenge (SpaceApps) は, 宇宙データを使って宇宙のアプリをつくるNASA 主催のハッカソンである. 2012 年を皮切りに毎年4 月に開催され, 近年は世界中の100 都市以上の会場にて総数10, 000人以上が参加する世界最大級のハッカソンである. 日本でも, 東京をはじめとした会場にてSpaceAppsを2012年より毎年開催してきた. 当初は東京のみでの開催だったが, 2016 年には国内の開催地は7 箇所にまで増加した.",
+      "keywords": [
+        "オープンサイエンス"
+      ],
+      "language": "ja",
+      "externalUrl": "http://doi.org/10.20637/JAXA-RR-16-007/0015",
+      "presentationDate": "2017-03-17T00:00:00.000Z",
+      "sortingDate": "2017-03-17T00:00:00.000Z",
+      "id": "6"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "宇宙航空研究開発機構研究開発報告: 宇宙科学情報解析論文誌",
+      "publishedDate": "2017-03-17T00:00:00.000Z",
+      "volume": "JAXA-RR-16-007",
+      "issue": "6",
+      "page": "167-171"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "PICALA: 聴講者の感情を照明色で表現するインタラクティブなプレゼンテーション",
+      "authors": [
+        "湯村 翼",
+        "リム 勇仁",
+        "丹 康雄"
+      ],
+      "keywords": [],
+      "id": "14",
+      "abstract": "本研究では，照明の色を用いてプレゼンテーション聴講者の感情を表現する手法を提案する．聴講者がPCやスマートフォンのブラウザのボタンをクリックするとスクリーン付近に設置した照明の色が変わるシステムの設計と実装を行った．聴講者が感情を示すボタンは「へぇ〜」「すごい」「笑」「？」の4種類を用意した．本システムをWISS2014，第48回情報科学若手の会，EC2015の3つの情報系研究会にて運用する実証実験を行った．参加者に対してアンケートを実施して主観評価を行い，本研究が目的としていた聴講者間および聴講者と講演者の感情共有の達成を確認できた.",
+      "language": "ja",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfdea3230bc2001e13a9fe",
+      "presentationDate": "2016-11-04T00:00:00.000Z",
+      "sortingDate": "2016-11-04T00:00:00.000Z",
+      "presentationlLocation": "NICOGRAPH 2016"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cfdddd230bc2001e13a9f5"
+    },
+    "publication": {
+      "bookTitle": "NICOGRAPH 2016 講演集",
+      "page": "57-64"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/4280593d1f524cebb3ac893074fba970"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "CROW: OpenFlowを用いた動的Webアクセス模倣システム",
+      "authors": [
+        "湯村 翼",
+        "高野 祐輝",
+        "安田 真悟",
+        "宮地 利幸"
+      ],
+      "abstract": "インターネットへの接続が前提となるソフトウェアの検証を目的として，テストベッド環境においてインターネットへの到達性を維持しつつ，様々な IP アドレスからの Web アクセスを模倣するシステム CROW の設計と実装を行った．CROW は，クローラが Web サーバへアクセスする際に，中間にあるスイッチがパケットヘッダの送信元 IP アドレスを書き換えることにより，模倣アクセスのトラフィックを生成する．パケットヘッダの書き換えは，環境内に設置された Open Flow スイッチにて実施する．これらの設計を元に，仮想マシンを用いて CROW の実装および環境構築を行った．",
+      "keywords": [],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00177074/",
+      "presentationlLocation": "DICOMO2016",
+      "presentationDate": "2016-07-06T00:00:00.000Z",
+      "sortingDate": "2016-07-06T00:00:00.000Z",
+      "id": "13",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfdd00230bc2001e13a98f"
+    },
+    "files": {
+      "draft": false,
+      "paper": "https://dl.yumulab.org/api/files/61cfdc23230bc2001e13a98c"
+    },
+    "publication": {
+      "bookTitle": "マルチメディア，分散協調とモバイルシンポジウム2016論文集",
+      "bookTitleAbbr": "DICOMO2016論文集",
+      "publishedDate": "2016-07-06T00:00:00.000Z",
+      "volume": "2016",
+      "page": "32-37",
+      "publisher": "情報処理学会",
+      "DOI": "http://id.nii.ac.jp/1001/00177074/"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/66049d00d30a442491cd0a64fbce31fa"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "paper-conference",
+      "title": "D3.js を用いた地図の球面ディスプレイへの投影",
+      "authors": [
+        "湯村 翼",
+        "平田 孝広",
+        "木村 元紀"
+      ],
+      "abstract": "地図を球面ディスプレイで見られるシステムを開発した。球面ディスプレイは民生品のプロジェクターを用いてリアプロジェクション式のものを制作した。地図の描画はD3.js の機能を用いてアプリケーションを制作した。",
+      "keywords": [
+        "プロジェクションマッピング",
+        "ディスプレイ"
+      ],
+      "language": "ja",
+      "externalUrl": "http://id.nii.ac.jp/1001/00102944/",
+      "thumbnail": "https://dl.yumulab.org/api/files/61cfdadf230bc2001e13a974",
+      "id": "12",
+      "presentationlLocation": "エンタテインメントコンピューティング2014",
+      "presentationDate": "2014-09-12T00:00:00.000Z",
+      "sortingDate": "2014-09-12T00:00:00.000Z"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cfdaee230bc2001e13a986"
+    },
+    "publication": {
+      "bookTitle": "エンタテインメントコンピューティングシンポジウム2014論文集",
+      "bookTitleAbbr": "EC2014",
+      "publishedDate": "2014-09-12T00:00:00.000Z",
+      "volume": "2014",
+      "page": "252 - 254",
+      "DOI": "http://id.nii.ac.jp/1001/00102944/"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "article-journal",
+      "title": "Merging of magnetic islands as an efficient accelerator of electrons",
+      "titleOfEnglish": "Merging of magnetic islands as an efficient accelerator of electrons",
+      "authors": [
+        "Kentaro G. Tanaka",
+        "Tsubasa Yumura",
+        "Masaki Fujimoto",
+        "Iku Shinohara",
+        "Sarah V. Badman",
+        "Adrian Grocott"
+      ],
+      "abstract": "In a thin elongated current sheet, it is likely that more than one X-line forms and thus multiple magnetic islands are produced. The islands are then subject to merging. By simulating such a case with a two-dimensional full-particle code, we show that a merger forming a large island produces the most energetic electron population in the system. By setting the lateral extent of the simulation box to be as large as ∼100 ion inertial lengths, we introduce many (16) small islands in the initial thin current sheet (∼1 ion inertial length thickness). Merging of these islands proceeds to leave only two islands in the system. Then, strong electron acceleration is seen upon the final merger that produces the single island in the large simulation box. The most energetic electrons in the system are accelerated at the merging line. The merging line acceleration dominates because the reverse-reconnection facilitating the final merger is in such a strongly driven manner that the associated electric field is an order of magnitude larger than those available upon normal reconnection. Combining the results from additional runs enables us to obtain a scaling law, which suggests a non-negligible role played by merging lines in the observed electron acceleration phenomena.",
+      "keywords": [],
+      "language": "en",
+      "externalUrl": "https://aip.scitation.org/doi/pdf/10.1063/1.3491123",
+      "sortingDate": "2010-10-07T00:00:00.000Z",
+      "id": "5"
+    },
+    "files": {},
+    "publication": {
+      "bookTitle": "Physics of Plasmas",
+      "publishedDate": "2010-10-07T00:00:00.000Z",
+      "volume": "17",
+      "issue": "10",
+      "DOI": "https://doi.org/10.1063/1.3491123"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": "https://speakerdeck.com/player/6db7a935abcc41419f2cac3729251414"
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "thesis",
+      "title": "複数の X-line を形成する磁気リコネクションでの電子加速",
+      "authors": [
+        "湯村 翼"
+      ],
+      "keywords": [],
+      "language": "ja",
+      "presentationDate": "2008-03-31T00:00:00.000Z",
+      "sortingDate": "2008-03-31T00:00:00.000Z",
+      "id": "3",
+      "titleOfEnglish": "Electron Acceleration during Magnetic Reconnection with multiple X-lines",
+      "abstract": "高エネルギー粒子の生成は, 宇宙プラズマにおける最大の問題の 1 つである. 磁 気リコネクションは, 地球磁気圏や太陽から高エネルギー天体に至るまであらゆる スケールの宇宙プラズマにおいて高エネルギー粒子の生成源として注目される. 人 工衛星のその場観測やシミュレーションを用いた研究により, 磁気リコネクション での様々な電子加速メカニズムが提唱されてきた. しかしそれらの先行研究で行 われたシミュレーションでは, 初期に単一な X-line を形成するモデルを主に用い てきた. 磁気圏尾部や惑星間空間の観測から磁気リコネクションにおける複数の X-line の形成が示唆されており, 複数の X-line と電子加速の関連性を示唆する観 測結果もあるが, これまでのシミュレーションで複数の X-line の効果は考慮され ていない.\n本研究では磁気リコネクションにおいて複数の X-line の形成が電子加速メカニ ズムに与える効果を解明することを目的とし, 初期に任意の数の X-line を形成す るモデルを用いて 2 次元粒子シミュレーションを行った. シミュレーションでは 複数の X-line の形成により複数の磁気島が生成され, リコネクションの発展の中 で磁気島は合体した. 電子加速は磁気島合体に対応して起こった. 多数の磁気島が 生成され磁気島合体が多段階に分かれる場合には, 電子加速も多段階に分かれて起 こった. 加速された高エネルギー電子の空間分布を調べたところ, 多段階の電子加 速によって磁気島を取り囲む多重リング状の分布を形成することを発見した. 電 子の加速領域を調べた結果, X-line, pileup 領域, 磁気島合体領域の 3 つの領域が 電子加速領域となっていた. 磁気島合体領域は複数の X-line の形成によって生ま れる領域であり, 電子加速領域となることは本研究が初めて発見した. 超高エネル ギー電子の生成機構とそれらへの各加速領域の寄与を明らかにするため電子の軌 道と加速履歴を調べた. その結果, 超高エネルギー電子の生成には X-line での加 速が不可欠であることがわかった. しかし X-line での加速のみで超高エネルギー に達する電子はごく僅かで, 超高エネルギーまで到達した多くの電子は X-line で の加速後に pileup 領域や磁気島合体領域でさらなる加速を受けていた.\n初期 X-line 数や計算領域の大きさなどの計算設定の依存性を調べるため, 様々 な計算設定の下でシミュレーションを実行し結果を比較した. 初期 X-line 数の異 なる計算では, 最終時刻での電子エネルギースペクトルはよく似た形を示すが, 電 子が 3 つの加速領域で得るエネルギーには差が生じた. 計算領域の大きさの異な る計算を比較した結果, 計算領域が大きいほど電子の得るエネルギーは増加し, 高 エネルギー電子は多く生成された. エネルギースペクトルは磁気リコネクションの スケールに依存し, 計算領域の大きさの異なる場合でも合体の途中の磁気島の大き さが同じ状態の時に比較するとスペクトルはよく一致した. 本研究における最大 スケールの計算では磁気島合体領域での電子加速の規模が大きくなり, 非熱的電子 が多数生成された."
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cb1bde8f8dee001ea19cb1"
+    },
+    "publication": {
+      "bookTitle": "東京大学大学院 修士論文"
+    },
+    "acm": {},
+    "embed": {
+      "slideshare": ""
+    },
+    "external": {
+      "links": []
+    }
+  },
+  {
+    "core": {
+      "type": "thesis",
+      "title": "レイリーテイラー不安定による赤道電離圏プラズマバブルの発生",
+      "titleOfEnglish": "Generation of Equatorial Ionospheric Plasma Bubbles by Rayleigh-Taylor Instability",
+      "authors": [
+        "湯村 翼"
+      ],
+      "abstract": "赤道上空の電離圏では, 赤道スプレッド F と呼ばれるプラズマ密度の不規則構造が生 じることが知られている. イオノゾンデ観測による研究ではその詳細は未解決であったが, 非干渉性レーダー観測を用いた研究によって電離圏下部の密度の小さいプラズマが高高度 へ上昇しているという考えがまとめられ, 低高度のプラズマが泡のように上昇するこの現 象を ”プラズマバブル” と呼ぶ. プラズマバブルの発生を説明できる機構としてレイリー テイラー不安定が有力視される. レイリーテイラー不安定はプラズマが鉛直方向に正の密 度勾配を持つときに重力によって発生する不安定である. この条件に一致する電離圏下部 では, 微小擾乱が大きな不安定へと成長し得る.\nレイリーテイラー不安定の理論を用い電離圏密度の数値シミュレーションを行い, プラ ズマバブルの発生と成長を再現した. バブルの発生と成長に大きく寄与する要素を抽出す るためパラメータを変えて様々な条件下でシミュレーションを行った. その結果, プラズ マピークの高度がプラズマバブルの成長速度に大きく関わっていることが示された. プラ ズマピークが上昇するとバブルの成長は著しく早まり, プラズマピークの高度が下がると バブルは発生しない. このことはイオン-中性大気の衝突周波数より考察できる. また, 大 気の鉛直温度構造もまたバブルの発生と成長に関わることが示された. 大気が低温である 夜型の温度構造においては昼型の温度構造よりもバブルの成長が早く, バブルが夜に頻出 するという観測事実に一致する.",
+      "keywords": [],
+      "language": "ja",
+      "presentationDate": "2006-01-27T00:00:00.000Z",
+      "sortingDate": "2006-01-27T00:00:00.000Z",
+      "id": "4"
+    },
+    "files": {
+      "paper": "https://dl.yumulab.org/api/files/61cb1cd08f8dee001ea19cd9"
+    },
+    "publication": {
+      "bookTitle": "北海道大学 卒業論文"
+    },
+    "acm": {},
+    "embed": {},
+    "external": {
+      "links": []
+    }
+  }
+]
