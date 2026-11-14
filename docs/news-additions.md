@@ -9,7 +9,7 @@
 - 原則としてNewsの題目・著者を登録し、Newsから参照できる主催者プログラム、年度まとめ、大学・共同研究者の記事で補足しました。共著者の全員が分からない場合は、確認できた著者だけを登録しています。
 - 巻号・ページ・DOI・出版日など、分からない情報は空欄にしています。MUS147と複雑系マイクロシンポジウムは、公式募集要項に原稿掲載・概要集の記載があるため国内学会として分類しています。
 - 発表日が明記されている場合のみ `presentationDate` を登録しています。不明な場合はNews記事の日付を `sortingDate` に使用し、発表日や出版日としては扱いません。例外として、採択段階のVRST2026は開催初日（2026-11-16）を並べ替え日とし、概要に「開催予定」「採択」を明記しています。
-- Newsからの初回追加時にはサムネイル・スライド埋め込み・PDFファイルを追加せず、画像欄は共通プレースホルダーを使用しました。その後、EC79の4件に提供されたPDFと論文内の図を追加しました（下記参照）。
+- Newsからの初回追加時にはサムネイル・スライド埋め込み・PDFファイルを追加せず、画像欄は共通プレースホルダーを使用しました。その後、EC79の4件と複雑系マイクロシンポジウムの3件に提供されたPDFと論文内の図を追加しました（下記参照）。
 - 新URLはトップ直下です。CDIO ARM2024は同じ会議で湯村が2件登壇しているため、パネルのURLに `panel` を付けて区別しました。
 
 ## 追加一覧
@@ -26,10 +26,10 @@
 | 87 | `/ec79-oyamada/` | ノア：メタバース空間で対話相手に向かって自律移動するAIアバターの開発と評価 | 小山田 悠人, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
 | 88 | `/ec79-hokin/` | 足位置の視覚的提示による電子オルガンのペダル鍵盤演奏学習支援システムの開発と評価 | 寳金 和志, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
 | 89 | `/ec79-tamahori/` | リン酸二水素アンモニウム結晶のコンピュテーショナルデザインの検討 | 玉堀 舜, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
-| 90 | `/csmicro25-nakayama/` | BLEビーコンを用いて物理空間とサンドボックスゲームを接続するシステムの開発 | 中山 貴博 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | Newsで確認できた筆頭著者のみ登録。共著者・ページ番号は未確認。公式募集要項で講演論文と概要集の存在を確認。 |
-| 91 | `/csmicro25-hayasaka/` | Re:CODE - 古いギターを再利用した弾き語りのための電子楽器の開発 | 早坂 匠真 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | Newsで確認できた筆頭著者のみ登録。共著者・ページ番号は未確認。公式募集要項で講演論文と概要集の存在を確認。 |
-| 92 | `/csmicro25-kataoka/` | VLMと二輪自動車ドライブレコーダー映像による道路上の運転危険箇所の検出の検討 | 片岡 美樹 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | Newsで確認できた筆頭著者のみ登録。共著者・ページ番号は未確認。公式募集要項で講演論文と概要集の存在を確認。 |
-| 93 | `/csmicro25-ishikura/` | ARマーカーを用いたビニールハウスの窓開閉監視システムの開発 | 石倉 汰一 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | Newsで確認できた筆頭著者のみ登録。共著者・ページ番号は未確認。公式募集要項で講演論文と概要集の存在を確認。栗原研究室との共同研究。 |
+| 90 | `/csmicro25-nakayama/` | BLEビーコンを用いて物理空間とサンドボックスゲームを接続するシステムの開発 | 中山 貴博, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 提供PDFで筆頭著者・第2著者を確認。PDFと論文内の画像を配置済み。巻号・通しページは未確認。 |
+| 91 | `/csmicro25-hayasaka/` | Re:CODE - 古いギターを再利用した弾き語りのための電子楽器の開発 | 早坂 匠真, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 提供PDFで筆頭著者・第2著者を確認。PDFと論文内の画像を配置済み。巻号・通しページは未確認。 |
+| 92 | `/csmicro25-kataoka/` | VLMと二輪自動車ドライブレコーダー映像による道路上の運転危険箇所の検出の検討 | 片岡 美樹, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 提供PDFで筆頭著者・第2著者を確認。PDFと論文内の画像を配置済み。巻号・通しページは未確認。 |
+| 93 | `/csmicro25-ishikura/` | ARマーカーを用いたビニールハウスの窓開閉監視システムの開発 | 石倉 汰一, 栗原 純一, 湯村 翼 | 第25回複雑系マイクロシンポジウム | [News](https://www.yumulab.org/2026/03/07/cs-micro.html) / [補足1](https://cs-micro.github.io/2026/) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 著者3名はユーザー指定に基づき補完。PDF・画像は未提供。栗原研究室との共同研究。 |
 | 94 | `/i2026-kabumoto/` | PreMaCube：感圧導電シートを2次元マーカとして用いるキューブ型インタフェースの開発 | 株本 くるみ, 清水 怜良, 上村 宙, 由谷 哲夫, 渋谷 敦子, 湯村 翼 | インタラクション2026論文集 | [News](https://www.yumulab.org/2026/03/05/interaction.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) / [補足2](https://www.interaction-ipsj.org/proceedings/2026/data/pdf/3A07.pdf) | 著者一覧は年度まとめ記事と公開論文で確認。 |
 | 95 | `/ubi89-akiba/` | 電子ペーパーサイネージにおける人の移動を通信媒介とした情報配送手法の開発と評価 | 秋葉 貴文, 湯村 翼 | 第89回情報処理学会ユビキタスコンピューティングシステム研究発表会 | [News](https://www.yumulab.org/2026/03/02/ubi89.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。 |
 | 96 | `/ubi89-hashimoto/` | HORUS Monitor：ヘッドマウントディスプレイを用いた自動運転車遠隔監視システムの提案 | 橋本 空輝, 清水 怜良, 金子 直矢, 牧野 仁宣, 湯村 翼 | 第89回情報処理学会ユビキタスコンピューティングシステム研究発表会 | [News](https://www.yumulab.org/2026/03/02/ubi89.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mbl118ubi89.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。 |
@@ -57,6 +57,18 @@
 | 89 | `/ec79-tamahori/` | `EC79_玉堀.pdf` | `public/pdfs/89.pdf` | 4ページ・図4「結晶で装飾したフィギュア台座の製作」→ `public/images/papers/89.jpg` |
 
 取り込み済みの提供ファイルは `tmp/archive/` に保管します。論文の件数とURLは変わりません。
+
+## 複雑系マイクロシンポジウムのPDF・サムネイル追加
+
+2026-11-14に提供された3件を、題目・著者で既存レコードと照合しました。第2著者に「湯村 翼」を登録しています。PDFは内容を変更せず配置し、SHA-256で原本との一致を確認しています。サムネイルは論文内の画像を720×377ピクセルにトリミングし、余白を追加せず保存しています。
+
+| ID | URL | 提供ファイル名 | 配置先PDF | サムネイルの出典 |
+|---|---|---|---|---|
+| 90 | `/csmicro25-nakayama/` | `csmicro-nakayama.pdf` | `public/pdfs/90.pdf` | 3ページ・Fig.5（ゲーム内の動作例）→ `public/images/papers/90.jpg` |
+| 91 | `/csmicro25-hayasaka/` | `csmicro-hayasaka.pdf` | `public/pdfs/91.pdf` | 1ページ・Fig.1（Re:CODEの演奏写真）→ `public/images/papers/91.jpg` |
+| 92 | `/csmicro25-kataoka/` | `csmicro-kataoka.pdf` | `public/pdfs/92.pdf` | 2ページ・Fig.3（危険箇所を示す走行映像）→ `public/images/papers/92.jpg` |
+
+取り込み済みの原本は `tmp/archive/` に保管します。石倉さん（ID 93）はPDF・サムネイルを追加せず、ユーザー指定の「石倉 汰一, 栗原 純一, 湯村 翼」に著者を更新しています。
 
 ## 管理上の注意
 

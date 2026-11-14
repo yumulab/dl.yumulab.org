@@ -3385,13 +3385,15 @@
       "type": "paper-conference",
       "title": "BLEビーコンを用いて物理空間とサンドボックスゲームを接続するシステムの開発",
       "authors": [
-        "中山 貴博"
+        "中山 貴博",
+        "湯村 翼"
       ],
       "language": "ja",
       "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
       "sortingDate": "2026-03-07T00:00:00.000Z",
       "presentationDate": "2026-03-07T00:00:00.000Z",
-      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+      "presentationlLocation": "北見経済センタービル（北海道北見市）",
+      "thumbnail": "/images/papers/90.jpg"
     },
     "publication": {
       "bookTitle": "第25回複雑系マイクロシンポジウム",
@@ -3402,6 +3404,9 @@
         "https://cs-micro.github.io/2026/",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/90.pdf"
     }
   },
   {
@@ -3410,13 +3415,15 @@
       "type": "paper-conference",
       "title": "Re:CODE - 古いギターを再利用した弾き語りのための電子楽器の開発",
       "authors": [
-        "早坂 匠真"
+        "早坂 匠真",
+        "湯村 翼"
       ],
       "language": "ja",
       "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
       "sortingDate": "2026-03-07T00:00:00.000Z",
       "presentationDate": "2026-03-07T00:00:00.000Z",
-      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+      "presentationlLocation": "北見経済センタービル（北海道北見市）",
+      "thumbnail": "/images/papers/91.jpg"
     },
     "publication": {
       "bookTitle": "第25回複雑系マイクロシンポジウム",
@@ -3427,6 +3434,9 @@
         "https://cs-micro.github.io/2026/",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/91.pdf"
     }
   },
   {
@@ -3435,13 +3445,15 @@
       "type": "paper-conference",
       "title": "VLMと二輪自動車ドライブレコーダー映像による道路上の運転危険箇所の検出の検討",
       "authors": [
-        "片岡 美樹"
+        "片岡 美樹",
+        "湯村 翼"
       ],
       "language": "ja",
       "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",
       "sortingDate": "2026-03-07T00:00:00.000Z",
       "presentationDate": "2026-03-07T00:00:00.000Z",
-      "presentationlLocation": "北見経済センタービル（北海道北見市）"
+      "presentationlLocation": "北見経済センタービル（北海道北見市）",
+      "thumbnail": "/images/papers/92.jpg"
     },
     "publication": {
       "bookTitle": "第25回複雑系マイクロシンポジウム",
@@ -3452,6 +3464,9 @@
         "https://cs-micro.github.io/2026/",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/92.pdf"
     }
   },
   {
@@ -3460,7 +3475,9 @@
       "type": "paper-conference",
       "title": "ARマーカーを用いたビニールハウスの窓開閉監視システムの開発",
       "authors": [
-        "石倉 汰一"
+        "石倉 汰一",
+        "栗原 純一",
+        "湯村 翼"
       ],
       "language": "ja",
       "externalUrl": "https://www.yumulab.org/2026/03/07/cs-micro.html",

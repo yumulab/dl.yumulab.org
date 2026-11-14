@@ -19,7 +19,7 @@ const slides = embedUrl(paper.embed?.slideshare);
 const video = embedUrl(paper.embed?.youtube);
 const keywords = core.keywords?.filter(Boolean) ?? [];
 const info = [
-  ['掲載誌・会議名', pub?.bookTitle], ['巻', pub?.volume], ['号', pub?.issue],
+  ['掲載誌・会議名', pub?.bookTitle || pub?.bookTitleAbbr], ['巻', pub?.volume], ['号', pub?.issue],
   ['番号', pub?.number], ['ページ', pub?.page],
   ['出版日', pub?.publishedDate && formatDate(pub.publishedDate)],
   ['発表日', core.presentationDate && formatDate(core.presentationDate)],
@@ -42,28 +42,22 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
         {slides && <a class="outline-button" href="#slides">発表スライド</a>}
       </div>
     </header>
-    <div class="detail-layout">
-      <div class="detail-body">
-        {core.abstract && <section class="detail-section"><h2><span>Abstract</span>概要</h2><p class="abstract-text">{core.abstract}</p></section>}
-        {(slides || video || links.length > 0) && <section class="detail-section">
-          <h2><span>Artifacts</span>関連資料</h2>
-          {video && <div class="embed-frame"><iframe src={video} title={`${core.title}の紹介動画`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" /></div>}
-          {slides && <div class="embed-frame" id="slides"><iframe src={slides} title={`${core.title}の発表スライド`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" /></div>}
-          {links.length > 0 && <ul class="artifact-links">{links.map((url) => <li><a href={url} target="_blank" rel="noopener noreferrer">{url}<Icon name="external" size={15} /></a></li>)}</ul>}
-        </section>}
-        <section class="detail-section"><h2><span>Information</span>書誌情報</h2><dl class="information">{info.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>
-        {keywords.length > 0 && <section class="detail-section"><h2><span>Keywords</span>キーワード</h2><div class="keyword-list">{keywords.map((keyword) => <a href={`${withBase('/')}?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}</div></section>}
-        <section class="detail-section">
-          <div class="section-heading"><h2><span>Citation</span>引用</h2><button type="button" id="copy-citation" class="copy-button" hidden><Icon name="copy" size={15} /><span>コピー</span></button></div>
-          <p id="citation-text" class="citation-text">{citation(paper)}</p><p id="copy-status" class="sr-only" role="status"></p>
-        </section>
-        {source && <section class="detail-section"><h2><span>Source URL</span>公開元</h2><a class="source-url" href={source} target="_blank" rel="noopener noreferrer">{source}<Icon name="external" size={15} /></a></section>}
-      </div>
-      <aside class="detail-aside" aria-label="論文の概要情報">
-        <img class="detail-thumbnail" src={thumbnail(paper)} alt={core.thumbnail || core.thumbnailSmall ? `${core.title}の研究紹介画像` : ''} width="560" height="294" />
-        {pub?.bookTitleAbbr && <p class="aside-venue"><span class="venue-badge" style={`--badge-color: ${category.color}`}>{pub.bookTitleAbbr}</span></p>}
-        {core.presentationDate && <p class="aside-date">{formatDate(core.presentationDate)} 発表</p>}
-      </aside>
+    <div class="detail-body">
+      {(core.thumbnail || core.thumbnailSmall) && <img class="detail-thumbnail" src={thumbnail(paper)} alt={`${core.title}の研究紹介画像`} width="560" height="294" />}
+      {core.abstract && <section class="detail-section"><h2><span>Abstract</span>概要</h2><p class="abstract-text">{core.abstract}</p></section>}
+      {(slides || video || links.length > 0) && <section class="detail-section">
+        <h2><span>Artifacts</span>関連資料</h2>
+        {video && <div class="embed-frame"><iframe src={video} title={`${core.title}の紹介動画`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" /></div>}
+        {slides && <div class="embed-frame" id="slides"><iframe src={slides} title={`${core.title}の発表スライド`} loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" /></div>}
+        {links.length > 0 && <ul class="artifact-links">{links.map((url) => <li><a href={url} target="_blank" rel="noopener noreferrer">{url}<Icon name="external" size={15} /></a></li>)}</ul>}
+      </section>}
+      <section class="detail-section"><h2><span>Information</span>書誌情報</h2><dl class="information">{info.map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>
+      {keywords.length > 0 && <section class="detail-section"><h2><span>Keywords</span>キーワード</h2><div class="keyword-list">{keywords.map((keyword) => <a href={`${withBase('/')}?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}</div></section>}
+      <section class="detail-section">
+        <div class="section-heading"><h2><span>Citation</span>引用</h2><button type="button" id="copy-citation" class="copy-button" hidden><Icon name="copy" size={15} /><span>コピー</span></button></div>
+        <p id="citation-text" class="citation-text">{citation(paper)}</p><p id="copy-status" class="sr-only" role="status"></p>
+      </section>
+      {source && <section class="detail-section"><h2><span>Source URL</span>公開元</h2><a class="source-url" href={source} target="_blank" rel="noopener noreferrer">{source}<Icon name="external" size={15} /></a></section>}
     </div>
     <a class="back-link bottom-back" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
   </main>
