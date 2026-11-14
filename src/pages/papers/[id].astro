@@ -34,7 +34,7 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
       <span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span>
       <h1>{core.title}</h1>
       {core.titleOfEnglish && <p class="english-title" lang="en">{core.titleOfEnglish}</p>}
-      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}><Icon name="user" size={15} />{author}</a>)}</div>
+      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}>{author}</a>)}</div>
       <div class="detail-actions">
         {pdf && <a class="pdf-button" href={pdf} target="_blank" rel="noopener noreferrer"><Icon name="download" size={18} />PDFを開く<Icon name="external" size={14} /></a>}
         {source && <a class="outline-button" href={source} target="_blank" rel="noopener noreferrer">公開元を見る<Icon name="external" size={15} /></a>}

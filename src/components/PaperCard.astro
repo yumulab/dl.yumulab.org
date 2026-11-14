@@ -1,7 +1,6 @@
 ---
 import type { Paper } from '../lib/papers';
 import { paperType, typeInfo, paperDate, formatDate, thumbnail } from '../lib/papers';
-import Icon from './Icon.astro';
 import { withBase } from '../lib/urls';
 interface Props { paper: Paper; index: number; }
 const { paper, index } = Astro.props;
@@ -16,7 +15,7 @@ const category = typeInfo(paperType(paper));
       <div class="paper-meta"><time datetime={paperDate(paper)}>{formatDate(paperDate(paper))}</time><span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span></div>
       <h3 class="paper-title">{paper.core.title}</h3>
       <div class="paper-byline">
-        <p class="paper-authors"><Icon name="user" size={13} /><span>{paper.core.authors?.join(', ')}</span></p>
+        <p class="paper-authors"><span>{paper.core.authors?.join(', ')}</span></p>
         {paper.publication?.bookTitleAbbr && <p><span class="venue-badge" style={`--badge-color: ${category.color}`}>{paper.publication.bookTitleAbbr}</span></p>}
       </div>
     </div>
