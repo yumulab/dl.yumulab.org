@@ -1,5 +1,5 @@
 ---
-interface Props { name: 'search' | 'close' | 'user' | 'book' | 'arrow' | 'download' | 'external' | 'copy' | 'grid' | 'list' | 'text' | 'filter' | 'chevron'; size?: number; }
+interface Props { name: 'search' | 'close' | 'user' | 'book' | 'arrow' | 'download' | 'external' | 'copy' | 'grid' | 'list' | 'text' | 'filter' | 'chevron' | 'trophy'; size?: number; }
 const { name, size = 18 } = Astro.props;
 const paths = {
   search: 'm21 21-4.5-4.5M19 10.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0Z',
@@ -15,6 +15,7 @@ const paths = {
   text: 'M4 5h16M4 10h12M4 15h16M4 20h10',
   filter: 'M4 6h16M7 12h10M10 18h4',
   chevron: 'm6 9 6 6 6-6',
+  trophy: 'M8 3h8v6a4 4 0 0 1-8 0V3ZM8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 2v5m-4 3h8m-6 0v-3h4v3',
 };
 ---
 <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={paths[name]} /></svg>

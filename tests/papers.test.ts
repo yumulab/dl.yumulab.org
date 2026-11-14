@@ -140,3 +140,10 @@ test('legacy category URLs resolve to the new merged categories', () => {
   assert.equal(readFilters(new URLSearchParams('type=report')).type, 'domestic-conference');
   assert.equal(readFilters(new URLSearchParams('type=talk')).type, 'presentation');
 });
+
+test('award names combine with author and venue searches without matching other presentations', () => {
+  const awarded = filterPapers(papers, { ...defaults, q: '学生奨励賞 秋葉' });
+  assert.deepEqual(awarded.map((paper) => paper.core.id), ['49', '29']);
+  assert.deepEqual(filterPapers(papers, { ...defaults, q: '研究奨励賞 金賞 EC75' }).map((paper) => paper.core.id), ['69']);
+  assert.equal(filterPapers(papers, { ...defaults, q: '優秀論文賞 WISS2021' }).length, 0);
+});

@@ -102,6 +102,18 @@
 
 サムネイルは2ページ・図2のASSADEP Simulator画面を抽出し、元画像を拡大せず、余白なしの720×377px JPEGにトリミングして `public/images/papers/85.jpg` に保存しました。配置と表示の確認後、元PDFは内容を変更せず `tmp/archive/vrsjhdc-shimizu.pdf` に保管します。
 
+## 情報処理北海道シンポ2023のサムネイル追加
+
+2026-11-15に、既存の論文PDFから埋め込み画像を抽出し、5件のサムネイルを追加しました。元画像は拡大せず、グリッドの縦横比（約1.91:1）に合わせてトリミングし、余白は追加していません。PDF原本は変更していません。
+
+| ID | URL | サムネイルの出典 | 配置先・サイズ |
+|---|---|---|---|
+| 36 | `/info2023-kamada/` | 1ページ・図1(B)（複数組み合わせたRolBoの完成予想図） | `public/images/papers/36.jpg`、621×325px |
+| 37 | `/info2023-akiba/` | 2ページ・図5（NNEPSプロトタイプ） | `public/images/papers/37.jpg`、280×147px |
+| 38 | `/info2023-oka/` | 2ページ・図4（GRABプロトタイプ） | `public/images/papers/38.jpg`、482×252px |
+| 39 | `/info2023-tsujinaga/` | 2ページ・図6（LTooLのコンテンツ選択画面） | `public/images/papers/39.jpg`、493×258px |
+| 40 | `/info2023-fujiya/` | 2ページ・図2(a)（Jadwelryプロトタイプの表面） | `public/images/papers/40.jpg`、373×195px |
+
 ## 管理上の注意
 
 追加データは `src/data/papers.json`、URL名は `src/data/paper-slugs.json` に登録しています。`npm run import:legacy` は現行APIから論文データを置き換えるため、手動追加したID 80〜107を保存・再統合する必要があります。追加記録の出典を参照して、未確認情報を後から補完してください。

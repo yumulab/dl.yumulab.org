@@ -44,7 +44,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "研究奨励賞（銀賞）",
+        "sourceUrl": "https://www.yumulab.org/2026/03/27/ec79-award.html"
+      }
+    ]
   },
   {
     "core": {
@@ -508,7 +514,13 @@
       "links": [
         "https://dev.protopedia.net/prototype/6352"
       ]
-    }
+    },
+    "awards": [
+      {
+        "name": "研究奨励賞（銀賞）",
+        "sourceUrl": "https://www.yumulab.org/conference/2025/03/19/ec75.html"
+      }
+    ]
   },
   {
     "core": {
@@ -597,7 +609,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "研究奨励賞（金賞）",
+        "sourceUrl": "https://www.yumulab.org/conference/2025/03/19/ec75.html"
+      }
+    ]
   },
   {
     "core": {
@@ -746,7 +764,8 @@
     },
     "files": {},
     "publication": {
-      "bookTitle": "Japan UBI Symposium 2025"
+      "bookTitle": "Japan UBI Symposium 2025",
+      "bookTitleAbbr": "Japan UBI Symposium 2025"
     },
     "acm": {},
     "embed": {
@@ -1211,7 +1230,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "研究奨励賞（銀賞）",
+        "sourceUrl": "https://www.yumulab.org/award/2024/06/07/ec71award.html"
+      }
+    ]
   },
   {
     "core": {
@@ -1257,7 +1282,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "研究奨励賞（銀賞）",
+        "sourceUrl": "https://www.yumulab.org/award/2024/06/07/ec71award.html"
+      }
+    ]
   },
   {
     "core": {
@@ -1293,7 +1324,8 @@
       "volume": "2024-IOT-64",
       "issue": "27",
       "page": "1-6",
-      "ISSN": "2188-8787"
+      "ISSN": "2188-8787",
+      "bookTitleAbbr": "IOT64"
     },
     "acm": {},
     "embed": {
@@ -1301,7 +1333,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "学生奨励賞",
+        "sourceUrl": "https://www.yumulab.org/award/2024/03/14/iot64.html"
+      }
+    ]
   },
   {
     "core": {
@@ -1335,7 +1373,8 @@
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
-      "publishedDate": "2024-02-28T00:00:00.000Z"
+      "publishedDate": "2024-02-28T00:00:00.000Z",
+      "bookTitleAbbr": "インタラクション2024"
     },
     "acm": {},
     "embed": {
@@ -1373,7 +1412,8 @@
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
-      "publishedDate": "2024-02-28T00:00:00.000Z"
+      "publishedDate": "2024-02-28T00:00:00.000Z",
+      "bookTitleAbbr": "インタラクション2024"
     },
     "acm": {},
     "embed": {
@@ -1410,7 +1450,8 @@
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
-      "publishedDate": "2024-02-28T00:00:00.000Z"
+      "publishedDate": "2024-02-28T00:00:00.000Z",
+      "bookTitleAbbr": "インタラクション2024"
     },
     "acm": {},
     "embed": {
@@ -1447,7 +1488,8 @@
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
-      "publishedDate": "2024-02-28T00:00:00.000Z"
+      "publishedDate": "2024-02-28T00:00:00.000Z",
+      "bookTitleAbbr": "インタラクション2024"
     },
     "acm": {},
     "embed": {
@@ -1485,7 +1527,8 @@
     },
     "publication": {
       "bookTitle": "インタラクション2024論文集",
-      "publishedDate": "2024-02-28T00:00:00.000Z"
+      "publishedDate": "2024-02-28T00:00:00.000Z",
+      "bookTitleAbbr": "インタラクション2024"
     },
     "acm": {},
     "embed": {
@@ -1536,7 +1579,8 @@
       "volume": "2023-EC-70",
       "issue": "2",
       "page": "1-9",
-      "ISSN": "2188-8914"
+      "ISSN": "2188-8914",
+      "bookTitleAbbr": "EC70"
     },
     "acm": {},
     "embed": {},
@@ -1610,7 +1654,8 @@
     "publication": {
       "bookTitle": "Bulletin of Networking, Computing, Systems, and Software",
       "volume": "13",
-      "number": "1"
+      "number": "1",
+      "bookTitleAbbr": "NCSS2023"
     },
     "acm": {},
     "embed": {
@@ -1638,7 +1683,8 @@
       "presentationlLocation": "北海道大学",
       "presentationDate": "2023-10-14T00:00:00.000Z",
       "sortingDate": "2023-10-14T00:00:00.000Z",
-      "id": "36"
+      "id": "36",
+      "thumbnail": "/images/papers/36.jpg"
     },
     "files": {
       "draft": false,
@@ -1648,7 +1694,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
       "publishedDate": "2023-10-14T00:00:00.000Z",
-      "page": "115-118"
+      "page": "115-118",
+      "bookTitleAbbr": "情報処理北海道シンポ2023"
     },
     "acm": {},
     "embed": {
@@ -1676,7 +1723,8 @@
       "presentationlLocation": "北海道大学",
       "presentationDate": "2023-10-14T00:00:00.000Z",
       "sortingDate": "2023-10-14T00:00:00.000Z",
-      "id": "37"
+      "id": "37",
+      "thumbnail": "/images/papers/37.jpg"
     },
     "files": {
       "draft": false,
@@ -1686,7 +1734,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
       "publishedDate": "2023-10-14T00:00:00.000Z",
-      "page": "119-120"
+      "page": "119-120",
+      "bookTitleAbbr": "情報処理北海道シンポ2023"
     },
     "acm": {},
     "embed": {
@@ -1714,7 +1763,8 @@
       "presentationlLocation": "北海道大学",
       "presentationDate": "2023-10-14T00:00:00.000Z",
       "sortingDate": "2023-10-14T00:00:00.000Z",
-      "id": "38"
+      "id": "38",
+      "thumbnail": "/images/papers/38.jpg"
     },
     "files": {
       "draft": false,
@@ -1724,7 +1774,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
       "publishedDate": "2023-10-14T00:00:00.000Z",
-      "page": "121-124"
+      "page": "121-124",
+      "bookTitleAbbr": "情報処理北海道シンポ2023"
     },
     "acm": {},
     "embed": {
@@ -1751,7 +1802,8 @@
       "language": "ja",
       "presentationDate": "2023-10-14T00:00:00.000Z",
       "sortingDate": "2023-10-14T00:00:00.000Z",
-      "id": "39"
+      "id": "39",
+      "thumbnail": "/images/papers/39.jpg"
     },
     "files": {
       "draft": false,
@@ -1761,7 +1813,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
       "publishedDate": "2023-10-14T00:00:00.000Z",
-      "page": "125-126"
+      "page": "125-126",
+      "bookTitleAbbr": "情報処理北海道シンポ2023"
     },
     "acm": {},
     "embed": {
@@ -1790,7 +1843,8 @@
       "presentationlLocation": "北海道大学",
       "presentationDate": "2023-10-14T00:00:00.000Z",
       "sortingDate": "2023-10-14T00:00:00.000Z",
-      "id": "40"
+      "id": "40",
+      "thumbnail": "/images/papers/40.jpg"
     },
     "files": {
       "draft": false,
@@ -1800,7 +1854,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2023講演論文集",
       "publishedDate": "2023-10-14T00:00:00.000Z",
-      "page": "127-128"
+      "page": "127-128",
+      "bookTitleAbbr": "情報処理北海道シンポ2023"
     },
     "acm": {},
     "embed": {
@@ -1841,7 +1896,8 @@
     "publication": {
       "bookTitle": "インタラクション2023論文集",
       "publishedDate": "2023-03-01T00:00:00.000Z",
-      "page": "469-474"
+      "page": "469-474",
+      "bookTitleAbbr": "インタラクション2023"
     },
     "acm": {},
     "embed": {
@@ -1876,7 +1932,8 @@
     "publication": {
       "bookTitle": "インタラクション2023論文集",
       "publishedDate": "2023-03-01T00:00:00.000Z",
-      "page": "331-333"
+      "page": "331-333",
+      "bookTitleAbbr": "インタラクション2023"
     },
     "acm": {},
     "embed": {
@@ -1918,7 +1975,8 @@
       "publishedDate": "2023-02-27T00:00:00.000Z",
       "volume": "2023-CSEC-100",
       "issue": "24",
-      "page": "1-6"
+      "page": "1-6",
+      "bookTitleAbbr": "CSEC100"
     },
     "acm": {},
     "embed": {
@@ -1958,7 +2016,8 @@
       "volume": "2023-UBI-77",
       "issue": "17",
       "page": "1-7",
-      "publisher": "情報処理学会"
+      "publisher": "情報処理学会",
+      "bookTitleAbbr": "UBI77"
     },
     "acm": {},
     "embed": {
@@ -1966,7 +2025,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "優秀論文賞",
+        "sourceUrl": "https://www.yumulab.org/award/2023/03/09/ubiaward.html"
+      }
+    ]
   },
   {
     "core": {
@@ -1995,7 +2060,8 @@
     "publication": {
       "bookTitle": "インターネットと運用技術シンポジウム論文集",
       "volume": "2022",
-      "page": "98-99"
+      "page": "98-99",
+      "bookTitleAbbr": "IOTS2022"
     },
     "acm": {},
     "embed": {
@@ -2005,7 +2071,13 @@
       "links": [
         "https://github.com/Gachal29/Furm"
       ]
-    }
+    },
+    "awards": [
+      {
+        "name": "IOTS2022学生奨励賞",
+        "sourceUrl": "https://www.yumulab.org/award/2022/12/09/iots.html"
+      }
+    ]
   },
   {
     "core": {
@@ -2035,7 +2107,8 @@
       "bookTitle": "インターネットと運用技術シンポジウム論文集",
       "publishedDate": "2022-12-01T00:00:00.000Z",
       "volume": "2022",
-      "page": "84-85"
+      "page": "84-85",
+      "bookTitleAbbr": "IOTS2022"
     },
     "acm": {},
     "embed": {
@@ -2043,7 +2116,13 @@
     },
     "external": {
       "links": []
-    }
+    },
+    "awards": [
+      {
+        "name": "IOTS2022学生奨励賞",
+        "sourceUrl": "https://www.yumulab.org/award/2022/12/09/iots.html"
+      }
+    ]
   },
   {
     "core": {
@@ -2064,7 +2143,8 @@
     },
     "files": {},
     "publication": {
-      "bookTitle": "CODEBLUE2022"
+      "bookTitle": "CODEBLUE2022",
+      "bookTitleAbbr": "CODEBLUE2022"
     },
     "acm": {},
     "embed": {
@@ -2094,7 +2174,8 @@
     },
     "files": {},
     "publication": {
-      "bookTitle": "コンピュータセキュリティシンポジウム2022（CSS2022）"
+      "bookTitle": "コンピュータセキュリティシンポジウム2022（CSS2022）",
+      "bookTitleAbbr": "CSS2022"
     },
     "acm": {},
     "embed": {
@@ -2129,7 +2210,8 @@
     "publication": {
       "bookTitle": "情報処理北海道シンポジウム2022講演論文集",
       "publishedDate": "2022-10-15T00:00:00.000Z",
-      "page": "185-188"
+      "page": "185-188",
+      "bookTitleAbbr": "情報処理北海道シンポ2022"
     },
     "acm": {},
     "embed": {
@@ -2170,7 +2252,8 @@
       "bookTitle": "エンタテインメントコンピューティングシンポジウム2022論文集",
       "publishedDate": "2022-08-25T00:00:00.000Z",
       "volume": "2022",
-      "page": "99-101"
+      "page": "99-101",
+      "bookTitleAbbr": "EC2022"
     },
     "acm": {},
     "embed": {},
@@ -2206,7 +2289,8 @@
     "publication": {
       "bookTitle": "インタラクション2022論文集",
       "publishedDate": "2022-02-21T00:00:00.000Z",
-      "page": "180-183"
+      "page": "180-183",
+      "bookTitleAbbr": "インタラクション2022"
     },
     "acm": {},
     "embed": {},
@@ -2392,7 +2476,8 @@
       "publisher": "宇宙航空研究開発機構",
       "copyrightHolder": "宇宙航空研究開発機構",
       "DOI": "http://doi.org/10.20637/00047376",
-      "ISSN": "2433-2216"
+      "ISSN": "2433-2216",
+      "bookTitleAbbr": "宇宙科学情報解析論文誌"
     },
     "acm": {},
     "embed": {},
@@ -2774,7 +2859,8 @@
       "page": "1-7",
       "publisher": "情報処理学会",
       "ISSN": "2188-8914",
-      "DOI": ""
+      "DOI": "",
+      "bookTitleAbbr": "EC46"
     },
     "acm": {},
     "embed": {
@@ -2851,7 +2937,8 @@
       "issue": "23",
       "page": "1-9",
       "publisher": "情報処理学会",
-      "ISSN": "2188-8760"
+      "ISSN": "2188-8760",
+      "bookTitleAbbr": "EC44"
     },
     "acm": {},
     "embed": {
@@ -2886,7 +2973,8 @@
       "publishedDate": "2017-03-17T00:00:00.000Z",
       "volume": "JAXA-RR-16-007",
       "issue": "6",
-      "page": "167-171"
+      "page": "167-171",
+      "bookTitleAbbr": "宇宙科学情報解析論文誌"
     },
     "acm": {},
     "embed": {},
@@ -2918,7 +3006,8 @@
     },
     "publication": {
       "bookTitle": "NICOGRAPH 2016 講演集",
-      "page": "57-64"
+      "page": "57-64",
+      "bookTitleAbbr": "NICOGRAPH 2016"
     },
     "acm": {},
     "embed": {
@@ -3873,7 +3962,13 @@
       "links": [
         "https://hic.lne.st/conference/hokkaido2022/"
       ]
-    }
+    },
+    "awards": [
+      {
+        "name": "北海道フォーラム2022賞",
+        "sourceUrl": "https://www.yumulab.org/award/2022/11/26/hic.html"
+      }
+    ]
   },
   {
     "core": {

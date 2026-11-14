@@ -63,6 +63,12 @@ svg{flex-shrink:0;vertical-align:middle}
 .paper-byline p{display:flex;align-items:baseline;gap:5px;margin:2px 0}
 .paper-byline p svg{position:relative;top:2px}
 .paper-authors{color:#555}
+.award-badges{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:7px 0 0;min-width:0;max-width:100%}
+.award-badges li{min-width:0;max-width:100%}
+.award-badge{display:inline-flex;align-items:flex-start;gap:5px;max-width:100%;padding:3px 7px;border:1px solid #ddbc65;border-radius:4px;background:#fff5d6;color:#805800;font-size:11px;font-weight:600;line-height:1.6}
+.award-badge>svg{margin-top:2px}
+.award-badge>span{min-width:0;overflow-wrap:anywhere}
+a.award-badge:hover{background:#ffebae;text-decoration:underline}
 .papers-grid[data-view=grid] .paper-card{border:1px solid var(--badge-color,#007ab8);border-radius:8px}
 .papers-grid[data-view=grid] .paper-card{box-shadow:none}
 .papers-grid[data-view=grid] .paper-card:hover{box-shadow:0 5px 14px #15374d24}
@@ -105,6 +111,8 @@ svg{flex-shrink:0;vertical-align:middle}
 .papers-grid[data-view=text] .paper-byline{display:flex;flex-wrap:wrap;gap:3px 14px;font-size:11px;margin:0}
 .papers-grid[data-view=text] .paper-byline p{margin:0;min-width:0;overflow-wrap:anywhere}
 .papers-grid[data-view=text] .paper-byline svg{display:none}
+.papers-grid[data-view=text] .award-badges{flex-basis:100%;margin-top:3px}
+.papers-grid[data-view=text] .award-badge>svg{display:block}
 .paper-year-heading{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin:18px 0 0;font-size:20px;font-weight:600;line-height:1.5;color:#3b5666}
 .papers-grid[data-view=list] .paper-year-heading,.papers-grid[data-view=text] .paper-year-heading{margin:28px 0 4px}
 .papers-grid .paper-year-heading:first-child{margin-top:0}
@@ -121,6 +129,8 @@ svg{flex-shrink:0;vertical-align:middle}
 .author-links{display:flex;gap:10px 22px;flex-wrap:wrap;margin-bottom:25px}
 .author-links a{display:inline-flex;gap:7px;align-items:center;font-size:13px;color:#555}
 .author-links a:hover{text-decoration:underline}
+.detail-header>.award-badges{margin:0 0 22px}
+.detail-header .award-badge{font-size:13px;padding:5px 10px}
 .detail-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .pdf-button,.outline-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:4px;padding:10px 16px;font-size:12px;border:1px solid #d6e1e7;background:white;color:#53768a;min-height:40px}
 .pdf-button{background:#e54a44;color:white;border-color:#e54a44}

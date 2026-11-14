@@ -3,9 +3,11 @@ import type { Paper } from '../lib/papers';
 import { paperType, typeInfo, paperDate, formatDate, thumbnail } from '../lib/papers';
 import { withBase } from '../lib/urls';
 import { paperPath } from '../lib/paper-urls';
+import AwardBadges from './AwardBadges.astro';
 interface Props { paper: Paper; index: number; }
 const { paper, index } = Astro.props;
 const category = typeInfo(paperType(paper));
+const venue = paper.publication?.bookTitleAbbr?.trim() || paper.publication?.bookTitle?.trim();
 ---
 <article class="paper-card" data-paper-id={paper.core.id} style={`--badge-color: ${category.color}`}>
   <a href={withBase(paperPath(paper))} class="paper-card-link">
@@ -17,7 +19,8 @@ const category = typeInfo(paperType(paper));
       <h3 class="paper-title">{paper.core.title}</h3>
       <div class="paper-byline">
         <p class="paper-authors"><span>{paper.core.authors?.join(', ')}</span></p>
-        {paper.publication?.bookTitleAbbr && <p><span class="venue-badge">{paper.publication.bookTitleAbbr}</span></p>}
+        {venue && <p><span class="venue-badge">{venue}</span></p>}
+        <AwardBadges awards={paper.awards} />
       </div>
     </div>
   </a>

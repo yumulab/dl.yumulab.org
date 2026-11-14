@@ -18,6 +18,11 @@ const legacyTypes: Record<string, string> = {
   talk: 'presentation',
 };
 
+export interface PaperAward {
+  name: string;
+  sourceUrl: string;
+}
+
 export interface Paper {
   core: {
     id: string;
@@ -53,6 +58,7 @@ export interface Paper {
   };
   embed?: { slideshare?: string; youtube?: string };
   external?: { links?: string[] };
+  awards?: PaperAward[];
 }
 
 export const papers: Paper[] = (records as Paper[]).filter((paper) => !paper.core.draft);
@@ -124,6 +130,7 @@ export function searchText(paper: Paper): string {
     paper.core.title, paper.core.titleOfEnglish, ...(paper.core.authors ?? []),
     paper.core.abstract, ...(paper.core.keywords ?? []), paper.publication?.bookTitle,
     paper.publication?.bookTitleAbbr, typeInfo(paperType(paper)).label,
+    ...(paper.awards ?? []).map((award) => award.name),
   ].filter(Boolean).join(' '));
 }
 
