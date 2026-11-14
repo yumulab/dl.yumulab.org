@@ -65,6 +65,12 @@ svg{flex-shrink:0;vertical-align:middle}
 .paper-byline{font-size:10px;line-height:1.75;color:#707b84;margin-top:auto}
 .paper-byline p{display:flex;align-items:baseline;gap:5px;margin:2px 0}
 .paper-byline p svg{position:relative;top:2px}
+.papers-grid[data-view=grid] .paper-card-link{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto 1fr}
+.papers-grid[data-view=grid] .paper-content{display:contents}
+.papers-grid[data-view=grid] .paper-image{grid-area:1/1}
+.papers-grid[data-view=grid] .paper-meta{grid-area:1/1;align-self:end;align-items:center;z-index:1;margin:0;padding:24px 11px 8px;color:#fff;background:linear-gradient(transparent,rgba(14,31,43,.85))}
+.papers-grid[data-view=grid] .paper-title{grid-area:2/1;margin:11px 11px 9px}
+.papers-grid[data-view=grid] .paper-byline{grid-area:3/1;align-self:end;margin:0;padding:0 11px 13px}
 .active-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
 .active-filters span{font-size:11px;color:#28779e;background:#edf7fb;border:1px solid #d7edf6;border-radius:3px;padding:3px 9px;overflow-wrap:anywhere}
 .catalog-end{font-size:11px;color:#87919a;text-align:center;margin:36px 0 0}
