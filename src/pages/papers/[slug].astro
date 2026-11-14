@@ -4,12 +4,17 @@ import Icon from '../../components/Icon.astro';
 import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail, paperPdf } from '../../lib/papers';
 import type { Paper } from '../../lib/papers';
 import { withBase } from '../../lib/urls';
+import { paperSlug, paperPath } from '../../lib/paper-urls';
 
 export function getStaticPaths() {
-  return papers.map((paper) => ({ params: { id: paper.core.id }, props: { paper } }));
+  return papers.flatMap((paper) => [
+    { params: { slug: paperSlug(paper) }, props: { paper, legacy: false } },
+    { params: { slug: paper.core.id }, props: { paper, legacy: true } },
+  ]);
 }
-interface Props { paper: Paper; }
-const { paper } = Astro.props;
+interface Props { paper: Paper; legacy: boolean; }
+const { paper, legacy } = Astro.props;
+if (legacy) return Astro.redirect(withBase(paperPath(paper)), 301);
 const { core, publication: pub } = paper;
 const category = typeInfo(paperType(paper));
 const pdf = paperPdf(paper);

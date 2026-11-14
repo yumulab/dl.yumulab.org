@@ -41,6 +41,8 @@ npm run preview # ビルド結果をローカルで確認
 
 `src/data/papers.json` がデータ本体です。1論文につき1オブジェクトを追加・編集し、再ビルドすると反映されます。型定義は `src/lib/papers.ts` の `Paper` を参照してください。最低限の形式:
 
+新しい論文には `src/data/paper-slugs.json` にも `"80": "ec80-surname"` のようなURL名を登録してください。URLは `/papers/学会名-第1著者の姓/` です。インタラクションは `i20XX`、第36回ハプティクス研究会は `haptics36` を使用しています。登録済みURLは論文データの編集・再取り込みでも変わりません。未登録や重複がある場合はビルド時に検出します。
+
 ```json
 {
   "core": {
@@ -97,13 +99,17 @@ GitHubのリポジトリで **Settings → Pages → Build and deployment → So
 
 将来 `https://dl.yumulab.org/` に切り替える際は、`astro.config.mjs` の `site` を `https://dl.yumulab.org`、`base` を `/` に変更してください。その後、GitHub PagesのCustom domainとDNSを設定します。論文・画像・PDFのリンクを個別に修正する必要はありません。
 
+旧 `/papers/77/` などの数字URLは、対応する新URLへ即時転送するHTMLページを生成します。GitHub PagesではHTTPの301応答ではなく、`meta refresh` による自動転送です。転送ページのcanonicalは新URLを指します。会議名の略称と全件の対応は [URL対応表](docs/paper-urls.md) を参照してください。
+
 ## 構成
 
 ```text
 src/data/papers.json       論文データ
+src/data/paper-slugs.json  数字IDと固定URL名の対応
+src/lib/paper-urls.ts      論文URLの生成・検証
 src/lib/papers.ts          型・検索・日付・リンクの処理
 src/pages/index.astro      一覧と検索
-src/pages/papers/[id].astro 論文詳細の静的生成
+src/pages/papers/[slug].astro 論文詳細と旧URLの転送ページ
 src/scripts/catalog.ts    ブラウザ上の絞り込みと表示切り替え
 src/styles/global.css     共通スタイルとレスポンシブ表示
 public/images/papers/     ローカルのサムネイル
