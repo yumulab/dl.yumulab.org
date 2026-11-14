@@ -60,7 +60,7 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
       </div>
       <aside class="detail-aside" aria-label="論文の概要情報">
         <img class="detail-thumbnail" src={thumbnail(paper)} alt={core.thumbnail || core.thumbnailSmall ? `${core.title}の研究紹介画像` : ''} width="560" height="294" />
-        {pub?.bookTitleAbbr && <p class="aside-venue"><Icon name="book" size={17} />{pub.bookTitleAbbr}</p>}
+        {pub?.bookTitleAbbr && <p class="aside-venue"><span class="venue-badge" style={`--badge-color: ${category.color}`}>{pub.bookTitleAbbr}</span></p>}
         {core.presentationDate && <p class="aside-date">{formatDate(core.presentationDate)} 発表</p>}
       </aside>
     </div>
