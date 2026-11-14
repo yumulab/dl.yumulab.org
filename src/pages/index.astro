@@ -8,13 +8,6 @@ const sorted = filterPapers(papers, { q: '', year: '', type: '', sort: 'newest',
 const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().reverse();
 ---
 <Layout>
-  <section class="hero" aria-labelledby="page-title">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">YUMURA LAB · DIGITAL LIBRARY</p>
-      <h1 id="page-title">北海道情報大学 湯村研究室<br class="mobile-break" /> 論文レポジトリ</h1>
-      <p class="hero-count">研究成果・発表資料 <span>{papers.length}</span> 件</p>
-    </div>
-  </section>
   <div class="view-bar">
     <div class="view-bar-inner">
       <div class="view-options" role="group" aria-label="表示形式">
@@ -39,6 +32,7 @@ const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().r
       </form>
     </section>
     <main id="main" class="catalog-main">
+      <h1 class="sr-only">論文一覧</h1>
       <noscript><p class="notice">検索・表示切り替えを利用するにはJavaScriptを有効にしてください。すべての論文は以下から閲覧できます。</p></noscript>
       <div id="active-filters" class="active-filters" aria-label="現在の検索条件" hidden></div>
       <div id="papers" class="papers-grid" data-view="grid">
