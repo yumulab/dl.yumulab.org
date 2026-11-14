@@ -58,6 +58,9 @@ svg{flex-shrink:0;vertical-align:middle}
 .type-badge,.venue-badge{display:inline-block;padding:2px 6px;border-radius:3px;line-height:1.6;font-size:10px;font-weight:500;white-space:nowrap}
 .type-badge{background:var(--badge-color,#007ab8);color:#fff}
 .venue-badge{border:2px solid var(--badge-color,#007ab8);background:rgba(255,255,255,.8);color:var(--badge-color,#007ab8);min-width:0;max-width:100%;font-size:inherit;white-space:normal;overflow-wrap:anywhere}
+.paper-meta .venue-badge{display:none}
+.papers-grid:is([data-view=list],[data-view=text]) .paper-meta .venue-badge{display:inline-block}
+.papers-grid:is([data-view=list],[data-view=text]) .paper-venue{display:none}
 .paper-title{font-size:13px;font-weight:600;line-height:1.8;margin:0 0 9px;overflow-wrap:anywhere;color:#36414a}
 .paper-byline{font-size:10px;line-height:1.75;color:#707b84;margin-top:auto}
 .paper-byline p{display:flex;align-items:baseline;gap:5px;margin:2px 0}

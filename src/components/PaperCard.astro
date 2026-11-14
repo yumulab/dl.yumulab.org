@@ -15,11 +15,11 @@ const venue = paper.publication?.bookTitleAbbr?.trim() || paper.publication?.boo
       <img src={thumbnail(paper)} alt="" width="560" height="294" loading={index < 3 ? 'eager' : 'lazy'} decoding="async" />
     </div>
     <div class="paper-content">
-      <div class="paper-meta"><time datetime={paperDate(paper)}>{formatDate(paperDate(paper))}</time><span class="type-badge">{category.label}</span></div>
+      <div class="paper-meta"><time datetime={paperDate(paper)}>{formatDate(paperDate(paper))}</time><span class="type-badge">{category.label}</span>{venue && <span class="venue-badge">{venue}</span>}</div>
       <h3 class="paper-title">{paper.core.title}</h3>
       <div class="paper-byline">
         <p class="paper-authors"><span>{paper.core.authors?.join(', ')}</span></p>
-        {venue && <p><span class="venue-badge">{venue}</span></p>}
+        {venue && <p class="paper-venue"><span class="venue-badge">{venue}</span></p>}
         <AwardBadges awards={paper.awards} />
       </div>
     </div>
