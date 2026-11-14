@@ -3253,7 +3253,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/10/haptics36.html",
       "sortingDate": "2026-03-10T00:00:00.000Z",
       "presentationDate": "2026-03-10T00:00:00.000Z",
-      "presentationlLocation": "千葉大学 西千葉キャンパス"
+      "presentationlLocation": "千葉大学 西千葉キャンパス",
+      "thumbnail": "/images/papers/85.jpg"
     },
     "publication": {
       "bookTitle": "日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会",
@@ -3263,6 +3264,9 @@
       "links": [
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/85.pdf"
     }
   },
   {
@@ -3750,7 +3754,8 @@
       ],
       "language": "en",
       "externalUrl": "https://www.yumulab.org/2025/07/12/nneps-journal.html",
-      "sortingDate": "2025-07-12T00:00:00.000Z"
+      "sortingDate": "2025-07-12T00:00:00.000Z",
+      "thumbnail": "/images/papers/102.jpg"
     },
     "publication": {
       "bookTitle": "International Journal on Advances in Networks and Services",
