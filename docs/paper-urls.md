@@ -1,6 +1,6 @@
 # 論文詳細URLの対応表
 
-URLはサイトのルートを基準に表記しています。現在の仮URLでは、先頭に `https://yumulab.github.io/dl.yumulab.org` が付きます。独自ドメイン移行後は `https://dl.yumulab.org` が付きます。
+URLはサイトのルートを基準に表記しています。公開先の独自ドメインでは、先頭に `https://dl.yumulab.org` が付きます。以前の仮URLでは `https://yumulab.github.io/dl.yumulab.org` が付いていました。
 
 例: `/papers/77/` → `/ec79-miyazaki/`。既存の数字URLと、以前の `/papers/ec79-miyazaki/` などのURLは、トップ直下の新URLへ即時転送するHTMLページとして残します。全件について `/papers/略称-姓/` から `/略称-姓/` へ直接転送します。
 

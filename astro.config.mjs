@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://yumulab.github.io',
-  base: '/dl.yumulab.org',
+  site: 'https://dl.yumulab.org',
+  base: '/',
   output: 'static',
   trailingSlash: 'always',
 });

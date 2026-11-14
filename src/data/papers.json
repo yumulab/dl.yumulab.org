@@ -3272,7 +3272,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
       "sortingDate": "2026-03-09T00:00:00.000Z",
       "presentationDate": "2026-03-09T00:00:00.000Z",
-      "presentationlLocation": "電気通信大学（東京都調布市）"
+      "presentationlLocation": "電気通信大学（東京都調布市）",
+      "thumbnail": "/images/papers/86.jpg"
     },
     "publication": {
       "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
@@ -3283,6 +3284,9 @@
         "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/86.pdf"
     }
   },
   {
@@ -3298,7 +3302,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
       "sortingDate": "2026-03-10T00:00:00.000Z",
       "presentationDate": "2026-03-10T00:00:00.000Z",
-      "presentationlLocation": "電気通信大学（東京都調布市）"
+      "presentationlLocation": "電気通信大学（東京都調布市）",
+      "thumbnail": "/images/papers/87.jpg"
     },
     "publication": {
       "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
@@ -3309,6 +3314,9 @@
         "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/87.pdf"
     }
   },
   {
@@ -3324,7 +3332,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
       "sortingDate": "2026-03-10T00:00:00.000Z",
       "presentationDate": "2026-03-10T00:00:00.000Z",
-      "presentationlLocation": "電気通信大学（東京都調布市）"
+      "presentationlLocation": "電気通信大学（東京都調布市）",
+      "thumbnail": "/images/papers/88.jpg"
     },
     "publication": {
       "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
@@ -3335,6 +3344,9 @@
         "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/88.pdf"
     }
   },
   {
@@ -3350,7 +3362,8 @@
       "externalUrl": "https://www.yumulab.org/2026/03/10/ec79.html",
       "sortingDate": "2026-03-10T00:00:00.000Z",
       "presentationDate": "2026-03-10T00:00:00.000Z",
-      "presentationlLocation": "電気通信大学（東京都調布市）"
+      "presentationlLocation": "電気通信大学（東京都調布市）",
+      "thumbnail": "/images/papers/89.jpg"
     },
     "publication": {
       "bookTitle": "第79回情報処理学会エンタテインメントコンピューティング研究発表会",
@@ -3361,6 +3374,9 @@
         "https://www.ipsj.or.jp/kenkyukai/event/ec79.html",
         "https://www.yumulab.org/2026/03/31/summary.html"
       ]
+    },
+    "files": {
+      "paper": "/pdfs/89.pdf"
     }
   },
   {

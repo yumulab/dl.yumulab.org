@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-開発サーバーは `http://localhost:4321/dl.yumulab.org/` で起動します。
+開発サーバーは `http://localhost:4321/` で起動します。
 
 ```sh
 npm run check   # Astro・TypeScriptの型チェック
@@ -26,7 +26,7 @@ npm run preview # ビルド結果をローカルで確認
 - すべての表示形式で、論文の日付に合わせた年度ごとの見出しと区切りを表示（4月〜翌年3月）
 - タイトル・英語タイトル・著者・概要・キーワード・掲載誌による複数語検索
 - 年度、種類での絞り込み、新しい順／古い順への並べ替え
-- 検索条件のURLへの反映（例: `/dl.yumulab.org/?q=湯村&year=2025&type=domestic-conference&view=list`）
+- 検索条件のURLへの反映（例: `/?q=湯村&year=2025&type=domestic-conference&view=list`）
 - 論文詳細、PDFリンク、書誌情報、キーワード、引用のコピー
 - Speaker Deck・YouTubeの埋め込み、関連資料へのリンク
 - JavaScriptを無効にした場合も論文一覧・詳細を閲覧可能
@@ -65,9 +65,11 @@ npm run preview # ビルド結果をローカルで確認
 }
 ```
 
-画像がある場合は `public/images/papers/<id>.jpg` に配置し、`core.thumbnailSmall` または `core.thumbnail` に画像の取得元URLを設定します。画像がない論文には共通のプレースホルダーが表示されます。`core.draft: true` の論文は表示しません。`files.draft: true` のPDFリンクは表示しません。
+画像がある場合は `public/images/papers/<id>.jpg` に配置し、`core.thumbnailSmall` または `core.thumbnail` に `/images/papers/<id>.jpg`（ローカル画像）または画像の取得元URLを設定します。画像がない論文には共通のプレースホルダーが表示されます。`core.draft: true` の論文は表示しません。`files.draft: true` のPDFリンクは表示しません。
 
 論文PDFは `public/pdfs/<id>.pdf` に配置し、`files.paper` に `/pdfs/<id>.pdf` を指定します。公開先の `base` はリンク生成時に付加するため、JSONに `/dl.yumulab.org` は含めません。
+
+取り込み待ちのPDF・画像は `tmp/before/` に置きます。論文データと照合して `public/` へ配置し、表示・ファイルの確認後に元ファイルを `tmp/archive/` に移します。`tmp/` 以下はGitの追跡対象外です。論文内の図をサムネイルにする場合は、元の図を抽出し、グリッドの縦横比（約1.91:1）に合わせてトリミングした720×377ピクセルの画像として保存します。余白は追加しません。
 
 ## 現行サイトからの再取り込み
 
@@ -89,15 +91,15 @@ PDFは4件ずつ取得し、PDFのヘッダーと終端を確認してから保�
 
 ## 公開
 
-当面の公開URLは `https://yumulab.github.io/dl.yumulab.org/` です。`astro.config.mjs` に `site: 'https://yumulab.github.io'` と `base: '/dl.yumulab.org'` を設定しています。内部リンク・画像・検索フォームは `base` に追従します。
+公開先は `https://dl.yumulab.org/` です。`astro.config.mjs` に `site: 'https://dl.yumulab.org'` と `base: '/'` を設定しています。以前の仮URLは `https://yumulab.github.io/dl.yumulab.org/` です。内部リンク・画像・検索フォームは `base` に追従します。
 
-GitHubのリポジトリで **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定してください。独自ドメインは設定せず、Custom domainは空欄のままにします。
+GitHubのリポジトリで **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定し、**Custom domain** に `dl.yumulab.org` を保存してください。その後、DNSの `dl` のAレコードを `yumulab.github.io` 宛てのCNAMEに置き換えます。DNSチェック・証明書発行後に **Enforce HTTPS** を有効にします。切替順序と設定値は [独自ドメインへの切替手順](docs/custom-domain.md) を参照してください。
 
 `.github/workflows/deploy.yml` により、`main` へのpush時に型チェック・テスト・ビルド・公開を実行します。設定前の実行が失敗した場合は、Pagesを有効にしてから **Actions → Deploy to GitHub Pages → Run workflow** で再実行できます。`dist/` をGitに追加する必要はありません。
 
-論文PDFは `dist/pdfs/` にコピーされ、仮URLでもサイト内から配信されます。
+論文PDFは `dist/pdfs/` にコピーされ、`https://dl.yumulab.org/pdfs/<id>.pdf` から配信されます。
 
-将来 `https://dl.yumulab.org/` に切り替える際は、`astro.config.mjs` の `site` を `https://dl.yumulab.org`、`base` を `/` に変更してください。その後、GitHub PagesのCustom domainとDNSを設定します。論文・画像・PDFのリンクを個別に修正する必要はありません。
+GitHub Actionsで公開する構成のため、リポジトリ内の `CNAME` ファイルは不要です。論文・画像・PDFのリンクを個別に修正する必要はありません。切替後は旧サイトの `/api/papers`・`/api/files/…` はGitHub Pagesから提供されないため、現行API向けの再取り込み・PDF再取得ツールを使う場合は、別途残した旧サーバーの参照先を設定する必要があります。通常のサイト閲覧は保存済みJSON・画像・PDFで動作します。
 
 旧 `/papers/77/` などの数字URLと `/papers/ec79-miyazaki/` などの旧形式URLは、トップ直下の `/ec79-miyazaki/` などへ即時転送するHTMLページを生成します。GitHub PagesではHTTPの301応答ではなく、`meta refresh` による自動転送です。転送ページのcanonicalは新URLを指します。会議名の略称と全件の対応は [URL対応表](docs/paper-urls.md) を参照してください。
 
