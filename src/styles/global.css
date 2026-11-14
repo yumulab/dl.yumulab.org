@@ -28,12 +28,12 @@ svg{flex-shrink:0;vertical-align:middle}
 .hero-count span{font-size:17px;font-weight:600;margin-left:7px;margin-right:3px}
 .mobile-break{display:none}
 .view-bar{border-bottom:1px solid var(--border);background:#fff}
-.view-bar-inner{max-width:1168px;padding:14px 48px;margin:auto;display:flex;align-items:center;justify-content:space-between}
-.view-options{display:flex;gap:6px}
-.view-options button{display:flex;align-items:center;gap:7px;border:1px solid transparent;border-radius:4px;padding:7px 12px;background:transparent;color:#737d84;font-size:12px;transition:background .15s}
+.view-bar-inner{max-width:1168px;padding:14px 48px;margin:auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px}
+.view-options{display:flex;gap:6px;flex-wrap:wrap;max-width:100%}
+.view-options button{display:flex;align-items:center;gap:7px;border:1px solid transparent;border-radius:4px;padding:7px 12px;background:transparent;color:#737d84;font-size:12px;white-space:nowrap;transition:background .15s}
 .view-options button[aria-pressed=true]{color:var(--blue);background:#eaf6fc;border-color:#d3eaf7}
 .view-options button:hover{background:#f1f7fa;color:var(--blue)}
-#result-count{color:var(--muted);font-size:12px;margin:0}
+#result-count{color:var(--muted);font-size:12px;margin:0 0 0 auto;white-space:nowrap}
 .catalog-layout{max-width:1168px;margin:0 auto;padding:24px 48px 56px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;min-height:55vh;align-items:start}
 .filters{position:sticky;top:24px;padding-top:6px}
 .filters summary{list-style:none;display:none;cursor:pointer}
@@ -83,6 +83,19 @@ svg{flex-shrink:0;vertical-align:middle}
 .papers-grid[data-view=list] .paper-title{font-size:15px;margin-bottom:8px}
 .papers-grid[data-view=list] .paper-meta{font-size:11px;margin-bottom:7px}
 .papers-grid[data-view=list] .paper-byline{font-size:11px}
+.papers-grid[data-view=text]{grid-template-columns:1fr;gap:0}
+.papers-grid[data-view=text] .paper-card{box-shadow:none;border-radius:0;border-bottom:1px solid var(--border)}
+.papers-grid[data-view=text] .paper-card:hover{box-shadow:none;transform:none;background:#f7fbfd}
+.papers-grid[data-view=text] .paper-card-link{padding:14px 0}
+.papers-grid[data-view=text] .paper-image{display:none}
+.papers-grid[data-view=text] .paper-content{padding:0;gap:4px}
+.papers-grid[data-view=text] .paper-meta{font-size:11px;margin:0;gap:10px}
+.papers-grid[data-view=text] .type-badge{background:transparent;color:var(--badge-color);padding:0;font-size:11px}
+.papers-grid[data-view=text] .paper-title{font-size:14px;font-weight:500;line-height:1.8;margin:0}
+.papers-grid[data-view=text] .paper-card-link:hover .paper-title{color:var(--blue)}
+.papers-grid[data-view=text] .paper-byline{display:flex;flex-wrap:wrap;gap:3px 14px;font-size:11px;margin:0}
+.papers-grid[data-view=text] .paper-byline p{margin:0;min-width:0;overflow-wrap:anywhere}
+.papers-grid[data-view=text] .paper-byline svg{display:none}
 .site-footer{max-width:1072px;margin:0 auto;border-top:1px solid var(--border);padding:24px 0 28px;display:flex;justify-content:space-between;gap:24px;color:#7b858e;font-size:10px}
 .site-footer>div{display:flex;gap:16px;flex-wrap:wrap}
 .site-footer>div:first-child{flex-direction:column;gap:3px}
@@ -143,5 +156,5 @@ svg{flex-shrink:0;vertical-align:middle}
 @media(max-width:1100px){.catalog-layout{padding:24px 28px 48px;grid-template-columns:200px minmax(0,1fr);gap:20px}.view-bar-inner{padding-left:28px;padding-right:28px}.papers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:27px}.site-footer,.detail-page{margin-left:28px;margin-right:28px}.detail-layout{gap:32px;grid-template-columns:minmax(0,1fr) 240px}}
 @media(max-width:900px){.catalog-layout{grid-template-columns:1fr;gap:20px}.filters{position:static;padding:0;border:1px solid var(--border);border-radius:4px}.filters summary{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;font-size:12px;color:#637d8e}.filters summary>span{display:flex;gap:8px;align-items:center}.filters details[open] summary>svg{transform:rotate(180deg)}#search-form{padding:4px 16px 16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.filter-field{margin:0}.filter-field:first-child{grid-column:1/-1}.search-input input{font-size:12px}.reset-button{justify-self:start;grid-column:1/-1}.papers-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-inner{min-height:205px}.detail-layout{grid-template-columns:minmax(0,1fr) 200px;gap:26px}.detail-header h1{font-size:24px}}
 @media(max-width:720px){.site-header{padding:0 18px}.site-name{font-size:11px}.lab-link{font-size:10px}.hero h1{font-size:24px}.mobile-break{display:block}.hero-inner{min-height:218px}.papers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-footer{padding:24px 0;flex-direction:column;gap:15px}.detail-layout{display:flex;flex-direction:column;gap:30px}.detail-body{width:100%}.detail-aside{position:static;max-width:400px;width:100%;order:-1}.detail-thumbnail{aspect-ratio:2.2}.detail-header h1{font-size:22px}.detail-page{padding-top:25px}.detail-header{padding-top:26px}.detail-section h2>span{font-size:20px}.abstract-text{font-size:13px}.information>div{grid-template-columns:100px minmax(0,1fr)}}
-@media(max-width:480px){body{font-size:13px}.site-header{height:52px;gap:10px;padding:0 14px}.site-name{max-width:235px;font-size:10px;line-height:1.7}.lab-link{font-size:9px}.hero h1{font-size:21px;letter-spacing:.02em}.hero-inner{padding:26px 16px;min-height:210px}.hero-eyebrow{font-size:9px}.view-bar-inner{padding:12px 16px}.view-options button{font-size:11px;padding:7px 8px;gap:5px}#result-count{font-size:10px}.catalog-layout{padding:18px 16px 40px;gap:18px}.papers-grid{grid-template-columns:1fr;gap:20px}.paper-title{font-size:14px}.paper-content{padding:12px 14px 15px}.paper-meta{font-size:11px}.paper-byline{font-size:11px}.paper-image{aspect-ratio:1.91}.filter-field label{font-size:11px}.select-wrap select{font-size:11px;padding-left:8px}#search-form{gap:12px 8px;padding-left:12px;padding-right:12px}.select-wrap>svg{right:8px}.papers-grid[data-view=list] .paper-card-link{gap:12px}.papers-grid[data-view=list] .paper-image{width:90px;aspect-ratio:1.4}.papers-grid[data-view=list] .paper-title{font-size:12px}.papers-grid[data-view=list] .paper-meta{font-size:10px;gap:5px}.papers-grid[data-view=list] .paper-byline{font-size:10px}.site-footer,.detail-page{margin-left:18px;margin-right:18px}.detail-header h1{font-size:20px}.detail-actions{gap:8px}.pdf-button,.outline-button{padding:9px 12px;font-size:11px}.author-links{gap:8px 15px}.author-links a{font-size:12px}.information>div{grid-template-columns:85px minmax(0,1fr);gap:12px;font-size:11px}.empty-state{padding:55px 6px}.empty-state h2{font-size:14px}.section-heading{gap:8px}.copy-button{font-size:10px}}
+@media(max-width:480px){body{font-size:13px}.site-header{height:52px;gap:10px;padding:0 14px}.site-name{max-width:235px;font-size:10px;line-height:1.7}.lab-link{font-size:9px}.hero h1{font-size:21px;letter-spacing:.02em}.hero-inner{padding:26px 16px;min-height:210px}.hero-eyebrow{font-size:9px}.view-bar-inner{padding:12px 16px}.view-options{gap:4px}.view-options button{font-size:10px;padding:7px 6px;gap:4px}.view-options button svg{width:14px;height:14px}#result-count{font-size:10px}.catalog-layout{padding:18px 16px 40px;gap:18px}.papers-grid{grid-template-columns:1fr;gap:20px}.paper-title{font-size:14px}.paper-content{padding:12px 14px 15px}.paper-meta{font-size:11px}.paper-byline{font-size:11px}.paper-image{aspect-ratio:1.91}.filter-field label{font-size:11px}.select-wrap select{font-size:11px;padding-left:8px}#search-form{gap:12px 8px;padding-left:12px;padding-right:12px}.select-wrap>svg{right:8px}.papers-grid[data-view=list] .paper-card-link{gap:12px}.papers-grid[data-view=list] .paper-image{width:90px;aspect-ratio:1.4}.papers-grid[data-view=list] .paper-title{font-size:12px}.papers-grid[data-view=list] .paper-meta{font-size:10px;gap:5px}.papers-grid[data-view=list] .paper-byline{font-size:10px}.site-footer,.detail-page{margin-left:18px;margin-right:18px}.detail-header h1{font-size:20px}.detail-actions{gap:8px}.pdf-button,.outline-button{padding:9px 12px;font-size:11px}.author-links{gap:8px 15px}.author-links a{font-size:12px}.information>div{grid-template-columns:85px minmax(0,1fr);gap:12px;font-size:11px}.empty-state{padding:55px 6px}.empty-state h2{font-size:14px}.section-heading{gap:8px}.copy-button{font-size:10px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}

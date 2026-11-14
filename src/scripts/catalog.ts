@@ -50,7 +50,7 @@ function render(updateUrl = true) {
     if (filters.year) params.set('year', filters.year);
     if (filters.type) params.set('type', filters.type);
     if (filters.sort !== 'newest') params.set('sort', filters.sort);
-    if (filters.view !== 'tile') params.set('view', filters.view);
+    if (filters.view !== 'grid') params.set('view', filters.view);
     const search = params.toString();
     history.replaceState(null, '', `${location.pathname}${search ? `?${search}` : ''}${location.hash}`);
   }
@@ -75,7 +75,8 @@ form.addEventListener('submit', (event) => {
 viewButtons.forEach((button) => button.addEventListener('click', () => {
   clearTimeout(debounce);
   filters.q = query.value;
-  filters.view = button.dataset.view === 'list' ? 'list' : 'tile';
+  const view = button.dataset.view;
+  if (view === 'list' || view === 'grid' || view === 'text') filters.view = view;
   render();
 }));
 function reset() {

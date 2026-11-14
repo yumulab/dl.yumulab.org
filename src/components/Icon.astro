@@ -1,5 +1,5 @@
 ---
-interface Props { name: 'search' | 'close' | 'user' | 'book' | 'arrow' | 'download' | 'external' | 'copy' | 'grid' | 'list' | 'filter' | 'chevron'; size?: number; }
+interface Props { name: 'search' | 'close' | 'user' | 'book' | 'arrow' | 'download' | 'external' | 'copy' | 'grid' | 'list' | 'text' | 'filter' | 'chevron'; size?: number; }
 const { name, size = 18 } = Astro.props;
 const paths = {
   search: 'm21 21-4.5-4.5M19 10.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0Z',
@@ -12,6 +12,7 @@ const paths = {
   copy: 'M9 9h12v12H9zM15 9V3H3v12h6',
   grid: 'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z',
   list: 'M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01',
+  text: 'M4 5h16M4 10h12M4 15h16M4 20h10',
   filter: 'M4 6h16M7 12h10M10 18h4',
   chevron: 'm6 9 6 6 6-6',
 };

@@ -33,6 +33,17 @@ test('shared URL restores Japanese queries and validates filter options', () => 
   assert.deepEqual(invalid, defaults);
 });
 
+test('shared URLs restore all three display modes without changing search results', () => {
+  const resultIds = filterPapers(papers, { ...defaults, q: '湯村', year: '2025' }).map((paper) => paper.core.id);
+  for (const view of ['list', 'grid', 'text'] as const) {
+    const restored = readFilters(new URLSearchParams({ q: '湯村', year: '2025', view }));
+    assert.equal(restored.view, view);
+    assert.deepEqual(filterPapers(papers, restored).map((paper) => paper.core.id), resultIds);
+  }
+  assert.equal(defaults.view, 'grid');
+  assert.equal(readFilters(new URLSearchParams('view=tile')).view, 'grid');
+});
+
 test('missing thumbnails use the placeholder and IDs remain unique', () => {
   assert.equal(new Set(papers.map((paper) => paper.core.id)).size, papers.length);
   const missing = papers.find((paper) => !paper.core.thumbnail && !paper.core.thumbnailSmall)!;

@@ -88,18 +88,19 @@ export interface Filters {
   year: string;
   type: string;
   sort: 'newest' | 'oldest';
-  view: 'tile' | 'list';
+  view: 'list' | 'grid' | 'text';
 }
 
 export function readFilters(params: URLSearchParams): Filters {
   const year = params.get('year') ?? '';
   const type = params.get('type') ?? '';
+  const view = params.get('view');
   return {
     q: params.get('q') ?? '',
     year: /^\d{4}$/.test(year) ? year : '',
     type: Object.hasOwn(paperTypes, type) || type === 'other' ? type : '',
     sort: params.get('sort') === 'oldest' ? 'oldest' : 'newest',
-    view: params.get('view') === 'list' ? 'list' : 'tile',
+    view: view === 'list' || view === 'text' ? view : 'grid',
   };
 }
 
