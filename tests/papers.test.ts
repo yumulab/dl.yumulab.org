@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { papers, paperType, typeInfo, filterPapers, readFilters, paperDate, paperFiscalYear, normalize, safeUrl, embedUrl, thumbnail, groupPapersByFiscalYear } from '../src/lib/papers';
+import { papers, paperType, typeInfo, filterPapers, readFilters, paperDate, paperFiscalYear, normalize, safeUrl, embedUrl, thumbnail, groupPapersByFiscalYear, fiscalYearGroupLabel } from '../src/lib/papers';
 import type { Paper } from '../src/lib/papers';
 
 const defaults = readFilters(new URLSearchParams());
@@ -46,13 +46,13 @@ test('shared URLs restore all three display modes without changing search result
 });
 
 test('fiscal year groups follow both sort directions and keep every paper in order', () => {
-  const years = [...new Set(papers.map(paperFiscalYear))].sort();
+  const years = [...new Set(papers.map((paper) => Number(paperFiscalYear(paper)) <= 2020 ? '2020' : paperFiscalYear(paper)))].sort();
   for (const sort of ['oldest', 'newest'] as const) {
     const sorted = filterPapers(papers, { ...defaults, sort });
     const grouped = groupPapersByFiscalYear(sorted);
     assert.deepEqual(grouped.map((group) => group.year), sort === 'oldest' ? years : [...years].reverse());
     assert.deepEqual(grouped.flatMap((group) => group.papers.map((paper) => paper.core.id)), sorted.map((paper) => paper.core.id));
-    assert.ok(grouped.every((group) => group.papers.every((paper) => paperFiscalYear(paper) === group.year)));
+    assert.ok(grouped.every((group) => group.papers.every((paper) => group.year === '2020' ? Number(paperFiscalYear(paper)) <= 2020 : paperFiscalYear(paper) === group.year)));
   }
 });
 
@@ -66,6 +66,26 @@ test('fiscal year headings match the filtered results in every display mode', ()
     assert.equal(grouped[0].papers.length, results.length);
     assert.deepEqual(groupPapersByFiscalYear(filterPapers(papers, { ...defaults, view, q: 'この語は存在しないxyz' })), []);
   }
+});
+
+test('older papers share one heading at the 2020 fiscal-year boundary in every view', () => {
+  const samples: Paper[] = ['2018-04-01', '2020-04-01', '2021-03-31', '2021-04-01'].map((date, index) => ({
+    core: { id: String(index), title: date, sortingDate: date },
+  }));
+  for (const view of ['grid', 'list', 'text'] as const) {
+    for (const sort of ['newest', 'oldest'] as const) {
+      const sorted = filterPapers(samples, { ...defaults, view, sort });
+      const groups = groupPapersByFiscalYear(sorted);
+      assert.deepEqual(groups.map((group) => fiscalYearGroupLabel(group.year)), sort === 'newest' ? ['2021年度', '2020年度以前'] : ['2020年度以前', '2021年度']);
+      const earlier = groups.find((group) => group.year === '2020')!;
+      assert.deepEqual(earlier.papers.map((paper) => paper.core.id), sort === 'newest' ? ['2', '1', '0'] : ['0', '1', '2']);
+      assert.deepEqual(groups.flatMap((group) => group.papers), sorted);
+    }
+    const filtered = filterPapers(samples, { ...defaults, view, year: '2018' });
+    assert.deepEqual(filtered.map((paper) => paper.core.id), ['0']);
+    assert.equal(fiscalYearGroupLabel(groupPapersByFiscalYear(filtered)[0].year), '2020年度以前');
+  }
+  assert.equal(fiscalYearGroupLabel(''), '年度不明');
 });
 
 test('fiscal year boundaries include April 1 through the following March 31', () => {

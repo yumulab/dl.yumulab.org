@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import PaperCard from '../components/PaperCard.astro';
-import { papers, paperFiscalYear, paperTypes, filterPapers, groupPapersByFiscalYear } from '../lib/papers';
+import { papers, paperFiscalYear, paperTypes, filterPapers, groupPapersByFiscalYear, fiscalYearGroupLabel } from '../lib/papers';
 import { withBase } from '../lib/urls';
 const sorted = filterPapers(papers, { q: '', year: '', type: '', sort: 'newest', view: 'grid' });
 const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().reverse();
@@ -37,7 +37,7 @@ const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().r
       <div id="active-filters" class="active-filters" aria-label="現在の検索条件" hidden></div>
       <div id="papers" class="papers-grid" data-view="grid">
         {groupPapersByFiscalYear(sorted).map(({ year, papers: yearPapers }) => <Fragment>
-          <h2 class="paper-year-heading">{year ? `${year}年度` : '年度不明'}</h2>
+          <h2 class="paper-year-heading">{fiscalYearGroupLabel(year)}</h2>
           {yearPapers.map((paper) => <PaperCard paper={paper} index={sorted.indexOf(paper)} />)}
         </Fragment>)}
       </div>

@@ -1,4 +1,4 @@
-import { papers, filterPapers, readFilters, typeInfo, groupPapersByFiscalYear } from '../lib/papers';
+import { papers, filterPapers, readFilters, typeInfo, groupPapersByFiscalYear, fiscalYearGroupLabel } from '../lib/papers';
 
 const form = document.querySelector<HTMLFormElement>('#search-form')!;
 const query = document.querySelector<HTMLInputElement>('#query')!;
@@ -24,7 +24,7 @@ function render(updateUrl = true) {
   groupPapersByFiscalYear(results).forEach(({ year, papers: yearPapers }) => {
     const heading = document.createElement('h2');
     heading.className = 'paper-year-heading';
-    heading.textContent = year ? `${year}年度` : '年度不明';
+    heading.textContent = fiscalYearGroupLabel(year);
     fragment.append(heading);
     yearPapers.forEach((paper) => fragment.append(cards.get(paper.core.id)!));
   });

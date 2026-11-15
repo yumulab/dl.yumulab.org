@@ -91,16 +91,21 @@ export function paperFiscalYear(paper: Paper): string {
   return String(Number(date.slice(0, 4)) - (month < 4 ? 1 : 0));
 }
 
-/** Group sorted results without changing the fiscal year or paper order. */
+/** Combine fiscal years through 2020 while preserving the sorted paper order. */
 export function groupPapersByFiscalYear(sorted: Paper[]): { year: string; papers: Paper[] }[] {
   const groups = new Map<string, Paper[]>();
   for (const paper of sorted) {
-    const year = paperFiscalYear(paper);
+    const fiscalYear = paperFiscalYear(paper);
+    const year = fiscalYear && Number(fiscalYear) <= 2020 ? '2020' : fiscalYear;
     const group = groups.get(year);
     if (group) group.push(paper);
     else groups.set(year, [paper]);
   }
   return [...groups].map(([year, papers]) => ({ year, papers }));
+}
+
+export function fiscalYearGroupLabel(year: string): string {
+  return year === '2020' ? '2020年度以前' : year ? `${year}年度` : '年度不明';
 }
 
 export function formatDate(value?: string): string {
