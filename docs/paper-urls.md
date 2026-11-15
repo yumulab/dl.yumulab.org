@@ -10,7 +10,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 
 | 発表先・掲載先 | URL先頭の略称 | 新URLの例 |
 |---|---|---|
-| 情報処理北海道シンポ2026 | `info2026` | `/info2026-hashimoto/` |
+| 情報処理北海道シンポジウム2026 | `info2026` | `/info2026-hashimoto/` |
 | Jxiv（プレプリント） | `jxiv2026` | `/jxiv2026-akiba/` |
 | VRST2026 | `vrst2026` | `/vrst2026-shimizu/` |
 | アニマーレ2026 | `animare2026` | `/animare2026-kamimura/` |
@@ -18,7 +18,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | NICOGRAPH International 2026 | `nicograph2026` | `/nicograph2026-miyauchi/` |
 | EC79 | `ec79` | `/ec79-miyazaki/` |
 | 第36回ハプティクス研究会 | `haptics36` | `/haptics36-kamimura/` |
-| 複雑系マイクロ25 | `csmicro25` | `/csmicro25-nakayama/` |
+| 複雑系マイクロシンポジウム25 | `csmicro25` | `/csmicro25-nakayama/` |
 | インタラクション2026 | `i2026` | `/i2026-nishiyama/` |
 | UBI89 | `ubi89` | `/ubi89-hashimoto/` |
 | バーチャル学会2025 | `virtual2025` | `/virtual2025-oyamada/` |
@@ -94,10 +94,10 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 
 | 数字形式URL | 現在のURL | 第1著者 | 発表先・掲載先 |
 |---|---|---|---|
-| `/papers/108/` | `/info2026-hashimoto/` | 橋本 空輝 | 情報処理北海道シンポ2026 |
-| `/papers/109/` | `/info2026-sato/` | 佐藤 一樹 | 情報処理北海道シンポ2026 |
-| `/papers/110/` | `/info2026-tada/` | 多田 祐翔 | 情報処理北海道シンポ2026 |
-| `/papers/111/` | `/info2026-ueshima/` | 上嶋 歩夢 | 情報処理北海道シンポ2026 |
+| `/papers/108/` | `/info2026-hashimoto/` | 橋本 空輝 | 情報処理北海道シンポジウム2026 |
+| `/papers/109/` | `/info2026-sato/` | 佐藤 一樹 | 情報処理北海道シンポジウム2026 |
+| `/papers/110/` | `/info2026-tada/` | 多田 祐翔 | 情報処理北海道シンポジウム2026 |
+| `/papers/111/` | `/info2026-ueshima/` | 上嶋 歩夢 | 情報処理北海道シンポジウム2026 |
 | `/papers/112/` | `/jxiv2026-akiba/` | 秋葉 貴文 | Jxiv（プレプリント） |
 | `/papers/80/` | `/vrst2026-shimizu/` | Rei Shimizu | VRST2026 |
 | `/papers/81/` | `/vrst2026-kamimura/` | Sora Kamimura | VRST2026 |
@@ -111,10 +111,10 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | `/papers/88/` | `/ec79-hokin/` | 寳金 和志 | EC79 |
 | `/papers/89/` | `/ec79-tamahori/` | 玉堀 舜 | EC79 |
 | `/papers/86/` | `/ec79-ota/` | 太田 駿 | EC79 |
-| `/papers/90/` | `/csmicro25-nakayama/` | 中山 貴博 | 複雑系マイクロ25 |
-| `/papers/91/` | `/csmicro25-hayasaka/` | 早坂 匠真 | 複雑系マイクロ25 |
-| `/papers/92/` | `/csmicro25-kataoka/` | 片岡 美樹 | 複雑系マイクロ25 |
-| `/papers/93/` | `/csmicro25-ishikura/` | 石倉 汰一 | 複雑系マイクロ25 |
+| `/papers/90/` | `/csmicro25-nakayama/` | 中山 貴博 | 複雑系マイクロシンポジウム25 |
+| `/papers/91/` | `/csmicro25-hayasaka/` | 早坂 匠真 | 複雑系マイクロシンポジウム25 |
+| `/papers/92/` | `/csmicro25-kataoka/` | 片岡 美樹 | 複雑系マイクロシンポジウム25 |
+| `/papers/93/` | `/csmicro25-ishikura/` | 石倉 汰一 | 複雑系マイクロシンポジウム25 |
 | `/papers/79/` | `/i2026-nishiyama/` | 西山 拓実 | インタラクション2026 |
 | `/papers/94/` | `/i2026-kabumoto/` | 株本 くるみ | インタラクション2026 |
 | `/papers/96/` | `/ubi89-hashimoto/` | 橋本 空輝 | UBI89 |

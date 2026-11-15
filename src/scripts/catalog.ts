@@ -4,10 +4,10 @@ const form = document.querySelector<HTMLFormElement>('#search-form')!;
 const query = document.querySelector<HTMLInputElement>('#query')!;
 const year = document.querySelector<HTMLSelectElement>('#year')!;
 const type = document.querySelector<HTMLSelectElement>('#type')!;
-const sort = document.querySelector<HTMLSelectElement>('#sort')!;
 const container = document.querySelector<HTMLElement>('#papers')!;
 const cards = new Map([...container.querySelectorAll<HTMLElement>('[data-paper-id]')].map((card) => [card.dataset.paperId!, card]));
 const viewButtons = document.querySelectorAll<HTMLButtonElement>('button[data-view]');
+const sortButtons = document.querySelectorAll<HTMLButtonElement>('button[data-sort]');
 const activeFilters = document.querySelector<HTMLElement>('#active-filters')!;
 let filters = readFilters(new URLSearchParams(location.search));
 
@@ -15,9 +15,9 @@ function render(updateUrl = true) {
   query.value = filters.q;
   year.value = filters.year;
   type.value = filters.type;
-  sort.value = filters.sort;
   container.dataset.view = filters.view;
   viewButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.view === filters.view)));
+  sortButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.sort === filters.sort)));
 
   const results = filterPapers(papers, filters);
   const fragment = document.createDocumentFragment();
@@ -30,7 +30,7 @@ function render(updateUrl = true) {
   });
   container.replaceChildren(fragment);
   const filtered = Boolean(filters.q || filters.year || filters.type);
-  document.querySelector('#result-count')!.textContent = filtered ? `${results.length} 件 / 全 ${papers.length} 件` : `全 ${papers.length} 件`;
+  document.querySelector('#result-count-value')!.textContent = filtered ? `${results.length} 件 / 全 ${papers.length} 件` : `全 ${papers.length} 件`;
   document.querySelector<HTMLElement>('#empty-state')!.hidden = results.length > 0;
   const end = document.querySelector<HTMLElement>('#catalog-end')!;
   end.hidden = results.length === 0;
@@ -68,9 +68,9 @@ form.addEventListener('submit', (event) => {
   filters.q = query.value;
   render();
 });
-[year, type, sort].forEach((select) => select.addEventListener('change', () => {
+[year, type].forEach((select) => select.addEventListener('change', () => {
   clearTimeout(debounce);
-  filters = { ...filters, q: query.value, year: year.value, type: type.value, sort: sort.value === 'oldest' ? 'oldest' : 'newest' };
+  filters = { ...filters, q: query.value, year: year.value, type: type.value };
   render();
 }));
 viewButtons.forEach((button) => button.addEventListener('click', () => {
@@ -78,6 +78,13 @@ viewButtons.forEach((button) => button.addEventListener('click', () => {
   filters.q = query.value;
   const view = button.dataset.view;
   if (view === 'list' || view === 'grid' || view === 'text') filters.view = view;
+  render();
+}));
+sortButtons.forEach((button) => button.addEventListener('click', () => {
+  clearTimeout(debounce);
+  filters.q = query.value;
+  const sort = button.dataset.sort;
+  if (sort === 'newest' || sort === 'oldest') filters.sort = sort;
   render();
 }));
 function reset() {
