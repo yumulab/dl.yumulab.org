@@ -5,6 +5,7 @@ export const paperTypes = {
   'domestic-conference': { label: '国内学会', color: '#0199b4' },
   'international-conference': { label: '国際学会', color: '#165189' },
   'article-journal': { label: '論文誌', color: '#b3366a' },
+  preprint: { label: 'プレプリント', color: '#526d82' },
   thesis: { label: '学位論文', color: '#7e57c2' },
   magazine: { label: '雑誌記事', color: '#b26a13' },
   'invited-ta': { label: '招待講演', color: '#477d25' },
@@ -65,7 +66,7 @@ export const papers: Paper[] = (records as Paper[]).filter((paper) => !paper.cor
 
 export function paperType(paper: Paper): keyof typeof paperTypes | 'other' {
   const { type, language } = paper.core;
-  if (type === 'article-journal') return 'article-journal';
+  if (type === 'article-journal' || type === 'preprint') return type;
   if (language === 'en') return 'international-conference';
   if (type === 'paper-conference' || type === 'report') return 'domestic-conference';
   if (type === 'talk') return 'presentation';
@@ -105,7 +106,7 @@ export function groupPapersByFiscalYear(sorted: Paper[]): { year: string; papers
 }
 
 export function fiscalYearGroupLabel(year: string): string {
-  return year === '2020' ? '2020年度以前' : year ? `${year}年度` : '年度不明';
+  return year === '2020' ? '2020年度以前（研究室設立前）' : year ? `${year}年度` : '年度不明';
 }
 
 export function formatDate(value?: string): string {

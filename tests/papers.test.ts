@@ -76,14 +76,14 @@ test('older papers share one heading at the 2020 fiscal-year boundary in every v
     for (const sort of ['newest', 'oldest'] as const) {
       const sorted = filterPapers(samples, { ...defaults, view, sort });
       const groups = groupPapersByFiscalYear(sorted);
-      assert.deepEqual(groups.map((group) => fiscalYearGroupLabel(group.year)), sort === 'newest' ? ['2021年度', '2020年度以前'] : ['2020年度以前', '2021年度']);
+      assert.deepEqual(groups.map((group) => fiscalYearGroupLabel(group.year)), sort === 'newest' ? ['2021年度', '2020年度以前（研究室設立前）'] : ['2020年度以前（研究室設立前）', '2021年度']);
       const earlier = groups.find((group) => group.year === '2020')!;
       assert.deepEqual(earlier.papers.map((paper) => paper.core.id), sort === 'newest' ? ['2', '1', '0'] : ['0', '1', '2']);
       assert.deepEqual(groups.flatMap((group) => group.papers), sorted);
     }
     const filtered = filterPapers(samples, { ...defaults, view, year: '2018' });
     assert.deepEqual(filtered.map((paper) => paper.core.id), ['0']);
-    assert.equal(fiscalYearGroupLabel(groupPapersByFiscalYear(filtered)[0].year), '2020年度以前');
+    assert.equal(fiscalYearGroupLabel(groupPapersByFiscalYear(filtered)[0].year), '2020年度以前（研究室設立前）');
   }
   assert.equal(fiscalYearGroupLabel(''), '年度不明');
 });
@@ -129,6 +129,8 @@ test('display categories merge domestic proceedings and reports and preserve Eng
     ['talk', 'en', 'international-conference', '国際学会'],
     ['article-journal', 'en', 'article-journal', '論文誌'],
     ['article-journal', 'ja', 'article-journal', '論文誌'],
+    ['preprint', 'ja', 'preprint', 'プレプリント'],
+    ['preprint', 'en', 'preprint', 'プレプリント'],
     ['thesis', 'ja', 'thesis', '学位論文'],
     ['paper-conference', '', 'domestic-conference', '国内学会'],
     ['', '', 'other', 'その他'],
@@ -145,6 +147,7 @@ test('category filters use displayed categories and category names are searchabl
     ['domestic-conference', '国内学会'],
     ['international-conference', '国際学会'],
     ['article-journal', '論文誌'],
+    ['preprint', 'プレプリント'],
     ['presentation', '予稿なし発表'],
   ]) {
     const expected = filterPapers(papers.filter((paper) => paperType(paper) === type), defaults);

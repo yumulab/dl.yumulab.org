@@ -11,6 +11,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | 発表先・掲載先 | URL先頭の略称 | 新URLの例 |
 |---|---|---|
 | 情報処理北海道シンポ2026 | `info2026` | `/info2026-hashimoto/` |
+| Jxiv（プレプリント） | `jxiv2026` | `/jxiv2026-akiba/` |
 | VRST2026 | `vrst2026` | `/vrst2026-shimizu/` |
 | アニマーレ2026 | `animare2026` | `/animare2026-kamimura/` |
 | MUS147 | `mus147` | `/mus147-shimizu/` |
@@ -87,7 +88,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 - 上村は `kamimura`、藤谷は `fujiya`、大畑は `ohata` を使用しています。
 - 寳金 `hokin`、玉堀 `tamahori`、大栁 `oyanagi` は確認済みの表記です。
 
-## 全111件のURL
+## 全112件のURL
 
 数字形式と `/papers/略称-姓/` 形式のURLはいずれもトップ直下のURLへ直接転送されます。Newsから追加した28件の出典は [追加記録](news-additions.md) にまとめています。
 
@@ -97,6 +98,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | `/papers/109/` | `/info2026-sato/` | 佐藤 一樹 | 情報処理北海道シンポ2026 |
 | `/papers/110/` | `/info2026-tada/` | 多田 祐翔 | 情報処理北海道シンポ2026 |
 | `/papers/111/` | `/info2026-ueshima/` | 上嶋 歩夢 | 情報処理北海道シンポ2026 |
+| `/papers/112/` | `/jxiv2026-akiba/` | 秋葉 貴文 | Jxiv（プレプリント） |
 | `/papers/80/` | `/vrst2026-shimizu/` | Rei Shimizu | VRST2026 |
 | `/papers/81/` | `/vrst2026-kamimura/` | Sora Kamimura | VRST2026 |
 | `/papers/82/` | `/animare2026-kamimura/` | 上村 宙 | アニマーレ2026 |

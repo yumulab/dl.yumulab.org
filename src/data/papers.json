@@ -4089,5 +4089,40 @@
     "files": {
       "paper": "/pdfs/111.pdf"
     }
+  },
+  {
+    "core": {
+      "id": "112",
+      "type": "preprint",
+      "title": "MobiEPS：人の移動を通信媒介とする電子ペーパーサイネージ向け情報配送システム",
+      "authors": [
+        "秋葉 貴文",
+        "湯村 翼"
+      ],
+      "abstract": "人が携行するモバイル端末を介して、電子ペーパーサイネージ（EPS）へ更新情報を配送するシステムMobiEPSを提案する。人の近接時にEPSを起動して通信することで、常時接続の通信インフラと待機消費電力への依存を抑える。試作システムを用いたシミュレーションとユーザー評価により、データ量が配送性能に与える影響と、表示更新の認知・可読性に関する課題を調べた。",
+      "keywords": [
+        "電子ペーパーサイネージ",
+        "省電力",
+        "人流",
+        "遅延耐性ネットワーク",
+        "近接駆動"
+      ],
+      "language": "ja",
+      "externalUrl": "https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/5980",
+      "sortingDate": "2026-08-20T23:23:33.000Z",
+      "titleOfEnglish": "MobiEPS: A Human Mobility-Based Information Delivery System for Electronic Paper Signage",
+      "thumbnail": "/images/papers/112.jpg"
+    },
+    "publication": {
+      "bookTitle": "Jxiv, JSTプレプリントサーバ",
+      "bookTitleAbbr": "Jxiv",
+      "publishedDate": "2026-08-20T23:23:33.000Z",
+      "number": "5980",
+      "publisher": "科学技術振興機構（JST）",
+      "DOI": "10.51094/jxiv.5980"
+    },
+    "files": {
+      "paper": "/pdfs/112.pdf"
+    }
   }
 ]

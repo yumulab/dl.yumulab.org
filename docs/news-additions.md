@@ -114,6 +114,14 @@
 | 39 | `/info2023-tsujinaga/` | 2ページ・図6（LTooLのコンテンツ選択画面） | `public/images/papers/39.jpg`、493×258px |
 | 40 | `/info2023-fujiya/` | 2ページ・図2(a)（Jadwelryプロトタイプの表面） | `public/images/papers/40.jpg`、373×195px |
 
+## Jxivプレプリントの追加
+
+ユーザー指定の[Jxiv掲載ページ](https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/5980)をもとに、ID 112「MobiEPS：人の移動を通信媒介とする電子ペーパーサイネージ向け情報配送システム」を追加しました。URLは `/jxiv2026-akiba/`、種類は「プレプリント」です。著者は秋葉 貴文・湯村 翼、掲載先はJxiv、DOIは `10.51094/jxiv.5980` です。キーワードは掲載ページ、英語題目はPDFの1ページ目で確認しています。概要は掲載抄録を要約したものです。
+
+公開日はページの `citation_online_date`（2026-08-20）に合わせました。公開日時は2026-08-20 23:23:33 UTCです。投稿日時・原稿記載日は2026-08-07であり、公開日と区別しています。
+
+[公開PDF（バージョン1）](https://jxiv.jst.go.jp/index.php/jxiv/preprint/download/5980/13018)を変更せず `public/pdfs/112.pdf` に配置しました（13ページ、SHA-256: `81e3d2c121d0a5b7689aad1c9e540dc500cb05d147f758c07b646d8680d23413`）。著作権者は秋葉 貴文・湯村 翼、掲載ページで指定されたライセンスは[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)です。サムネイルは5ページ・図5「MobiEPSプロトタイプ実装」の埋め込み画像（2809×1581px）を抽出し、拡大せず、余白なしの720×377pxにトリミングして `public/images/papers/112.jpg` に配置しました。スライドは追加していません。
+
 ## 管理上の注意
 
-追加データは `src/data/papers.json`、URL名は `src/data/paper-slugs.json` に登録しています。`npm run import:legacy` は現行APIから論文データを置き換えるため、手動追加したID 80〜107を保存・再統合する必要があります。追加記録の出典を参照して、未確認情報を後から補完してください。
+追加データは `src/data/papers.json`、URL名は `src/data/paper-slugs.json` に登録しています。`npm run import:legacy` は現行APIから論文データを置き換えるため、手動追加したID 80以降や受賞情報を保存・再統合する必要があります。追加記録の出典を参照して、未確認情報を後から補完してください。
