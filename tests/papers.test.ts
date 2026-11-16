@@ -124,6 +124,8 @@ test('display categories merge domestic proceedings and reports and preserve Eng
     ['paper-conference', 'ja', 'domestic-conference', '国内学会'],
     ['report', 'ja', 'domestic-conference', '国内学会'],
     ['talk', 'ja', 'presentation', '予稿なし発表'],
+    ['presentation', 'ja', 'presentation', '予稿なし発表'],
+    ['presentation', 'en', 'presentation', '予稿なし発表'],
     ['paper-conference', 'en', 'international-conference', '国際学会'],
     ['report', 'en', 'international-conference', '国際学会'],
     ['talk', 'en', 'international-conference', '国際学会'],
@@ -169,4 +171,11 @@ test('award names combine with author and venue searches without matching other 
   assert.deepEqual(awarded.map((paper) => paper.core.id), ['49', '29']);
   assert.deepEqual(filterPapers(papers, { ...defaults, q: '研究奨励賞 金賞 EC75' }).map((paper) => paper.core.id), ['69']);
   assert.equal(filterPapers(papers, { ...defaults, q: '優秀論文賞 WISS2021' }).length, 0);
+});
+
+test('premium presentation selections are searchable and remain separate from awards', () => {
+  const results = filterPapers(papers, { ...defaults, q: 'プレミアム発表' });
+  assert.deepEqual(results.map((paper) => paper.core.id), ['64']);
+  assert.equal(results[0].awards?.length ?? 0, 0);
+  assert.deepEqual(results[0].selections?.map((selection) => selection.name), ['プレミアム発表']);
 });

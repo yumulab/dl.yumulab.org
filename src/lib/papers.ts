@@ -24,6 +24,11 @@ export interface PaperAward {
   sourceUrl: string;
 }
 
+export interface PaperSelection {
+  name: string;
+  sourceUrl?: string;
+}
+
 export interface Paper {
   core: {
     id: string;
@@ -60,13 +65,14 @@ export interface Paper {
   embed?: { slideshare?: string; youtube?: string };
   external?: { links?: string[] };
   awards?: PaperAward[];
+  selections?: PaperSelection[];
 }
 
 export const papers: Paper[] = (records as Paper[]).filter((paper) => !paper.core.draft);
 
 export function paperType(paper: Paper): keyof typeof paperTypes | 'other' {
   const { type, language } = paper.core;
-  if (type === 'article-journal' || type === 'preprint') return type;
+  if (type === 'article-journal' || type === 'preprint' || type === 'presentation') return type;
   if (language === 'en') return 'international-conference';
   if (type === 'paper-conference' || type === 'report') return 'domestic-conference';
   if (type === 'talk') return 'presentation';
@@ -137,6 +143,7 @@ export function searchText(paper: Paper): string {
     paper.core.abstract, ...(paper.core.keywords ?? []), paper.publication?.bookTitle,
     paper.publication?.bookTitleAbbr, typeInfo(paperType(paper)).label,
     ...(paper.awards ?? []).map((award) => award.name),
+    ...(paper.selections ?? []).map((selection) => selection.name),
   ].filter(Boolean).join(' '));
 }
 

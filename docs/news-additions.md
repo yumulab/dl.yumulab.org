@@ -45,6 +45,8 @@
 | 106 | `/hic2023-yumura/` | Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc. | 湯村 翼 | 超異分野学会東京大会2023 | [News](https://www.yumulab.org/event/2023/03/04/hic.html) | デモ発表。大会は3月3〜4日。個別発表日は不明のためNews記事日で並べ替え。 |
 | 107 | `/hic-hokkaido2022-yumura/` | Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc. | 湯村 翼 | 超異分野学会北海道フォーラム2022 | [News](https://www.yumulab.org/award/2022/11/26/hic.html) / [補足1](https://hic.lne.st/conference/hokkaido2022/) | ポスター・デモ発表。北海道フォーラム2022賞受賞。東京大会とは異なる発表先。 |
 
+CDIO ARM2024の2件（ID 103・104）は、ユーザー指定により種類を「予稿なし発表」（`core.type: "presentation"`）にしています。英語の発表ですが、この明示指定を言語による分類より優先します。
+
 ## EC79のPDF・サムネイル追加
 
 2026-11-14に `tmp/before/` で提供された4件を、題目・著者で既存レコードと照合しました。PDFは内容を変更せず `public/pdfs/` に配置し、SHA-256で原本との一致を確認しています。サムネイルはPDF内の埋め込み画像を抽出し、グリッドの縦横比（約1.91:1）に合わせてトリミングした720×377ピクセルのJPEGとして保存しています。図の一部が欠けることを許容し、白い余白は追加していません。

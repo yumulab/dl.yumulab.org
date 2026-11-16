@@ -1,0 +1,23 @@
+---
+import Icon from './Icon.astro';
+import type { PaperAward, PaperSelection } from '../lib/papers';
+import { safeUrl } from '../lib/papers';
+
+interface Props { awards?: PaperAward[]; selections?: PaperSelection[]; linked?: boolean; }
+const { awards = [], selections = [], linked = false } = Astro.props;
+const badges = [
+  ...awards.map((award) => ({ ...award, kind: 'award' as const })),
+  ...selections.map((selection) => ({ ...selection, kind: 'selection' as const })),
+];
+const label = awards.length && selections.length ? '受賞・選出' : selections.length ? '選出' : '受賞';
+---
+{badges.length > 0 && <ul class="recognition-badges" aria-label={label}>
+  {badges.map((badge) => {
+    const selection = badge.kind === 'selection';
+    const href = linked ? safeUrl(badge.sourceUrl) : undefined;
+    const Tag = href ? 'a' : 'span';
+    return <li><Tag class:list={['recognition-badge', selection ? 'selection-badge' : 'award-badge']} href={href}>
+      <Icon name={selection ? 'star' : 'trophy'} size={14} /><span><span class="sr-only">{selection ? '選出： ' : '受賞： '}</span>{badge.name}</span>
+    </Tag></li>;
+  })}
+</ul>}

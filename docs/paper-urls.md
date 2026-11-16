@@ -27,7 +27,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | CoSTEP20周年 | `costep2025` | `/costep2025-yumura/` |
 | EC2025-ICEC2025 | `ec2025-icec2025` | `/ec2025-icec2025-akiba/` |
 | EC2025 | `ec2025` | `/ec2025-oyamada/` |
-| IJANS | `netser2025` | `/netser2025-akiba/` |
+| NetSer | `netser2025` | `/netser2025-akiba/` |
 | HCI213 | `hci213` | `/hci213-kamimura/` |
 | EC75 | `ec75` | `/ec75-shimizu/` |
 | インタラクション2025 | `i2025` | `/i2025-minami/` |
@@ -130,7 +130,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | `/papers/73/` | `/ec2025-oyamada/` | 小山田 悠人 | EC2025 |
 | `/papers/74/` | `/ec2025-hokin/` | 寳金 和志 | EC2025 |
 | `/papers/72/` | `/ec2025-akiba/` | 秋葉 貴文 | EC2025 |
-| `/papers/102/` | `/netser2025-akiba/` | Takafumi Akiba | IJANS |
+| `/papers/102/` | `/netser2025-akiba/` | Takafumi Akiba | NetSer |
 | `/papers/71/` | `/hci213-kamimura/` | 上村 宙 | HCI213 |
 | `/papers/66/` | `/ec75-shimizu/` | 清水 怜良 | EC75 |
 | `/papers/67/` | `/ec75-sato/` | 佐藤 慎之助 | EC75 |

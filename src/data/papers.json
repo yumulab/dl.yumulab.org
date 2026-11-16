@@ -214,7 +214,7 @@
   },
   {
     "core": {
-      "type": "talk",
+      "type": "presentation",
       "titleOfEnglish": "",
       "authors": [
         "Takafumi Akiba",
@@ -697,7 +697,12 @@
         "https://github.com/shin3391/CHaserWeb",
         "https://protopedia.net/prototype/6340"
       ]
-    }
+    },
+    "selections": [
+      {
+        "name": "プレミアム発表"
+      }
+    ]
   },
   {
     "core": {
@@ -3848,7 +3853,7 @@
     },
     "publication": {
       "bookTitle": "International Journal on Advances in Networks and Services",
-      "bookTitleAbbr": "IJANS",
+      "bookTitleAbbr": "NetSer",
       "volume": "18",
       "issue": "1–2",
       "page": "1–11"
@@ -3863,7 +3868,7 @@
   {
     "core": {
       "id": "103",
-      "type": "talk",
+      "type": "presentation",
       "title": "Practices of Research and Education using Digital Fabrication Technologies",
       "authors": [
         "Tsubasa Yumura"
@@ -3881,7 +3886,7 @@
   {
     "core": {
       "id": "104",
-      "type": "panel-dis",
+      "type": "presentation",
       "title": "Utilization of Fabrication Technology for Prototyping and Creation",
       "authors": [
         "Tsubasa Yumura"
