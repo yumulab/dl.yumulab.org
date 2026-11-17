@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import RecognitionBadges from '../components/RecognitionBadges.astro';
-import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail, paperPdf } from '../lib/papers';
+import ScholarMetadata from '../components/ScholarMetadata.astro';
+import { paperFullTextPath } from '../lib/scholar';
+import { papers, paperType, typeInfo, citation, formatDate, safeUrl, embedUrl, thumbnail } from '../lib/papers';
 import type { Paper } from '../lib/papers';
 import { withBase } from '../lib/urls';
 import { paperSlug } from '../lib/paper-urls';
@@ -14,7 +16,7 @@ interface Props { paper: Paper; }
 const { paper } = Astro.props;
 const { core, publication: pub } = paper;
 const category = typeInfo(paperType(paper));
-const pdf = paperPdf(paper);
+const pdf = paperFullTextPath(paper);
 const source = safeUrl(core.externalUrl);
 const slides = embedUrl(paper.embed?.slideshare);
 const video = embedUrl(paper.embed?.youtube);
@@ -30,6 +32,7 @@ const info = [
 const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is string => Boolean(url));
 ---
 <Layout title={core.title} description={core.abstract || core.title} image={thumbnail(paper)}>
+  <ScholarMetadata slot="head" paper={paper} />
   <main id="main" class="detail-page">
     <a class="back-link" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
     <header class="detail-header">

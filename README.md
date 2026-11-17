@@ -30,6 +30,7 @@ npm run preview # ビルド結果をローカルで確認
 - 論文詳細、PDFリンク、書誌情報、キーワード、引用のコピー
 - Speaker Deck・YouTubeの埋め込み、関連資料へのリンク
 - JavaScriptを無効にした場合も論文一覧・詳細を閲覧可能
+- 論文詳細のHTMLにGoogle Scholar向けの書誌メタデータを出力
 
 表示形式は、画像付きの横並びリスト、カードを並べるグリッド、画像を省いたコンパクトなテキスト表示から選べます。初期表示はグリッドです。`view=list`・`view=grid`・`view=text` で表示形式を指定でき、検索・絞り込み条件と一緒にURLで共有できます。
 
@@ -44,6 +45,16 @@ npm run preview # ビルド結果をローカルで確認
 一覧の見出しは2021年度以降を年度ごとに表示し、2020年度以前は「2020年度以前（研究室設立前）」にまとめます。年度の絞り込みでは引き続き個別の年度を指定できます。
 
 種類の表示・検索・絞り込みは、元データの種類と言語から分類します。予稿集と研究報告は「国内学会」、講演は「予稿なし発表」、`core.type: "preprint"` は「プレプリント」です。`core.language: "en"` は「国際学会」を優先しますが、論文誌・プレプリント・明示的に指定した予稿なし発表（`core.type: "presentation"`）は、言語に関係なくそれぞれの種類を保ちます。元データの `core.type` は維持するため、現行サイトからの再取り込み後も同じ分類になります。
+
+## Google Scholar向けメタデータ
+
+各論文の詳細ページの `<head>` に、[Google Scholarの収録ガイドライン](https://scholar.google.com/intl/en/scholar/inclusion.html#indexing)でサポートされているHighwire Press形式の `citation_*` タグを出力します。論文タイトル、著者ごとのタグ、出版日、言語、正式な掲載誌・会議名、巻号、開始・終了ページ、出版社、ISSN・ISBN、DOIなど、登録済みの書誌情報を使用します。一覧や旧URLの転送ページには付与しません。DOI欄に保存されたURLはDOI識別子へ正規化し、DOIではないURLは出力しません。
+
+出版日は `publication.publishedDate` を優先し、なければ `core.presentationDate` を使います。ニュース記事日などが入る `core.sortingDate` は出版日として使いません。両方の日付がないレコードでは `citation_publication_date` を省略するため、収録に必要な出版年・発表日の補完が必要です。空の項目や、記録にない所属機関などは推測して付与しません。
+
+公開中のローカルPDFは、ビルド時に詳細ページと同じディレクトリの `/<slug>/paper.pdf` にも生成します。`citation_pdf_url` はこの絶対URLを指定し、画面のPDFボタンも同じURLへリンクします。元の `/pdfs/<id>.pdf` は引き続き利用できます。`files.draft: true` のPDFやPDF未登録の論文にはPDFタグ・配信用URLを生成しません。外部のPDFリンクは画面に表示できますが、同一ディレクトリの条件を満たさないため `citation_pdf_url` は付与しません。
+
+メタデータはJavaScriptの実行なしで読み取れます。収録にはメタデータのほか、公開された本文または著者による完全な概要など、Google Scholarのコンテンツ要件を満たす必要があります。収録の可否・時期はGoogle Scholarが判断します。
 
 ## 論文の追加・編集
 

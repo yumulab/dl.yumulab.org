@@ -1,0 +1,9 @@
+---
+import type { Paper } from '../lib/papers';
+import { scholarMetadata } from '../lib/scholar';
+
+interface Props { paper: Paper; }
+if (!Astro.site) throw new Error('Set Astro site to generate absolute citation URLs.');
+const tags = scholarMetadata(Astro.props.paper, Astro.site);
+---
+{tags.map(({ name, content }) => <meta name={name} content={content} />)}

@@ -125,12 +125,16 @@ export function thumbnail(paper: Paper): string {
     : withBase('/images/paper-placeholder.svg');
 }
 
-export function paperPdf(paper: Paper): string | undefined {
+export function localPaperPdfPath(paper: Paper): string | undefined {
   if (paper.files?.draft) return undefined;
   const value = paper.files?.paper?.trim();
-  if (!value) return undefined;
-  if (/^\/pdfs\/[a-zA-Z0-9][a-zA-Z0-9._-]*\.pdf$/.test(value)) return withBase(value);
-  return safeUrl(value);
+  return value && /^\/pdfs\/[a-zA-Z0-9][a-zA-Z0-9._-]*\.pdf$/.test(value) ? value : undefined;
+}
+
+export function paperPdf(paper: Paper): string | undefined {
+  if (paper.files?.draft) return undefined;
+  const local = localPaperPdfPath(paper);
+  return local ? withBase(local) : safeUrl(paper.files?.paper);
 }
 
 export function normalize(value: string): string {
