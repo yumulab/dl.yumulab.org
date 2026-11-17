@@ -36,6 +36,8 @@ npm run preview # ビルド結果をローカルで確認
 
 ヘッダ右端の研究室サイトリンクには `public/images/yumulab-logo.png` を使用します。提供画像を縦横比と透過を保って256×72pxに縮小し、PCでは96px幅、スマートフォンでは72px幅で表示しています。現在のロゴの元画像は `tmp/archive/yumulab-logo-banner-transparent3.png` に保管します。
 
+faviconは提供された `logo-blue.png` から作成しています。`public/favicon.ico` は16・32・48pxの3サイズ、`public/favicon.png` は96px、`public/apple-touch-icon.png` は180pxです。ブラウザ用のPNG・ICOは四隅を透過した角丸です。全ページの共通レイアウトで読み込みます。元画像は `tmp/archive/logo-blue.png` に保管します。
+
 一覧の学会名・掲載先は `publication.bookTitleAbbr`（略称）を優先し、略称がない場合は `publication.bookTitle`（正式名称）を表示します。
 
 受賞した発表は、3種類の一覧と個別ページに賞名付きのバッジを表示します。個別ページのバッジから受賞記事を開けます。賞名は検索対象にも含まれます。
