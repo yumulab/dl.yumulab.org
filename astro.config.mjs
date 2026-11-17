@@ -5,4 +5,8 @@ export default defineConfig({
   base: '/',
   output: 'static',
   trailingSlash: 'always',
+  redirects: {
+    '/ec79-ota/': '/ec79-oota/',
+    '/papers/ec79-ota/': '/ec79-oota/',
+  },
 });

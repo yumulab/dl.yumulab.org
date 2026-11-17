@@ -22,7 +22,7 @@
 | 83 | `/mus147-shimizu/` | 耳部への触覚提示によるASMR動画視聴体験の拡張 | 清水 怜良, 湯村 翼 | 第147回情報処理学会音楽情報科学研究発表会 | [News](https://www.yumulab.org/2026/09/02/mus147.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/mus147.html) | デモ発表。公式募集要項で原稿掲載ありと確認。巻号・ページは未確認。提供PDFとサムネイル画像を配置済み。 |
 | 84 | `/nicograph2026-miyauchi/` | EBE-TSUBU: Audiovisual Urban Reconstruction via Point Clouds and Hyper-Directional Acoustics | Koki Miyauchi, Togo Okubo, Rei Shimizu, Haruka Hirayama | NICOGRAPH International 2026 | [News](https://www.yumulab.org/2026/06/21/nicograph.html) / [補足1](https://www.do-johodai.ac.jp/topics/9699809/) / [補足2](https://masahiko-itoh.blogspot.com/2026/06/2nicograph-international-2026.html) | ポスター発表。著者順・英語表記は共同研究者の伊藤教授の記事で確認。個別発表日は不明のためNews記事日で並べ替え。 |
 | 85 | `/haptics36-shimizu/` | ASMR耳かき動画のための音と触覚の同時提示システムにおけるパラメトリックスピーカーの配置検討 | 清水 怜良, 湯村 翼 | 日本バーチャルリアリティ学会 ハプティクス研究委員会 第36回研究会 | [News](https://www.yumulab.org/2026/03/10/haptics36.html) / [補足1](https://www.yumulab.org/2026/03/31/summary.html) | 巻号・ページ・出版日は未確認。提供PDFと論文内の画像を配置済み。 |
-| 86 | `/ec79-ota/` | 推しみん：推しとの疑似会話体験を活用した睡眠管理アプリの提案 | 太田 駿, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
+| 86 | `/ec79-oota/` | 推しみん：推しとの疑似会話体験を活用した睡眠管理アプリの提案 | 太田 駿, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
 | 87 | `/ec79-oyamada/` | ノア：メタバース空間で対話相手に向かって自律移動するAIアバターの開発と評価 | 小山田 悠人, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
 | 88 | `/ec79-hokin/` | 足位置の視覚的提示による電子オルガンのペダル鍵盤演奏学習支援システムの開発と評価 | 寳金 和志, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
 | 89 | `/ec79-tamahori/` | リン酸二水素アンモニウム結晶のコンピュテーショナルデザインの検討 | 玉堀 舜, 湯村 翼 | 第79回情報処理学会エンタテインメントコンピューティング研究発表会 | [News](https://www.yumulab.org/2026/03/10/ec79.html) / [補足1](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) / [補足2](https://www.yumulab.org/2026/03/31/summary.html) | 同じ題目の口頭発表とデモは1件として登録。 |
@@ -53,7 +53,7 @@ CDIO ARM2024の2件（ID 103・104）は、ユーザー指定により種類を�
 
 | ID | URL | 提供ファイル名 | 配置先PDF | サムネイルの出典 |
 |---|---|---|---|---|
-| 86 | `/ec79-ota/` | `EC79_太田.pdf` | `public/pdfs/86.pdf` | 1ページ・図1「推しみんの就寝誘導メッセージ」→ `public/images/papers/86.jpg` |
+| 86 | `/ec79-oota/` | `EC79_太田.pdf` | `public/pdfs/86.pdf` | 1ページ・図1「推しみんの就寝誘導メッセージ」→ `public/images/papers/86.jpg` |
 | 87 | `/ec79-oyamada/` | `EC79_小山田.pdf` | `public/pdfs/87.pdf` | 3ページ・図3「VRChatクライアント画面」→ `public/images/papers/87.jpg` |
 | 88 | `/ec79-hokin/` | `EC79_寳金.pdf` | `public/pdfs/88.pdf` | 2ページ・図2「システム概観」→ `public/images/papers/88.jpg` |
 | 89 | `/ec79-tamahori/` | `EC79_玉堀.pdf` | `public/pdfs/89.pdf` | 4ページ・図4「結晶で装飾したフィギュア台座の製作」→ `public/images/papers/89.jpg` |
