@@ -128,7 +128,7 @@ a.selection-badge:hover{background:#e6ddfc;text-decoration:underline}
 .papers-grid[data-view=list] .paper-byline{font-size:11px;line-height:1.5;margin-top:0}
 .papers-grid[data-view=list] .paper-authors{font-size:13px;margin:0}
 .papers-grid[data-view=text]{grid-template-columns:1fr;gap:0}
-.papers-grid[data-view=text] .paper-card{box-shadow:none;border-radius:0;border-bottom:1px solid var(--border)}
+.papers-grid[data-view=text] .paper-card{box-shadow:none;border-radius:0}
 .papers-grid[data-view=text] .paper-card:hover{box-shadow:none;transform:none;background:#f7fbfd}
 .papers-grid[data-view=text] .paper-card-link{padding:14px 0}
 .papers-grid[data-view=text] .paper-image{display:none}
