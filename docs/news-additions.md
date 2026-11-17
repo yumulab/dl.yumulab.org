@@ -60,6 +60,18 @@ CDIO ARM2024の2件（ID 103・104）は、ユーザー指定により種類を�
 
 取り込み済みの提供ファイルは `tmp/archive/` に保管します。論文の件数とURLは変わりません。
 
+## EC79の発表スライド
+
+2026-11-17に、[研究室のSpeaker Deckアカウント](https://speakerdeck.com/yumulab)で公開されたEC79のスライドを確認しました。題目と、スライド説明欄に記載された論文詳細URLで照合し、太田・小山田・寳金・玉堀の4件に埋め込みを追加しました。宮崎の既存スライドも照合し、EC79の全5件の個別ページで閲覧できます。データは既存の `embed.slideshare` フィールドにSpeaker DeckのプレーヤーURLとして登録しています。
+
+| ID | 発表者 | 個別ページ | スライド公開ページ |
+| --- | --- | --- | --- |
+| 77 | 宮崎 創太 | `/ec79-miyazaki/` | [EC79-miyazaki](https://speakerdeck.com/yumulab/ec79-miyazaki) |
+| 86 | 太田 駿 | `/ec79-oota/` | [ec79-oota](https://speakerdeck.com/yumulab/ec79-oota) |
+| 87 | 小山田 悠人 | `/ec79-oyamada/` | [ec79-oyamada](https://speakerdeck.com/yumulab/ec79-oyamada) |
+| 88 | 寳金 和志 | `/ec79-hokin/` | [ec79-hokin](https://speakerdeck.com/yumulab/ec79-hokin) |
+| 89 | 玉堀 舜 | `/ec79-tamahori/` | [ec79-tamahori](https://speakerdeck.com/yumulab/ec79-tamahori) |
+
 ## 複雑系マイクロシンポジウムのPDF・サムネイル追加
 
 2026-11-14に提供された3件を、題目・著者で既存レコードと照合しました。第2著者に「湯村 翼」を登録しています。PDFは内容を変更せず配置し、SHA-256で原本との一致を確認しています。サムネイルは論文内の画像を720×377ピクセルにトリミングし、余白を追加せず保存しています。
@@ -71,6 +83,18 @@ CDIO ARM2024の2件（ID 103・104）は、ユーザー指定により種類を�
 | 92 | `/csmicro25-kataoka/` | `csmicro-kataoka.pdf` | `public/pdfs/92.pdf` | 2ページ・Fig.3（危険箇所を示す走行映像）→ `public/images/papers/92.jpg` |
 
 取り込み済みの原本は `tmp/archive/` に保管します。石倉さん（ID 93）はPDF・サムネイルを追加せず、ユーザー指定の「石倉 汰一, 栗原 純一, 湯村 翼」に著者を更新しています。
+
+## 複雑系マイクロシンポジウム25の発表スライド
+
+2026-11-17に、[研究室のSpeaker Deckアカウント](https://speakerdeck.com/yumulab)の公開スライドを、題目と説明欄の論文詳細URLで照合しました。以下の3件にプレーヤーURLを登録し、各個別ページへ埋め込みました。
+
+| ID | 発表者 | 個別ページ | スライド公開ページ |
+| --- | --- | --- | --- |
+| 90 | 中山 貴博 | `/csmicro25-nakayama/` | [csmicro25-nakayama](https://speakerdeck.com/yumulab/csmicro25-nakayama) |
+| 91 | 早坂 匠真 | `/csmicro25-hayasaka/` | [csmicro25-hayasaka](https://speakerdeck.com/yumulab/csmicro25-hayasaka) |
+| 92 | 片岡 美樹 | `/csmicro25-kataoka/` | [csmicro25-kataoka](https://speakerdeck.com/yumulab/csmicro25-kataoka) |
+
+石倉 汰一の発表（ID 93）は、公開一覧で対応するスライドを確認できていないため、埋め込みは未設定です。
 
 ## PreMaCube・HORUS Monitor・WISS2025のPDF・サムネイル追加
 
