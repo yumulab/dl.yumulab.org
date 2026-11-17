@@ -3203,6 +3203,8 @@
       "id": "80",
       "type": "paper-conference",
       "title": "ASSADEP: Non-Contact Ear Haptic Feedback Using Airborne Ultrasound for Immersive ASMR Viewing",
+      "thumbnail": "/images/papers/80.jpg",
+      "thumbnailSmall": "/images/papers/80.jpg",
       "authors": [
         "Rei Shimizu",
         "Tsubasa Yumura"
@@ -3228,6 +3230,8 @@
       "id": "81",
       "type": "paper-conference",
       "title": "MaRI/OTTS: A Magnetorheological Self-Sensing Haptic Interface for Tangible Interaction",
+      "thumbnail": "/images/papers/81.jpg",
+      "thumbnailSmall": "/images/papers/81.jpg",
       "authors": [
         "Sora Kamimura",
         "Tsubasa Yumura"
@@ -3253,6 +3257,8 @@
       "id": "82",
       "type": "talk",
       "title": "歌詞駆動パーティクルライブ制作支援ツール",
+      "thumbnail": "/images/papers/82.jpg",
+      "thumbnailSmall": "/images/papers/82.jpg",
       "authors": [
         "上村 宙",
         "加藤 淳",

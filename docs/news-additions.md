@@ -124,6 +124,21 @@ CDIO ARM2024の2件（ID 103・104）は、ユーザー指定により種類を�
 
 [公開PDF（バージョン1）](https://jxiv.jst.go.jp/index.php/jxiv/preprint/download/5980/13018)を変更せず `public/pdfs/112.pdf` に配置しました（13ページ、SHA-256: `81e3d2c121d0a5b7689aad1c9e540dc500cb05d147f758c07b646d8680d23413`）。著作権者は秋葉 貴文・湯村 翼、掲載ページで指定されたライセンスは[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)です。サムネイルは5ページ・図5「MobiEPSプロトタイプ実装」の埋め込み画像（2809×1581px）を抽出し、拡大せず、余白なしの720×377pxにトリミングして `public/images/papers/112.jpg` に配置しました。スライドは追加していません。
 
+## VRST2026のサムネイル追加
+
+2026-11-17に `tmp/before/` で提供された2枚を、VRST2026の発表に設定しました。元画像を拡大せず、グリッドと同じ縦横比の720×377px JPEGにトリミングしています。余白は追加していません。
+
+| ID | 発表 | 提供画像 | 配置先 | 切り抜き位置 |
+| --- | --- | --- | --- | --- |
+| 80 | ASSADEP（`/vrst2026-shimizu/`） | `assadep.png`（1224×656px） | `public/images/papers/80.jpg` | 中央。超音波アレイと制御基板を残す。 |
+| 81 | MaRI/OTTS（`/vrst2026-kamimura/`） | `mariotts.png`（1112×622px） | `public/images/papers/81.jpg` | 下寄せ。装置と下部の説明ラベルを残す。 |
+
+一覧・個別ページ・OGPの参照先と、ビルド後の画像を確認しました。原本は内容を変更せず `tmp/archive/assadep.png` と `tmp/archive/mariotts.png` に保管します。
+
+## アニマーレ2026のサムネイル追加
+
+2026-11-17に提供された `tmp/before/ParticleAlive.png`（1200×645px）を、「歌詞駆動パーティクルライブ制作支援ツール」（ID 82、`/animare2026-kamimura/`）のサムネイルに設定しました。元画像を拡大せず、中央を基準に余白なしの720×377px JPEGにトリミングし、`public/images/papers/82.jpg` に保存しています。原本は内容を変更せず `tmp/archive/ParticleAlive.png` に保管します。
+
 ## 管理上の注意
 
 追加データは `src/data/papers.json`、URL名は `src/data/paper-slugs.json` に登録しています。`npm run import:legacy` は現行APIから論文データを置き換えるため、手動追加したID 80以降や受賞情報を保存・再統合する必要があります。追加記録の出典を参照して、未確認情報を後から補完してください。
