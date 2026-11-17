@@ -16,7 +16,7 @@ svg{flex-shrink:0;vertical-align:middle}
 ::selection{background:#c5edfc}
 .sr-only,.skip-link:not(:focus){position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip-link:focus{position:fixed;top:8px;left:8px;z-index:200;background:white;padding:10px 20px;color:var(--blue)}
-.site-header{--header-gutter:24px;height:52px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--header-gutter);gap:20px;border-bottom:1px solid #30445b;position:relative;z-index:10;background:linear-gradient(110deg,#0b111b 0%,#1c2b3c 50%,#303b48 72%,#111a27 100%);color:#fff;font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif}
+.site-header{--header-gutter:24px;height:52px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--header-gutter);gap:20px;border-bottom:1px solid #30445b;position:relative;z-index:10;background:linear-gradient(110deg,#070d18 0%,#213a56 50%,#46617e 72%,#10243b 100%);color:#fff;font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif}
 .site-header :focus-visible{outline-color:#fff}
 .site-name{font-size:16px;font-weight:500;letter-spacing:.08em;line-height:1.5}
 .lab-link{display:flex;align-items:center;justify-content:center;align-self:stretch;flex-shrink:0;min-height:40px;margin-right:calc(-1 * var(--header-gutter));padding:0 12px;border-left:1px solid #8fa5bd80;cursor:pointer;transition:background .15s,border-color .15s}
