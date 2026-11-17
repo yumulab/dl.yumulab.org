@@ -13,7 +13,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | 情報処理北海道シンポジウム2026 | `info2026` | `/info2026-hashimoto/` |
 | Jxiv（プレプリント） | `jxiv2026` | `/jxiv2026-akiba/` |
 | VRST2026 | `vrst2026` | `/vrst2026-shimizu/` |
-| アニマーレ2026 | `animare2026` | `/animare2026-kamimura/` |
+| アニマーレ | `animare2026` | `/animare2026-kamimura/` |
 | MUS147 | `mus147` | `/mus147-shimizu/` |
 | NICOGRAPH International 2026 | `nicograph2026` | `/nicograph2026-miyauchi/` |
 | EC79 | `ec79` | `/ec79-miyazaki/` |
@@ -101,7 +101,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 | `/papers/112/` | `/jxiv2026-akiba/` | 秋葉 貴文 | Jxiv（プレプリント） |
 | `/papers/80/` | `/vrst2026-shimizu/` | Rei Shimizu | VRST2026 |
 | `/papers/81/` | `/vrst2026-kamimura/` | Sora Kamimura | VRST2026 |
-| `/papers/82/` | `/animare2026-kamimura/` | 上村 宙 | アニマーレ2026 |
+| `/papers/82/` | `/animare2026-kamimura/` | 上村 宙 | アニマーレ |
 | `/papers/83/` | `/mus147-shimizu/` | 清水 怜良 | MUS147 |
 | `/papers/84/` | `/nicograph2026-miyauchi/` | Koki Miyauchi | NICOGRAPH International 2026 |
 | `/papers/77/` | `/ec79-miyazaki/` | 宮崎 創太 | EC79 |
