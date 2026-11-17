@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import BackToTop from '../components/BackToTop.astro';
 import { withBase } from '../lib/urls';
 interface Props { title?: string; description?: string; image?: string; }
 const siteName = '北海道情報大学 湯村研究室 論文レポジトリ';
@@ -38,5 +39,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <div><a href={withBase('/')}>湯村研究室 論文レポジトリ</a><span>© {new Date().getFullYear()} Yumura Lab</span></div>
       <div><a href={withBase('/about/')}>このレポジトリについて</a><a href="https://yumulab.org/" target="_blank" rel="noopener noreferrer">湯村翼研究室 ↗</a></div>
     </footer>
+    <BackToTop />
   </body>
 </html>

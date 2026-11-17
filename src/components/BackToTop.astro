@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+---
+<button id="back-to-top" class="back-to-top" type="button" aria-label="ページの先頭に戻る" title="ページの先頭に戻る" hidden>
+  <Icon name="arrow" size={22} />
+</button>
+
+<style>
+  .back-to-top{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1px solid #496b8d;border-radius:50%;background:#233b54;color:#fff;transition:background .15s,border-color .15s}
+  .back-to-top:hover{background:#30475f;border-color:#8fa5bd}
+  .back-to-top:active{background:#182638}
+  .back-to-top :global(svg){transform:rotate(90deg)}
+  @media(max-width:480px){.back-to-top{right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}}
+</style>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('#back-to-top');
+  if (button) {
+    const updateVisibility = () => {
+      const hidden = window.scrollY < 300;
+      if (button.hidden !== hidden) button.hidden = hidden;
+    };
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    window.addEventListener('pageshow', updateVisibility);
+    updateVisibility();
+
+    button.addEventListener('click', () => {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+      document.querySelector<HTMLAnchorElement>('.site-name')?.focus({ preventScroll: true });
+    });
+  }
+</script>
