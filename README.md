@@ -34,6 +34,8 @@ npm run preview # ビルド結果をローカルで確認
 
 表示形式は、画像付きの横並びリスト、カードを並べるグリッド、画像を省いたコンパクトなテキスト表示から選べます。初期表示はグリッドです。`view=list`・`view=grid`・`view=text` で表示形式を指定でき、検索・絞り込み条件と一緒にURLで共有できます。
 
+ヘッダ右端の研究室サイトリンクには `public/images/yumulab-logo.png` を使用します。提供画像を縦横比と透過を保って256×68pxに縮小し、PCでは96px幅、スマートフォンでは72px幅で表示しています。現在のロゴの元画像は `tmp/archive/yumulab-logo-banner-transparent2.png` に保管します。
+
 一覧の学会名・掲載先は `publication.bookTitleAbbr`（略称）を優先し、略称がない場合は `publication.bookTitle`（正式名称）を表示します。
 
 受賞した発表は、3種類の一覧と個別ページに賞名付きのバッジを表示します。個別ページのバッジから受賞記事を開けます。賞名は検索対象にも含まれます。
