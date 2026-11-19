@@ -1,6 +1,6 @@
 # 湯村研究室 論文レポジトリ
 
-[現行サイト](https://dl.yumulab.org/)の公開部分と[研究室のNews](https://www.yumulab.org/news.html)をもとにした、Astro製の静的サイトです。既存79件、Newsから補完した28件、提供原稿から追加した情報処理北海道シンポジウム2026の4件、Jxivのプレプリント1件を合わせ、論文・学会発表・雑誌記事など計112件のメタデータを収録しています。追加分の出典と未確認情報は [News等からの追加記録](docs/news-additions.md) と [情報処理北海道シンポジウム2026の追加記録](docs/info2026.md) を参照してください。
+[現行サイト](https://dl.yumulab.org/)の公開部分と[研究室のNews](https://www.yumulab.org/news.html)をもとにした、Astro製の静的サイトです。既存79件、Newsから補完した28件、提供原稿から追加した情報処理北海道シンポジウム2026の4件、Jxivのプレプリント1件、WISS2026公式プログラムのデモ発表3件を合わせ、論文・学会発表・雑誌記事など計115件のメタデータを収録しています。追加分の出典と未確認情報は [News等からの追加記録](docs/news-additions.md) と [情報処理北海道シンポジウム2026の追加記録](docs/info2026.md)、[WISS2026の追加記録](docs/wiss2026.md) を参照してください。
 
 ## 開発
 
@@ -65,12 +65,12 @@ faviconは提供された `logo-blue.png` から作成しています。`public/
 
 `src/data/papers.json` がデータ本体です。1論文につき1オブジェクトを追加・編集し、再ビルドすると反映されます。型定義は `src/lib/papers.ts` の `Paper` を参照してください。最低限の形式:
 
-新しい論文には `src/data/paper-slugs.json` にも `"113": "ec80-surname"` のようなURL名を登録してください。URLはサイトのトップ直下の `/学会名-第1著者の姓/` です。インタラクションは `i20XX`、第36回ハプティクス研究会は `haptics36` を使用しています。登録済みURLは論文データの編集・再取り込みでも変わりません。未登録や重複がある場合はビルド時に検出します。
+新しい論文には `src/data/paper-slugs.json` にも `"116": "ec80-surname"` のようなURL名を登録してください。URLはサイトのトップ直下の `/学会名-第1著者の姓/` です。インタラクションは `i20XX`、第36回ハプティクス研究会は `haptics36` を使用しています。登録済みURLは論文データの編集・再取り込みでも変わりません。未登録や重複がある場合はビルド時に検出します。
 
 ```json
 {
   "core": {
-    "id": "113",
+    "id": "116",
     "type": "paper-conference",
     "language": "ja",
     "title": "論文タイトル",
@@ -85,7 +85,7 @@ faviconは提供された `logo-blue.png` から作成しています。`public/
     "bookTitleAbbr": "会議略称",
     "publishedDate": "2026-11-14T00:00:00.000Z"
   },
-  "files": { "paper": "/pdfs/113.pdf" }
+  "files": { "paper": "/pdfs/116.pdf" }
 }
 ```
 

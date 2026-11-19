@@ -4156,5 +4156,87 @@
     "files": {
       "paper": "/pdfs/112.pdf"
     }
+  },
+  {
+    "core": {
+      "id": "113",
+      "type": "paper-conference",
+      "title": "摂食に同期した自己アバタの形状変形による満腹感増強システムの提案",
+      "authors": [
+        "上村 宙",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2026/demo.html#demo-1-B17",
+      "thumbnail": "/images/papers/113.jpg",
+      "presentationlLocation": "苗場プリンスホテル（新潟県）",
+      "presentationDate": "2026-12-09T00:00:00.000Z",
+      "sortingDate": "2026-12-09T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "第34回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2026）",
+      "bookTitleAbbr": "WISS2026",
+      "number": "1-B17"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2026/"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "114",
+      "type": "paper-conference",
+      "title": "低出力レーザー加工機による木材の導電化の検討",
+      "authors": [
+        "西山 彩叶",
+        "湯村 翼",
+        "松田 裕貴"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2026/demo.html#demo-3-A02",
+      "thumbnail": "/images/papers/114.jpg",
+      "presentationlLocation": "苗場プリンスホテル（新潟県）",
+      "presentationDate": "2026-12-11T00:00:00.000Z",
+      "sortingDate": "2026-12-11T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "第34回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2026）",
+      "bookTitleAbbr": "WISS2026",
+      "number": "3-A02"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2026/"
+      ]
+    }
+  },
+  {
+    "core": {
+      "id": "115",
+      "type": "paper-conference",
+      "title": "音響放射圧を用いた ASMR 動画視聴時における耳部触覚提示システムの提案",
+      "authors": [
+        "清水 怜良",
+        "湯村 翼"
+      ],
+      "language": "ja",
+      "externalUrl": "https://www.wiss.org/WISS2026/demo.html#demo-3-B12",
+      "thumbnail": "/images/papers/115.jpg",
+      "presentationlLocation": "苗場プリンスホテル（新潟県）",
+      "presentationDate": "2026-12-11T00:00:00.000Z",
+      "sortingDate": "2026-12-11T00:00:00.000Z"
+    },
+    "publication": {
+      "bookTitle": "第34回インタラクティブシステムとソフトウェアに関するワークショップ（WISS2026）",
+      "bookTitleAbbr": "WISS2026",
+      "number": "3-B12"
+    },
+    "external": {
+      "links": [
+        "https://www.wiss.org/WISS2026/"
+      ]
+    }
   }
 ]

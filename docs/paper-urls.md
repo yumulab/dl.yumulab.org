@@ -10,6 +10,7 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 
 | 発表先・掲載先 | URL先頭の略称 | 新URLの例 |
 |---|---|---|
+| WISS2026 | `wiss2026` | `/wiss2026-kamimura/` |
 | 情報処理北海道シンポジウム2026 | `info2026` | `/info2026-hashimoto/` |
 | Jxiv（プレプリント） | `jxiv2026` | `/jxiv2026-akiba/` |
 | VRST2026 | `vrst2026` | `/vrst2026-shimizu/` |
@@ -88,12 +89,15 @@ URLはサイトのルートを基準に表記しています。公開先の独�
 - 上村は `kamimura`、藤谷は `fujiya`、大畑は `ohata` を使用しています。
 - 寳金 `hokin`、玉堀 `tamahori`、大栁 `oyanagi` は確認済みの表記です。
 
-## 全112件のURL
+## 全115件のURL
 
 数字形式と `/papers/略称-姓/` 形式のURLはいずれもトップ直下のURLへ直接転送されます。Newsから追加した28件の出典は [追加記録](news-additions.md) にまとめています。
 
 | 数字形式URL | 現在のURL | 第1著者 | 発表先・掲載先 |
 |---|---|---|---|
+| `/papers/113/` | `/wiss2026-kamimura/` | 上村 宙 | WISS2026 |
+| `/papers/114/` | `/wiss2026-nishiyama/` | 西山 彩叶 | WISS2026 |
+| `/papers/115/` | `/wiss2026-shimizu/` | 清水 怜良 | WISS2026 |
 | `/papers/108/` | `/info2026-hashimoto/` | 橋本 空輝 | 情報処理北海道シンポジウム2026 |
 | `/papers/109/` | `/info2026-sato/` | 佐藤 一樹 | 情報処理北海道シンポジウム2026 |
 | `/papers/110/` | `/info2026-tada/` | 多田 祐翔 | 情報処理北海道シンポジウム2026 |
