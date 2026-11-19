@@ -11,9 +11,9 @@ const years = [...new Set(papers.map(paperFiscalYear).filter(Boolean))].sort().r
   <div class="view-bar">
     <div class="view-bar-inner">
       <div class="view-options" role="group" aria-label="表示形式">
-        <button type="button" data-view="grid" aria-controls="papers" aria-pressed="true"><Icon name="grid" size={16} />グリッド表示</button>
-        <button type="button" data-view="list" aria-controls="papers" aria-pressed="false"><Icon name="list" size={16} />リスト表示</button>
-        <button type="button" data-view="text" aria-controls="papers" aria-pressed="false"><Icon name="text" size={16} />テキスト表示</button>
+        <button type="button" data-view="grid" aria-controls="papers" aria-pressed="true"><Icon name="grid" size={16} />グリッド</button>
+        <button type="button" data-view="list" aria-controls="papers" aria-pressed="false"><Icon name="list" size={16} />リスト</button>
+        <button type="button" data-view="text" aria-controls="papers" aria-pressed="false"><Icon name="text" size={16} />テキスト</button>
       </div>
       <div class="view-options sort-options" role="group" aria-label="並び順">
         <button type="button" data-sort="newest" aria-controls="papers" aria-pressed="true"><Icon name="sort-desc" size={16} />新しい順</button>

@@ -15,6 +15,7 @@ export function getStaticPaths() {
 interface Props { paper: Paper; }
 const { paper } = Astro.props;
 const { core, publication: pub } = paper;
+const hasThumbnail = Boolean(core.thumbnail || core.thumbnailSmall);
 const category = typeInfo(paperType(paper));
 const pdf = paperFullTextPath(paper);
 const source = safeUrl(core.externalUrl);
@@ -35,20 +36,22 @@ const links = (paper.external?.links ?? []).map(safeUrl).filter((url): url is st
   <ScholarMetadata slot="head" paper={paper} />
   <main id="main" class="detail-page">
     <a class="back-link" href={withBase('/')}><Icon name="arrow" size={17} />論文一覧へ戻る</a>
-    <header class="detail-header">
-      <span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span>
-      <h1>{core.title}</h1>
-      {core.titleOfEnglish && <p class="english-title" lang="en">{core.titleOfEnglish}</p>}
-      <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}>{author}</a>)}</div>
-      <RecognitionBadges awards={paper.awards} selections={paper.selections} linked />
-      <div class="detail-actions">
-        {pdf && <a class="pdf-button" href={pdf} target="_blank" rel="noopener noreferrer"><Icon name="download" size={18} />PDFを開く<Icon name="external" size={14} /></a>}
-        {source && <a class="outline-button" href={source} target="_blank" rel="noopener noreferrer">公開元を見る<Icon name="external" size={15} /></a>}
-        {slides && <a class="outline-button" href="#slides">発表スライド</a>}
+    <header class:list={['detail-header', { 'has-thumbnail': hasThumbnail }]}>
+      {hasThumbnail && <img class="detail-header-image" src={thumbnail(paper)} alt="" aria-hidden="true" width="720" height="377" fetchpriority="high" decoding="async" />}
+      <div class="detail-header-content">
+        <span class="type-badge" style={`--badge-color: ${category.color}`}>{category.label}</span>
+        <h1>{core.title}</h1>
+        {core.titleOfEnglish && <p class="english-title" lang="en">{core.titleOfEnglish}</p>}
+        <div class="author-links">{(core.authors ?? []).map((author) => <a href={`${withBase('/')}?q=${encodeURIComponent(author)}`}>{author}</a>)}</div>
+        <RecognitionBadges awards={paper.awards} selections={paper.selections} linked />
+        <div class="detail-actions">
+          {pdf && <a class="pdf-button" href={pdf} target="_blank" rel="noopener noreferrer"><Icon name="download" size={18} />PDFを開く<Icon name="external" size={14} /></a>}
+          {source && <a class="outline-button" href={source} target="_blank" rel="noopener noreferrer">公開元を見る<Icon name="external" size={15} /></a>}
+          {slides && <a class="outline-button" href="#slides">発表スライド</a>}
+        </div>
       </div>
     </header>
     <div class="detail-body">
-      {(core.thumbnail || core.thumbnailSmall) && <img class="detail-thumbnail" src={thumbnail(paper)} alt={`${core.title}の研究紹介画像`} width="560" height="294" />}
       {core.abstract && <section class="detail-section"><h2><span>Abstract</span>概要</h2><p class="abstract-text">{core.abstract}</p></section>}
       {(slides || video || links.length > 0) && <section class="detail-section">
         <h2><span>Artifacts</span>関連資料</h2>
